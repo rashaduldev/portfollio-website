@@ -123,3 +123,79 @@
     @apply bg-background text-foreground;
   }
 }
+
+.primary_text_color{
+  color: #3f4144;
+}
+
+/* banner image css */
+
+@keyframes slide-right {
+  0% { width: 0; left: 0; }
+  100% { width: 100%; left: 0; }
+}
+
+@keyframes slide-left {
+  0% { width: 0; right: 0; }
+  100% { width: 100%; right: 0; }
+}
+
+@keyframes slide-down {
+  0% { height: 0; top: 0; }
+  100% { height: 100%; top: 0; }
+}
+
+.animated-border-wrapper {
+  position: relative;
+}
+
+.animated-border-wrapper.ltr::after,
+.animated-border-wrapper.rtl::after,
+.animated-border-wrapper.ltr::before,
+.animated-border-wrapper.rtl::before {
+  content: "";
+  position: absolute;
+  background-color: #3f4144; /* fallback */
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.dark .animated-border-wrapper::after,
+.dark .animated-border-wrapper::before {
+  background-color: #e5e7eb; /* gray-200 */
+}
+
+/* LTR styles */
+.animated-border-wrapper.ltr::after {
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+}
+
+.animated-border-wrapper.ltr::before {
+  top: 0;
+  right: 0;
+  width: 2px;
+  animation-name: slide-down;
+  animation-duration: 2s;
+}
+
+/* RTL styles */
+.animated-border-wrapper.rtl::after {
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  animation-name: slide-left;
+  animation-duration: 2s;
+}
+
+.animated-border-wrapper.rtl::before {
+  top: 0;
+  left: 0;
+  width: 2px;
+  animation-name: slide-down;
+  animation-duration: 2s;
+}

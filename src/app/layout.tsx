@@ -4,7 +4,13 @@ import { ThemeProvider } from 'next-themes'
 import './globals.css'
 import { LayoutContext } from '@/components/context'
 import Footer from '@/components/Footer'
+import CookieConsent from '@/components/CookieConsent'
 import Header from '@/components/Header'
+import Banner from '@/components/Banner'
+import SkillsSection from '@/components/SkillsSection'
+import SkillsMarquee from '@/components/SkillsMarquee'
+import Timeline from '@/components/Timeline'
+// import EducationTimeline from '@/components/Education'
 
 // Default translations to prevent undefined errors
 const defaultTranslations = {
@@ -38,9 +44,9 @@ const defaultTranslations = {
   }
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<string>('en')
-  const [translations, setTranslations] = useState<any>(defaultTranslations)
+  const [translations, setTranslations] = useState<unknown>(defaultTranslations)
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -80,8 +86,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LayoutContext.Provider value={{ language, setLanguage, translations, isRTL }}>
+          <CookieConsent />
             <Header />
-            <main className="flex-grow">{children}</main>
+            <Banner/>
+            <SkillsSection/>
+            <SkillsMarquee />
+            <Timeline/>
+            {/* <EducationTimeline/> */}
+            {/* <main className="flex-grow">{children}</main> */}
             <Footer />
           </LayoutContext.Provider>
         </ThemeProvider>

@@ -4,12 +4,14 @@ import { Mail } from 'lucide-react'
 import { useState, useContext } from 'react'
 import { Input } from '@/components/ui/input'
 import { LayoutContext } from './context'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   const context = useContext(LayoutContext)
   if (!context) {
     throw new Error('LayoutContext must be used within a LayoutContext.Provider')
   }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { translations, isRTL } = context
 
   console.log('Footer translations:', translations) // Debug log
@@ -48,16 +50,16 @@ export default function Footer() {
           <h3 className="font-semibold text-lg">{translations?.footer?.follow || 'Follow Us'}</h3>
           <div className="flex gap-4 mt-2">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-              <i className="fab fa-facebook-f text-xl"></i>
+              <FaFacebookF className="text-xl" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-              <i className="fab fa-twitter text-xl"></i>
+              <FaTwitter className="text-xl" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-              <i className="fab fa-linkedin-in text-xl"></i>
+              <FaLinkedinIn className="text-xl" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-              <i className="fab fa-instagram text-xl"></i>
+              <FaInstagram className="text-xl" />
             </a>
           </div>
         </div>

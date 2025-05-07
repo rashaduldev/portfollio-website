@@ -14,23 +14,22 @@ export default function Header() {
   }
   const { language, setLanguage, translations, isRTL } = context
 
-  console.log('Header translations:', translations) // Debug log
-
   const { theme, setTheme } = useTheme()
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isDrawerOpen, setDrawerOpen] = useState(false)
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
   return (
-    <header className="w-full bg-white dark:bg-gray-900 shadow">
+    <header className="w-full bg-white dark:bg-gray-900 shadow relative z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
         <div className={isRTL ? 'absolute right-4' : 'absolute left-4'}>
           <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
             {translations?.header?.brand || 'My Brand'}
           </Link>
         </div>
+
         <nav className="flex-grow text-center">
           <div className="hidden md:flex justify-center gap-6 text-gray-700 dark:text-gray-200">
             <Link href="/" className="hover:text-blue-500">{translations?.header?.home || 'Home'}</Link>
@@ -38,10 +37,11 @@ export default function Header() {
             <Link href="/contact" className="hover:text-blue-500">{translations?.header?.contact || 'Contact'}</Link>
           </div>
         </nav>
+
         <div className="flex items-center gap-2">
           <div className="md:hidden">
-            <Button variant="ghost" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            <Button variant="ghost" onClick={() => setDrawerOpen(true)}>
+              <Menu className="w-5 h-5" />
             </Button>
           </div>
           <Button variant="ghost" size="icon" onClick={toggleTheme}>
@@ -58,22 +58,40 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-md md:hidden">
-            <div className="flex flex-col items-center gap-4 py-4 text-gray-700 dark:text-gray-200">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-500">
-                {translations?.header?.home || 'Home'}
-              </Link>
-              <Link href="/projects" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-500">
-                {translations?.header?.projects || 'Projects'}
-              </Link>
-              <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-500">
-                {translations?.header?.contact || 'Contact'}
-              </Link>
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Drawer */}
+      <div
+        className={`fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+          isDrawerOpen ? 'translate-x-0' : isRTL ? 'translate-x-full' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-semibold">{translations?.header?.menu || 'Menu'}</h2>
+          <Button variant="ghost" onClick={() => setDrawerOpen(false)}>
+            <X className="w-5 h-5" />
+          </Button>
+        </div>
+        <div className="flex flex-col p-4 gap-4 text-gray-700 dark:text-gray-200">
+          <Link href="/" onClick={() => setDrawerOpen(false)} className="hover:text-blue-500">
+            {translations?.header?.home || 'Home'}
+          </Link>
+          <Link href="/projects" onClick={() => setDrawerOpen(false)} className="hover:text-blue-500">
+            {translations?.header?.projects || 'Projects'}
+          </Link>
+          <Link href="/contact" onClick={() => setDrawerOpen(false)} className="hover:text-blue-500">
+            {translations?.header?.contact || 'Contact'}
+          </Link>
+        </div>
+      </div>
+
+      {/* Backdrop */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={() => setDrawerOpen(false)}
+        />
+      )}
     </header>
   )
 }

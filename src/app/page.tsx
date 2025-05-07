@@ -7,6 +7,7 @@ export default function Main() {
   if (!context) {
     throw new Error('LayoutContext must be used within a LayoutContext.Provider')
   }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { translations, isRTL } = context
 
   console.log('Main translations:', translations) // Debug log
