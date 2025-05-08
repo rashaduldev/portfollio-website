@@ -19,6 +19,7 @@
   "resume":"Download Resume"
 },
 "skills": {
+  "about": "About me",
   "designTitle": "Design Skill",
   "devTitle": "Development Skill",
   "tools":"Tools",

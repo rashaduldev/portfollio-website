@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { LayoutContext } from "./context";
 
 const designSkills = [
@@ -42,6 +42,10 @@ export default function SkillsSection() {
   const { translations, isRTL } = context;
   const [progress, setProgress] = useState({ design: [], development: [] });
 
+  const designRef = useRef(null);
+  const toolsRef = useRef(null);
+  const devRef = useRef(null);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setProgress({
@@ -50,7 +54,33 @@ export default function SkillsSection() {
         development: devSkills.map((s) => s.value),
       });
     }, 300);
-    return () => clearTimeout(timer);
+
+    // Initialize IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          } else {
+            entry.target.classList.remove("in-view");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    // Observe the sections only if they exist
+    if (designRef.current) observer.observe(designRef.current);
+    if (toolsRef.current) observer.observe(toolsRef.current);
+    if (devRef.current) observer.observe(devRef.current);
+
+    // Cleanup function to unobserve on component unmount
+    return () => {
+      clearTimeout(timer);
+      if (designRef.current) observer.unobserve(designRef.current);
+      if (toolsRef.current) observer.unobserve(toolsRef.current);
+      if (devRef.current) observer.unobserve(devRef.current);
+    };
   }, []);
 
   const t = translations?.skills || {};
@@ -58,7 +88,7 @@ export default function SkillsSection() {
   const renderBar = (value) => {
     const barColor =
       value === 100 ? "bg-green-500 dark:bg-green-400" : "bg-[#3f4144] dark:bg-white";
-  
+
     return (
       <div className="w-full h-2 bg-white dark:bg-gray-700 rounded overflow-hidden">
         <div
@@ -71,19 +101,18 @@ export default function SkillsSection() {
       </div>
     );
   };
-  
-  
 
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
       className="w-full py-12 px-4 md:px-10 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
     >
+      <h3 className="text-4xl font-bold text-end max-w-6xl mx-auto my-2 md:my-10">{t.about || "About me"}</h3>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Design Skills */}
         <div>
-        <div>
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+        <div ref={designRef} className="skill-section opacity-0 transform translate-y-12 transition-all duration-1000 ease-in-out">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
             {t.tools || "Tools"}
           </h2>
           {toolskills.map((skill, idx) => (
@@ -96,8 +125,9 @@ export default function SkillsSection() {
             </div>
           ))}
         </div>
-        <div>
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+
+        <div ref={toolsRef} className="skill-section opacity-0 transform translate-y-12 transition-all duration-1000 ease-in-out">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
             {t.designTitle || "Design Skill"}
           </h2>
           {designSkills.map((skill, idx) => (
@@ -113,7 +143,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Development Skills */}
-        <div>
+        <div ref={devRef} className="skill-section opacity-0 transform translate-y-12 transition-all duration-1000 ease-in-out">
           <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
             {t.devTitle || "Development Skill"}
           </h2>
