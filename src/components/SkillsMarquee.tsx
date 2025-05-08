@@ -27,7 +27,7 @@ const SkillsMarquee = () => {
     { name: skills.cloudinary, icon: <SiCloudinary /> },
     { name: skills.jetBrains, icon: <SiJetbrains /> },
     { name: skills.cpanel, icon: <SiCpanel /> },
-    { name: skills.vs, icon: <SiCpanel /> },
+    { name: skills.vs, icon: <SiCpanel /> }, // Consider changing icon if different from cPanel
   ];
 
   const design = [
@@ -57,12 +57,15 @@ const SkillsMarquee = () => {
     items: { name: string; icon: JSX.Element }[],
     scrollDirection: "left" | "right"
   ) => (
-    <div className="my-6">
+    <div className="my-6 overflow-hidden">
       <Marquee direction={scrollDirection} gradient={false} speed={40}>
         {items.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-2 px-6 text-xl whitespace-nowrap">
-            <span className="text-2xl">{item.icon}</span>
-            <span>{item.name}</span>
+          <div
+            key={idx}
+            className="flex items-center gap-2 px-4 sm:px-6 text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap"
+          >
+            <span className="text-lg sm:text-xl md:text-2xl">{item.icon}</span>
+            <span className="truncate">{item.name}</span>
           </div>
         ))}
       </Marquee>
@@ -75,8 +78,8 @@ const SkillsMarquee = () => {
   return (
     <div className="w-full py-8 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
       {renderLine(skills.tools, tools, dir)}           {/* 1st line */}
-      {renderLine(skills.designTitle, design, oppositeDir)}  {/* 2nd line opposite */}
-      {renderLine(skills.devTitle, development, dir)}  {/* 3rd line same as 1st */}
+      {renderLine(skills.designTitle, design, oppositeDir)}  {/* 2nd line */}
+      {renderLine(skills.devTitle, development, dir)}  {/* 3rd line */}
     </div>
   );
 };

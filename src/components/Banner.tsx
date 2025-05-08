@@ -20,22 +20,23 @@ export default function Banner() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
-      const maxScroll = 500 // Adjust the max scroll amount based on your needs
-      const rotateValue = Math.min((scrollY / maxScroll) * 120, 10) // Rotate up to 120 degrees
-
-      // In RTL mode, we rotate in the opposite direction
+      const maxScroll = 500
+      const threshold = 50 // Minimum scroll before rotation starts
+      const effectiveScroll = Math.max(0, scrollY - threshold)
+  
+      const rotateValue = Math.min((effectiveScroll / (maxScroll - threshold)) * 10, 10)
       setRotateDeg(isRTL ? -rotateValue : rotateValue)
     }
-
+  
+    // Trigger once on mount to ensure initial scrollY is considered correctly
+    handleScroll()
+  
     window.addEventListener("scroll", handleScroll)
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [isRTL]) // Dependency on isRTL
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [isRTL])  
 
   return (
-    <section className="w-full bg-gray-100 dark:bg-gray-900 py-16 px-6">
+    <section className="w-full bg-gray-100 dark:bg-gray-900 py-10 sm:py-16 px-4 sm:px-6">
       <div
         className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 ${
           isRTL ? "md:flex-row" : ""
@@ -57,7 +58,7 @@ export default function Banner() {
             <Button className="cursor-pointer">
               <a
                 href="#"
-                className={`bg-primary text-white px-4 py-2 rounded cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row-reverse"} md:flex-row gap-[14px]`}
+                className={`bg-primary text-white dark:text-black px-4 py-2 rounded cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row md:flex-row-reverse"} md:flex-row gap-[14px]`}
               >
                 {translations?.main?.leftbutton || "Let's go"}
                 <CiLocationArrow1 />
@@ -68,7 +69,7 @@ export default function Banner() {
               <a
                 href="/assets/Resume of Md Rashadul Islam.pdf"
                 download="Resume of Md Rashadul Islam.pdf"
-                className={`cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row-reverse"} md:flex-row gap-[14px]`}
+                className={`cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row md:flex-row-reverse"} md:flex-row gap-[14px]`}
               >
                 {translations?.main?.resume || "Download Resume"}
                 {isRTL ? <IoArrowRedoCircleOutline /> : <IoArrowUndoCircleOutline />}

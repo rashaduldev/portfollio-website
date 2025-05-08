@@ -3,78 +3,105 @@
     "brand": "Rashadul",
     "home": "Home",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "scrollMessage": "scrollMessage"
   },
   "cookieConsent": {
-  "title": "use cookies 🍪",
-  "message": "This website uses cookies to ensure you get the best experience on our website.",
-  "accept": "Accept",
-  "reject": "Reject"
-},
+    "title": "use cookies 🍪",
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
   "main": {
-  "subtitle": "Hello",
-  "title": "I am Rashadul Islam",
-  "description": "Frontend Web Developer from Dhaka, passionate about Laravel and React.js. Currently working at BDOSC as a Frontend Web Developer, I focus on building error-free web applications and solving real-world problems. I enjoy learning, sharing knowledge, and improving web performance. Skilled in ReactJS, JavaScript, and PHP, I'm also learning React Native, Node.js, Next.js, MongoDB, and Flutter. I love collaborating on Laravel and MERN Stack projects and exploring new places in my free time.",
-  "leftbutton":"Let's go",
-  "resume":"Download Resume"
-},
-"skills": {
-  "about": "About me",
-  "designTitle": "Design Skill",
-  "devTitle": "Development Skill",
-  "tools":"Tools",
-  "git":"Git (Version Control)",
-  "firebase":"Firebase",
-  "cloudinary":"Cloudinary",
-  "jetBrains":"JetBrains",
-  "cpanel":"cPanel",
-  "vs":"Vs Code",
-  "photoshop": "Photoshop",
-  "figma": "Figma",
-  "xd": "Adobe XD",
-  "illustrator": "Adobe Illustrator",
-  "html": "HTML",
-  "css": "CSS",
-  "js": "JavaScript",
-  "ts": "TypeScript",
-  "react": "React.js",
-  "next": "Next.js",
-  "vue": " Vue.js",
-  "tailwind": "Tailwind CSS",
-  "bootstrap": "Bootstrap",
-  "node": "Node.js",
-  "ex": "Express.js",
-  "wp": "Wordpress"
-},
-"experience": {
-  "2020": {
-    "title": "IT Manager",
-    "company": "ShopUp",
-    "department": "Unicorn Department",
-    "description": "Managed IT infrastructure and led a team of developers to implement key technology solutions."
+    "subtitle": "Hello",
+    "title": "I am Rashadul Islam",
+    "description": "Frontend Web Developer from Dhaka, passionate about Laravel and React.js. Currently working at BDOSC as a Frontend Web Developer, I focus on building error-free web applications and solving real-world problems. I enjoy learning, sharing knowledge, and improving web performance. Skilled in ReactJS, JavaScript, and PHP, I'm also learning React Native, Node.js, Next.js, MongoDB, and Flutter. I love collaborating on Laravel and MERN Stack projects and exploring new places in my free time.",
+    "leftbutton": "Let's go",
+    "resume": "Download Resume"
   },
-  "2021": {
-    "title": "Web Development Level - 4",
-    "company": "Freelance",
-    "department": "Development",
-    "description": "Developed web applications and gained proficiency in HTML, CSS, and PHP."
+  "skills": {
+    "about": "About me",
+    "designTitle": "Design Skill",
+    "devTitle": "Development Skill",
+    "tools": "Tools",
+    "git": "Git (Version Control)",
+    "firebase": "Firebase",
+    "cloudinary": "Cloudinary",
+    "jetBrains": "JetBrains",
+    "cpanel": "cPanel",
+    "vs": "Vs Code",
+    "photoshop": "Photoshop",
+    "figma": "Figma",
+    "xd": "Adobe XD",
+    "illustrator": "Adobe Illustrator",
+    "html": "HTML",
+    "css": "CSS",
+    "js": "JavaScript",
+    "ts": "TypeScript",
+    "react": "React.js",
+    "next": "Next.js",
+    "vue": " Vue.js",
+    "tailwind": "Tailwind CSS",
+    "bootstrap": "Bootstrap",
+    "node": "Node.js",
+    "ex": "Express.js",
+    "wp": "Wordpress"
   },
-  "2023": {
-    "title": "Junior Frontend Developer",
-    "company": "BDOSC",
-    "department": "Development",
-    "description": "Built responsive web applications using HTML, CSS, JavaScript, ReactJS, and NodeJS."
+  "experience": {
+    "2025": {
+      "title": "Full Stack Web Developer",
+      "company": "BDOSC",
+      "department": "Engineering",
+      "description": "Developed full-stack applications with Tailwind, JavaScript, TypeScript, ReactJS, NodeJS, Express, and MongoDB."
+    },
+    "2023": {
+      "title": "Junior Frontend Developer",
+      "company": "BDOSC",
+      "department": "Development",
+      "description": "Built responsive web applications using HTML, CSS, JavaScript, ReactJS, and NodeJS."
+    },
+    "2021": {
+      "title": "Web Development Level - 4",
+      "company": "Freelance",
+      "department": "Development",
+      "description": "Developed web applications and gained proficiency in HTML, CSS, and PHP."
+    },
+    "2020": {
+      "title": "IT Manager",
+      "company": "ShopUp",
+      "department": "Unicorn Department",
+      "description": "Managed IT infrastructure and led a team of developers to implement key technology solutions."
+    }
   },
-  "2025": {
-    "title": "Full Stack Web Developer",
-    "company": "BDOSC",
-    "department": "Engineering",
-    "description": "Developed full-stack applications with Tailwind, JavaScript, TypeScript, ReactJS, NodeJS, Express, and MongoDB."
-  }
-},
+  "education": {
+    "2020": {
+      "title": "SSC",
+      "company": "Nawdabash High School",
+      "department": "Science",
+      "description": "Completed Secondary School Certificate with a focus on general science and foundational computing skills."
+    },
+    "2021": {
+      "title": "HSC",
+      "company": "Kurigram Govt Collage",
+      "department": "Science",
+      "description": "Passed Higher Secondary Certificate specializing in Science, with strong interest in mathematics and ICT."
+    },
+    "2023": {
+      "title": "Diploma in Eng:",
+      "company": "Dhaka Polytechnic Institute",
+      "department": "Computer Science & Technology",
+      "description": "Gained hands-on experience in programming, networking, and database management during a 4-year diploma program."
+    },
+    "2025": {
+      "title": "BSC",
+      "company": "Green University of Bangladesh",
+      "department": "BSc in CSE",
+      "description": "Pursuing a Bachelor's degree in Computer Science and Engineering focusing on full-stack development and modern technologies."
+    }
+  },
   "footer": {
-    "company": "Company",
-    "about": "About Us",
+    "company": "Rashadul",
+    "about": "About Me",
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -88,6 +115,7 @@
     "emailPlaceholder": "Enter your email",
     "subscribe": "Subscribe",
     "subscribeSuccess": "Thank you for subscribing with email:",
+    "scrollTop": "Back to Top",
     "copyright": "© 2025 My Brand. All rights reserved."
   }
 }

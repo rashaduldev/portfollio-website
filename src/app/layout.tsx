@@ -11,6 +11,7 @@ import SkillsSection from '@/components/SkillsSection'
 import SkillsMarquee from '@/components/SkillsMarquee'
 import Timeline from '@/components/Timeline'
 import { PortfolioJSON } from '@/types/translations'
+import WorkExperience from '@/components/WorkExperience'
 
 // import EducationTimeline from '@/components/Education'
 
@@ -20,7 +21,8 @@ export const defaultTranslations: PortfolioJSON = {
     brand: "Rashadul's Portfolio",
     home: "Home",
     projects: "Projects",
-    contact: "Contact"
+    contact: "Contact",
+    scrollMessage: "scrollMessage",
   },
   cookieConsent: {
     title: "We use cookies",
@@ -76,6 +78,20 @@ export const defaultTranslations: PortfolioJSON = {
       description: "Assisted in digitizing government forms and building reusable templates."
     }
   },
+  education: {
+    "2023": {
+      title: "Frontend Developer",
+      company: "BDOSC",
+      department: "IT Department",
+      description: "Developed responsive user interfaces using React.js and Tailwind CSS."
+    },
+    "2022": {
+      title: "Web Developer Intern",
+      company: "UY Systems Ltd",
+      department: "MyGov A2I Team",
+      description: "Assisted in digitizing government forms and building reusable templates."
+    }
+  },
   footer: {
     company: "Company",
     about: "About",
@@ -91,10 +107,12 @@ export const defaultTranslations: PortfolioJSON = {
     newsletterDesc: "Subscribe to stay updated on new projects and content.",
     emailPlaceholder: "Enter your email",
     subscribe: "Subscribe",
+    scrollTop: "Back to Top",
     subscribeSuccess: "Successfully subscribed with email:",
     copyright: `© ${new Date().getFullYear()} Md Rashadul Islam. All rights reserved.`
   }
-}
+};
+
 
 
 export default function RootLayout({ }: { children: React.ReactNode }) {
@@ -144,6 +162,7 @@ export default function RootLayout({ }: { children: React.ReactNode }) {
             <Banner/>
             <SkillsSection/>
             <SkillsMarquee />
+            <WorkExperience/>
             <Timeline/>
             {/* <EducationTimeline/> */}
             {/* <main className="flex-grow">{children}</main> */}

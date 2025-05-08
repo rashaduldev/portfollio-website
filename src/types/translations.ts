@@ -4,6 +4,7 @@ export type PortfolioJSON = {
     home: string
     projects: string
     contact: string
+    scrollMessage: string
   },
   cookieConsent: {
     title: string
@@ -53,6 +54,14 @@ export type PortfolioJSON = {
       description: string
     }
   },
+  education: {
+    [year: string]: {
+      title: string
+      company: string
+      department: string
+      description: string
+    }
+  },
   footer: {
     company: string
     about: string
@@ -68,6 +77,7 @@ export type PortfolioJSON = {
     newsletterDesc: string
     emailPlaceholder: string
     subscribe: string
+    scrollTop: string
     subscribeSuccess: string
     copyright: string
   }
