@@ -17,8 +17,8 @@ export default function WorkExperience() {
   })
 
   return (
-    <div className="w-full py-12 px-4 bg-gray-100 dark:bg-gray-900">
-      <h2 className="mx-auto text-center mb-10 font-bold text-4xl">Experiences</h2>
+    <div className="w-full py-12 px-4 ">
+      <h2 className="mx-auto text-center mb-10 font-bold text-4xl">{translations.experienceHeading}</h2>
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical Line */}
         <div className={`absolute ${isRTL ? 'md:left-auto md:right-1/2 right-0' : 'md:right-auto md:left-1/2 left-0'} transform md:-translate-x-1/2 h-full w-1 bg-black dark:bg-white z-0`} />

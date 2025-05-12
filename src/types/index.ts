@@ -16,7 +16,7 @@ export interface PortfolioJSON {
       privacy: string
       terms: string
       resources: string
-      blog: string
+      articles: string
       help: string
       faq: string
       follow: string

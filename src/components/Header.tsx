@@ -46,7 +46,7 @@ export default function Header() {
       {/* 🔵 Scroll Progress Bar (Top) */}
       <div className="fixed top-0 left-0 w-full z-[9999] h-[5px] bg-transparent">
       <div
-        className="h-full transition-all duration-100 ease-linear bg-[#3f4144] dark:bg-[#5ddb3d]"
+        className="h-full transition-all duration-100 ease-linear bg-[#3f4144] dark:bg-orange-400"
         style={{ width: `${scrollProgress}%`, opacity: scrollProgress > 0 ? 1 : 0 }}
       />
       </div>

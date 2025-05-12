@@ -5,7 +5,6 @@ import { useState, useContext } from 'react'
 import { Input } from '@/components/ui/input'
 import { LayoutContext } from './context'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
-import { TfiAngleDoubleUp } from 'react-icons/tfi'
 
 export default function Footer() {
   const context = useContext(LayoutContext)
@@ -13,7 +12,7 @@ export default function Footer() {
     throw new Error('LayoutContext must be used within a LayoutContext.Provider')
   }
 
-  const { translations, isRTL } = context
+  const { translations } = context
   const [email, setEmail] = useState('')
 
   const handleEmailSubmit = (e: React.FormEvent) => {
@@ -25,11 +24,6 @@ export default function Footer() {
       setEmail('')
     }
   }
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
   return (
     <footer className="w-full bg-gray-200 dark:bg-gray-800 text-black dark:text-white py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -39,9 +33,9 @@ export default function Footer() {
           <div className="flex flex-row gap-8">
             {/* Company */}
             <div className="flex-1">
-              <h3 className="font-semibold text-lg">{translations?.footer?.company || 'Company'}</h3>
+              <h3 className="font-semibold text-orange-400 dark:bg-orange-300 text-lg">{translations?.footer?.company || 'Rashadul'}</h3>
               <ul className="space-y-2">
-                <li><a href="/about" className="hover:text-blue-400">{translations?.footer?.about || 'About Us'}</a></li>
+                <li><a href="/about" className="hover:text-blue-400">{translations?.footer?.about || 'About Me'}</a></li>
                 <li><a href="/contact" className="hover:text-blue-400">{translations?.footer?.contact || 'Contact'}</a></li>
                 <li><a href="/privacy-policy" className="hover:text-blue-400">{translations?.footer?.privacy || 'Privacy Policy'}</a></li>
                 <li><a href="/terms" className="hover:text-blue-400">{translations?.footer?.terms || 'Terms of Service'}</a></li>
@@ -51,7 +45,7 @@ export default function Footer() {
             <div className="flex-1">
               <h3 className="font-semibold text-lg">{translations?.footer?.resources || 'Resources'}</h3>
               <ul className="space-y-2">
-                <li><a href="/blog" className="hover:text-blue-400">{translations?.footer?.blog || 'Blog'}</a></li>
+                <li><a href="/articles" className="hover:text-blue-400">{translations?.footer?.articles || 'Articles'}</a></li>
                 <li><a href="/help" className="hover:text-blue-400">{translations?.footer?.help || 'Help Center'}</a></li>
                 <li><a href="/faq" className="hover:text-blue-400">{translations?.footer?.faq || 'FAQ'}</a></li>
               </ul>
@@ -74,7 +68,7 @@ export default function Footer() {
         <div className="hidden md:block">
           <h3 className="font-semibold text-lg">{translations?.footer?.resources || 'Resources'}</h3>
           <ul className="space-y-2">
-            <li><a href="/blog" className="hover:text-blue-400">{translations?.footer?.blog || 'Blog'}</a></li>
+            <li><a href="/articles" className="hover:text-blue-400">{translations?.footer?.articles || 'Articles'}</a></li>
             <li><a href="/help" className="hover:text-blue-400">{translations?.footer?.help || 'Help Center'}</a></li>
             <li><a href="/faq" className="hover:text-blue-400">{translations?.footer?.faq || 'FAQ'}</a></li>
           </ul>
@@ -101,7 +95,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <h3 className="font-semibold text-lg">{translations?.footer?.newsletter || 'Subscribe to Our Newsletter'}</h3>
+          <h3 className="font-semibold text-lg">{translations?.footer?.newsletter || 'Subscribe to My Newsletter'}</h3>
           <p className="text-sm text-gray-400 mb-4">{translations?.footer?.newsletterDesc || 'Get the latest updates and offers.'}</p>
           <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-4">
             <Input
@@ -119,25 +113,6 @@ export default function Footer() {
           </form>
         </div>
       </div>
-
-      {/* Scroll to Top Button */}
-      <div className={`mt-8 flex justify-end mx-10`}>
-        <button
-          onClick={scrollToTop}
-          className="flex items-center gap-2 text-sm hover:text-blue-500 transition"
-        >
-          {isRTL ? (
-            <>
-              {translations?.footer?.scrollTop || 'উপরের দিকে'} <TfiAngleDoubleUp className="text-2xl cursor-pointer" />
-            </>
-          ) : (
-            <>
-              <TfiAngleDoubleUp  className="text-2xl cursor-pointer" /> {translations?.footer?.scrollTop || 'Back to Top'}
-            </>
-          )}
-        </button>
-      </div>
-
       <p className="mt-4 text-center text-sm">
         {translations?.footer?.copyright ||
           `© ${new Date().getFullYear()} My Brand. All rights reserved.`}

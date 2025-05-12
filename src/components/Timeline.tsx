@@ -17,8 +17,8 @@ export default function Timeline() {
   });
 
   return (
-    <div className="w-full py-10 px-4 bg-gray-100 dark:bg-gray-900">
-      <h2 className="mx-auto text-start mb-10 font-bold text-4xl max-w-6xl">Education</h2>
+    <div className="w-full py-10 px-4 ">
+      <h2 className="mx-auto text-start mb-10 font-bold text-4xl max-w-6xl">{translations.Educationheading}</h2>
       <div className="relative border-t-2 border-black dark:border-white flex justify-between items-start max-w-6xl mx-auto flex-wrap">
         {sortedEducations.map(([year, edu]) => (
           <div

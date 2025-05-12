@@ -36,7 +36,7 @@ export default function Banner() {
   }, [isRTL])  
 
   return (
-    <section className="w-full bg-gray-100 dark:bg-gray-900 py-10 sm:py-16 px-4 sm:px-6">
+    <section className="w-full  py-10 sm:py-16 px-4 sm:px-6">
       <div
         className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 ${
           isRTL ? "md:flex-row" : ""

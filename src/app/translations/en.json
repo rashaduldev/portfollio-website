@@ -8,7 +8,7 @@
   },
   "cookieConsent": {
     "title": "use cookies 🍪",
-    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "message": "This website uses cookies to ensure you get the best experience on My portfollio.",
     "accept": "Accept",
     "reject": "Reject"
   },
@@ -47,6 +47,16 @@
     "ex": "Express.js",
     "wp": "Wordpress"
   },
+  "statsSection": {
+  "title":"Achievements",
+  "stats": [
+    { "value": 1037, "label": "Project Completed" },
+    { "value": 20, "label": "Award Winner" },
+    { "value": 90, "label": "Client Satisfaction" },
+    { "value": 15, "label": "Year of Experience" }
+  ]
+},
+"experienceHeading": "Work Experience",
   "experience": {
     "2025": {
       "title": "Full Stack Web Developer",
@@ -73,6 +83,150 @@
       "description": "Managed IT infrastructure and led a team of developers to implement key technology solutions."
     }
   },
+  "testimonialsSection": {
+    "testimonialHeading": "Testimonials",
+    "trustedClients": "",
+    "testimonials": [
+      {
+        "quote": "This service changed the way we work",
+        "highlight": "dramatically",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18r4NC_pzJ3KV6wbdcWLAe3k-2j8zi7XMzQ&s",
+        "name": "Jane Doe",
+        "username": "@janedoe"
+      },
+      {
+        "quote": "Amazing experience from start to finish",
+        "highlight": "top-notch support",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_--AyyYijg_1uOCe5tcxVoTZ37o24do9rQ&s",
+        "name": "John Smith",
+        "username": "@johnsmith"
+      },
+      {
+        "quote": "The team went above and beyond with",
+        "highlight": "outstanding results",
+        "image": "https://www.digitalstrike.com/wp-content/uploads/2018/09/testimonial-blog-post.jpg",
+        "name": "Alice Johnson",
+        "username": "@alicej"
+      },
+      {
+        "quote": "The team went above and beyond with",
+        "highlight": "outstanding results",
+        "image": "https://www.crowe.com/ie/-/media/crowe/firms/europe/ie/crowe-ireland/images/crowe-ireland-client-testimonials.jpg?rev=93aee6721081491c958da91763bb239f",
+        "name": "Alice Johnson",
+        "username": "@alicej"
+      },
+      {
+        "quote": "The team went above and beyond with",
+        "highlight": "outstanding results",
+        "image": "https://onemarketmedia.com/wp-content/uploads/2020/06/testimonial-video.jpg",
+        "name": "Alice Johnson",
+        "username": "@alicej"
+      },
+      {
+        "quote": "The team went above and beyond with",
+        "highlight": "outstanding results",
+        "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+        "name": "Alice Johnson",
+        "username": "@alicej"
+      },
+      {
+        "quote": "The team went above and beyond with",
+        "highlight": "outstanding results",
+        "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+        "name": "Alice Johnson",
+        "username": "@alicej"
+      }
+    ]
+  },
+"projectsSection": {
+  "projectsHeading": "Projects",
+  "trustedProjects": "Latest projects",
+  "viewallproject": "View all project",
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Frontend"
+    },
+    {
+      "title": "Project 2",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Backend"
+    },
+    {
+      "title": "Project 3",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Fullstack"
+    },
+    {
+      "title": "Project 4",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Frontend"
+    },
+    {
+      "title": "Project 5",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Backend"
+    },
+    {
+      "title": "Project 6",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Fullstack"
+    },
+    {
+      "title": "Project 7",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Frontend"
+    },
+    {
+      "title": "Project 8",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Backend"
+    },
+    {
+      "title": "Project 9",
+      "description": "This is a description of the project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "techStack": "React, Node.js, MongoDB",
+      "link": "",
+      "endtrac": "Fullstack"
+    }
+  ]
+},
+  "Educationheading": "Education",
   "education": {
     "2020": {
       "title": "SSC",
@@ -99,23 +253,79 @@
       "description": "Pursuing a Bachelor's degree in Computer Science and Engineering focusing on full-stack development and modern technologies."
     }
   },
-  "footer": {
+  "whyChooseMeSection": {
+    "title": "Why Choose Me",
+    "description": "I provide high-quality web solutions with a focus on modern technologies, clean code, and outstanding user experience.",
+    "contactbutton": "Contact me",
+    "contactdescription": "Have any project idea contact with me",
+    "features": [
+      {
+        "title": "Clean & Modern Code",
+        "description": "I write maintainable, scalable, and efficient code with best practices and modern technologies."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Every website I build is fully responsive and optimized for all devices and screen sizes."
+      },
+      {
+        "title": "Performance Optimization",
+        "description": "I prioritize fast-loading websites with optimized assets and minimal latency."
+      },
+      {
+        "title": "SEO Friendly",
+        "description": "My projects are structured and coded with SEO best practices to improve visibility on search engines."
+      },
+      {
+        "title": "Strong Communication",
+        "description": "I ensure clear, transparent communication and timely updates throughout the project."
+      }
+    ]
+  },
+  "latestArticlesSection": {
+    "lefttitle": "Articles",
+    "title": "Latest Articles",
+    "viewAllLabel": "View All Articles",
+    "readMoreLabel": "Read More",
+    "articles": [
+      {
+        "title": "Mastering React Hooks",
+        "category": "React",
+        "date": "May 5, 2025",
+        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
+        "link": "/articles/mastering-react-hooks"
+      },
+      {
+        "title": "Next.js Server Components Explained",
+        "category": "Next.js",
+        "date": "May 3, 2025",
+        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
+        "link": "/articles/nextjs-server-components"
+      },
+      {
+        "title": "Optimizing Web Performance in 2025",
+        "category": "Web Performance",
+        "date": "April 28, 2025",
+        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
+        "link": "/articles/web-performance-2025"
+      }
+    ]
+  },
+    "footer": {
     "company": "Rashadul",
     "about": "About Me",
     "contact": "Contact",
-    "privacy": "Privacy Policy",
+    "privacy": "cookies policy",
     "terms": "Terms of Service",
     "resources": "Resources",
-    "blog": "Blog",
+    "articles": "Articles",
     "help": "Help Center",
     "faq": "FAQ",
-    "follow": "Follow Us",
-    "newsletter": "Subscribe to Our Newsletter",
+    "follow": "Follow Me",
+    "newsletter": "Subscribe to My Newsletter",
     "newsletterDesc": "Get the latest updates and offers.",
     "emailPlaceholder": "Enter your email",
     "subscribe": "Subscribe",
     "subscribeSuccess": "Thank you for subscribing with email:",
-    "scrollTop": "Back to Top",
     "copyright": "© 2025 My Brand. All rights reserved."
   }
 }

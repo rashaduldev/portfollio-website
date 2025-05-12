@@ -76,7 +76,7 @@ const SkillsMarquee = () => {
   const oppositeDir = isRTL ? "left" : "right";
 
   return (
-    <div className="w-full py-8 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div className="w-full py-8  text-gray-800 dark:text-white">
       {renderLine(skills.tools, tools, dir)}           {/* 1st line */}
       {renderLine(skills.designTitle, design, oppositeDir)}  {/* 2nd line */}
       {renderLine(skills.devTitle, development, dir)}  {/* 3rd line */}
