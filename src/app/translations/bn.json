@@ -75,55 +75,54 @@
     }
   },
 "testimonialsSection": {
-  "testimonialHeading": "প্রশংসাপত্র",
-  "trustedClients": "আমাদের বিশ্বস্ত ক্লায়েন্টরা",
+  "testimonialHeading": "গ্রাহক মতামত",
+  "trustedClients": "",
   "testimonials": [
     {
-      "quote": "এই সার্ভিস আমাদের কাজ করার পদ্ধতিকে বদলে দিয়েছে",
-      "highlight": "劇ত পরিবর্তন",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18r4NC_pzJ3KV6wbdcWLAe3k-2j8zi7XMzQ&s",
+      "quote": "এই সেবাটি আমাদের কাজ করার ধরন সম্পূর্ণভাবে পরিবর্তন করে দিয়েছে",
+      "highlight": "drastically",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
       "name": "জেন ডো",
       "username": "@janedoe"
     },
     {
-      "quote": "শুরু থেকে শেষ পর্যন্ত দারুণ অভিজ্ঞতা",
-      "highlight": "শ্রেষ্ঠ সাপোর্ট",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_--AyyYijg_1uOCe5tcxVoTZ37o24do9rQ&s",
+      "quote": "শুরু থেকে শেষ পর্যন্ত অসাধারণ অভিজ্ঞতা",
+      "highlight": "সর্বোচ্চ-শ্রেণীর সহায়তা",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
       "name": "জন স্মিথ",
       "username": "@johnsmith"
     },
     {
-      "quote": "টিমটি প্রত্যাশার চেয়েও বেশি করেছে",
-      "highlight": "চমৎকার ফলাফল",
-      "image": "https://www.digitalstrike.com/wp-content/uploads/2018/09/testimonial-blog-post.jpg",
+      "quote": "দলটি আমাদের জন্য অসাধারণ ফলাফল নিয়ে এসেছে",
+      "highlight": "উৎকৃষ্ট ফলাফল",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
       "name": "অ্যালিস জনসন",
       "username": "@alicej"
     },
     {
-      "quote": "টিমটি প্রত্যাশার চেয়েও বেশি করেছে",
-      "highlight": "চমৎকার ফলাফল",
-      "image": "https://www.crowe.com/ie/-/media/crowe/firms/europe/ie/crowe-ireland/images/crowe-ireland-client-testimonials.jpg?rev=93aee6721081491c958da91763bb239f",
+      "quote": "দলটি আমাদের জন্য অসাধারণ ফলাফল নিয়ে এসেছে",
+      "highlight": "উৎকৃষ্ট ফলাফল",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
       "name": "অ্যালিস জনসন",
       "username": "@alicej"
     },
     {
-      "quote": "টিমটি প্রত্যাশার চেয়েও বেশি করেছে",
-      "highlight": "চমৎকার ফলাফল",
-      "image": "https://onemarketmedia.com/wp-content/uploads/2020/06/testimonial-video.jpg",
+      "quote": "দলটি আমাদের জন্য অসাধারণ ফলাফল নিয়ে এসেছে",
+      "highlight": "উৎকৃষ্ট ফলাফল",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
+      "username": "@alicej"
+    },
+    {
+      "quote": "দলটি আমাদের জন্য অসাধারণ ফলাফল নিয়ে এসেছে",
+      "highlight": "উৎকৃষ্ট ফলাফল",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
       "name": "অ্যালিস জনসন",
       "username": "@alicej"
     },
     {
-      "quote": "টিমটি প্রত্যাশার চেয়েও বেশি করেছে",
-      "highlight": "চমৎকার ফলাফল",
-      "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
-      "name": "অ্যালিস জনসন",
-      "username": "@alicej"
-    },
-    {
-      "quote": "টিমটি প্রত্যাশার চেয়েও বেশি করেছে",
-      "highlight": "চমৎকার ফলাফল",
-      "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+      "quote": "দলটি আমাদের জন্য অসাধারণ ফলাফল নিয়ে এসেছে",
+      "highlight": "উৎকৃষ্ট ফলাফল",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
       "name": "অ্যালিস জনসন",
       "username": "@alicej"
     }
@@ -135,85 +134,121 @@
   "viewallproject": "সব প্রকল্প দেখুন",
   "projects": [
     {
+      "id": 1,
       "title": "প্রকল্প ১",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ফ্রন্টএন্ড"
+      "endtrac": "ফ্রন্টএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 2,
       "title": "প্রকল্প ২",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ব্যাকএন্ড"
+      "endtrac": "ব্যাকএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 3,
       "title": "প্রকল্প ৩",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ফুলস্ট্যাক"
+      "endtrac": "ফুলস্ট্যাক",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 4,
       "title": "প্রকল্প ৪",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ফ্রন্টএন্ড"
+      "endtrac": "ফ্রন্টএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 5,
       "title": "প্রকল্প ৫",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ব্যাকএন্ড"
+      "endtrac": "ব্যাকএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 6,
       "title": "প্রকল্প ৬",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ফুলস্ট্যাক"
+      "endtrac": "ফুলস্ট্যাক",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 7,
       "title": "প্রকল্প ৭",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ফ্রন্টএন্ড"
+      "endtrac": "ফ্রন্টএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
     },
     {
+      "id": 8,
       "title": "প্রকল্প ৮",
       "description": "এটি প্রকল্পের বর্ণনা।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "ব্যাকএন্ড"
+      "endtrac": "ব্যাকএন্ড",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
 },
 {
-"title": "প্রকল্প ৯",
-"description": "এটি প্রকল্পের বর্ণনা।",
-"desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-"mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-"techStack": "React, Node.js, MongoDB",
-"link": "",
-"endtrac": "ফুলস্ট্যাক"
+    "id": 9,
+    "title": "প্রকল্প ৯",
+    "description": "এটি প্রকল্পের বর্ণনা।",
+    "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+    "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+    "techStack": "React, Node.js, MongoDB",
+    "link": "",
+    "endtrac": "ফুলস্ট্যাক",
+    "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "নতুন"
 }
 ]
 },
@@ -310,17 +345,47 @@
     }
   ]
 },
-  "footer": {
+ "footer": {
     "company": "রাশাদুল",
     "about": "আমার সম্পর্কে",
     "contact": "যোগাযোগ",
-    "privacy": "প্রাইভেসি পলিসি",
-    "terms": "টার্মস অফ সার্ভিস",
-    "resources": "রিসোর্স",
-    "articles": "ব্লগ",
-    "help": "হেল্প সেন্টার",
-    "faq": "প্রশ্নোত্তর",
-    "follow": "অনুসরণ করুন",
-    "newsletter": "নিউজলেটার"
+    "privacy": "কুকিজ নীতি",
+    "terms": "সেবার শর্তাবলী",
+    "resources": "স्रोतসমূহ",
+    "articles": "নিবন্ধ",
+    "help": "সহায়তা কেন্দ্র",
+    "faq": "সাধারণ প্রশ্ন",
+    "follow": "আমাকে অনুসরণ করুন",
+    "newsletter": "আমার নিউজলেটারে সাবস্ক্রাইব করুন",
+    "newsletterDesc": "সর্বশেষ আপডেট এবং অফার পান।",
+    "emailPlaceholder": "আপনার ইমেইল দিন",
+    "subscribe": "সাবস্ক্রাইব করুন",
+    "subscribeSuccess": "সাবস্ক্রাইব করার জন্য ধন্যবাদ ইমেইল:",
+    "copyright": "© ২০২৫ আমার ব্র্যান্ড। সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "contact": {
+  "heroTitle": "যোগাযোগ করুন",
+  "letsConnect": "চলুন সংযুক্ত হই",
+  "description": "আমি আপনার কাছ থেকে শুনতে আগ্রহী! আপনার যদি কোনো প্রশ্ন, প্রকল্পের ধারণা থাকে বা শুধু হাই বলতে চান।",
+  "email": "ইমেইল",
+  "phone": "ফোন",
+  "address": "ঠিকানা",
+  "namePlaceholder": "আপনার নাম",
+  "phonePlaceholder": "আপনার ফোন",
+  "emailPlaceholder": "আপনার ইমেইল",
+  "messagePlaceholder": "আপনার বার্তা",
+  "sendButton": "বার্তা পাঠান",
+  "ctaTitle": "একজন সৃজনশীল ডেভেলপার খুঁজছেন?",
+  "ctaDescription": "চলুন একসাথে কিছু অসাধারণ তৈরি করি। এখনই যোগাযোগ করুন!"
+  },
+  "notFound": {
+    "title": "পৃষ্ঠা পাওয়া যায়নি",
+    "description": "দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা অস্তিত্ব নেই বা সরানো হয়েছে।",
+    "backToHome": "বাড়ি ফিরে যান"
+  },
+  "developerIsWorking": {
+    "title": "ডেভেলপার কাজ করছে...",
+    "description": "এই অংশটি বর্তমানে উন্নয়নের অধীনে রয়েছে। দয়া করে শীঘ্রই আপডেটের জন্য ফিরে আসুন।",
+    "backToHome": "বাড়ি ফিরে যান"
   }
 }

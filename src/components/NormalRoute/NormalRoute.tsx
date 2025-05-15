@@ -2,7 +2,6 @@ import Banner from "../Banner";
 import CookieConsent from "../CookieConsent";
 import LatestArticles from "../LatestArticles";
 import ProjectsSection from "../ProjectsSection";
-import ScrollToTopWithProgress from "../ScrollToTopWithProgress";
 import SkillsMarquee from "../SkillsMarquee";
 import SkillsSection from "../SkillsSection";
 import StatsSection from "../StatsCountSection";
@@ -25,7 +24,6 @@ const NormalRoute = () => {
         <WhyChooseMe />
         <Timeline />
         <LatestArticles />
-         <ScrollToTopWithProgress />
     </div>
   );
 };

@@ -34,7 +34,7 @@ const ScrollToTopWithProgress: React.FC = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-6 z-50 w-14 h-14 rounded-full border-2 border-gray-300 dark:border-gray-600 overflow-hidden shadow-lg bg-white dark:bg-gray-800 flex items-center justify-center group transition-transform hover:scale-110 ${
+        className={`fixed bottom-6 z-50 w-14 h-14 rounded-full cursor-pointer border-2 border-gray-300 dark:border-gray-600 overflow-hidden shadow-lg bg-white dark:bg-gray-800 flex items-center justify-center group transition-transform hover:scale-110 ${
           isRTL ? "left-6" : "right-6"
         }`}
         aria-label="Scroll to top"
@@ -59,7 +59,7 @@ const ScrollToTopWithProgress: React.FC = () => {
         </div>
 
         {/* Icon Layer */}
-        <ArrowUp className="relative z-10 text-black dark:text-white w-5 h-5 transition-colors duration-200 group-hover:text-black dark:group-hover:text-orange-300 cursor-pointer" />
+        <ArrowUp className="relative z-10 text-black dark:text-white w-5 h-5 transition-colors duration-200 group-hover:text-black dark:group-hover:text-orange-white" />
       </button>
     )
   );

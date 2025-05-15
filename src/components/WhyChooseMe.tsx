@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FeatureItem } from "@/types/translations";
 import { LayoutContext } from "./context";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function WhyChooseMe() {
   const context = useContext(LayoutContext);
@@ -74,7 +75,11 @@ export default function WhyChooseMe() {
         </div>
         <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="my-5 text-3xl mx-auto text-orange-400 dark:text-orange-300">{section.contactdescription}</h2>
-            <Button>{section.contactbutton}</Button>
+            <Button className="cursor-pointer">
+              <Link href="/contact">
+                {section.contactbutton}
+              </Link>
+            </Button>
         </div>
     </section>
   );

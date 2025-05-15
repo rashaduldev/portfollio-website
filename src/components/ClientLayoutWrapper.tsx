@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation'
 import NormalRoute from "./NormalRoute/NormalRoute"
 import Header from "./Header"
 import Footer from "./Footer"
+import ScrollToTopWithProgress from "./ScrollToTopWithProgress"
 
 interface ClientLayoutWrapperProps {
   children: React.ReactNode
@@ -64,6 +65,7 @@ export default function ClientLayoutWrapper({ children }: ClientLayoutWrapperPro
           {isHome ? <NormalRoute /> : <>{children}</>}
         </main>
         <Footer/>
+        <ScrollToTopWithProgress />
       </LayoutContext.Provider>
     </ThemeProvider>
   )

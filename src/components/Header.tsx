@@ -11,6 +11,7 @@ import { Sun, Moon, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { LayoutContext } from "./context"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const context = useContext(LayoutContext)
@@ -22,6 +23,7 @@ export default function Header() {
   const { theme, setTheme } = useTheme()
   const [isDrawerOpen, setDrawerOpen] = useState(false)
   const [scrollProgress, setScrollProgress] = useState(0)
+  const pathname = usePathname()
 
   // Handle theme toggle
   const toggleTheme = () => {
@@ -62,15 +64,30 @@ export default function Header() {
 
           <nav className="flex-grow text-center">
             <div className="hidden md:flex justify-center gap-6 text-gray-700 dark:text-gray-200">
-              <Link href="/" className="hover:text-blue-500">
-                {translations?.header?.home || "Home"}
-              </Link>
-              <Link href="/projects" className="hover:text-blue-500">
-                {translations?.header?.projects || "Projects"}
-              </Link>
-              <Link href="/contact" className="hover:text-blue-500">
-                {translations?.header?.contact || "Contact"}
-              </Link>
+             <Link
+              href="/"
+              className={`hover:text-blue-500 ${
+                pathname === "/" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
+              {translations?.header?.home || "Home"}
+            </Link>
+            <Link
+              href="/projects"
+              className={`hover:text-blue-500 ${
+                pathname === "/projects" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
+              {translations?.header?.projects || "Projects"}
+            </Link>
+            <Link
+              href="/contact"
+              className={`hover:text-blue-500 ${
+                pathname === "/contact" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
+              {translations?.header?.contact || "Contact"}
+            </Link>
             </div>
           </nav>
 
@@ -110,20 +127,27 @@ export default function Header() {
             </Button>
           </div>
           <div className="flex flex-col p-4 gap-4 text-gray-700 dark:text-gray-200">
-            <Link href="/" onClick={() => setDrawerOpen(false)} className="hover:text-blue-500">
+            <Link
+              href="/"
+              className={`hover:text-blue-500 ${
+                pathname === "/" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
               {translations?.header?.home || "Home"}
             </Link>
             <Link
               href="/projects"
-              onClick={() => setDrawerOpen(false)}
-              className="hover:text-blue-500"
+              className={`hover:text-blue-500 ${
+                pathname === "/projects" ? "text-blue-600 font-semibold" : ""
+              }`}
             >
               {translations?.header?.projects || "Projects"}
             </Link>
             <Link
               href="/contact"
-              onClick={() => setDrawerOpen(false)}
-              className="hover:text-blue-500"
+              className={`hover:text-blue-500 ${
+                pathname === "/contact" ? "text-blue-600 font-semibold" : ""
+              }`}
             >
               {translations?.header?.contact || "Contact"}
             </Link>

@@ -90,49 +90,49 @@
       {
         "quote": "This service changed the way we work",
         "highlight": "dramatically",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18r4NC_pzJ3KV6wbdcWLAe3k-2j8zi7XMzQ&s",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
         "name": "Jane Doe",
         "username": "@janedoe"
       },
       {
         "quote": "Amazing experience from start to finish",
         "highlight": "top-notch support",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_--AyyYijg_1uOCe5tcxVoTZ37o24do9rQ&s",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
         "name": "John Smith",
         "username": "@johnsmith"
       },
       {
         "quote": "The team went above and beyond with",
         "highlight": "outstanding results",
-        "image": "https://www.digitalstrike.com/wp-content/uploads/2018/09/testimonial-blog-post.jpg",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
         "name": "Alice Johnson",
         "username": "@alicej"
       },
       {
         "quote": "The team went above and beyond with",
         "highlight": "outstanding results",
-        "image": "https://www.crowe.com/ie/-/media/crowe/firms/europe/ie/crowe-ireland/images/crowe-ireland-client-testimonials.jpg?rev=93aee6721081491c958da91763bb239f",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
         "name": "Alice Johnson",
         "username": "@alicej"
       },
       {
         "quote": "The team went above and beyond with",
         "highlight": "outstanding results",
-        "image": "https://onemarketmedia.com/wp-content/uploads/2020/06/testimonial-video.jpg",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
         "name": "Alice Johnson",
         "username": "@alicej"
       },
       {
         "quote": "The team went above and beyond with",
         "highlight": "outstanding results",
-        "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
         "name": "Alice Johnson",
         "username": "@alicej"
       },
       {
         "quote": "The team went above and beyond with",
         "highlight": "outstanding results",
-        "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
         "name": "Alice Johnson",
         "username": "@alicej"
       }
@@ -144,85 +144,121 @@
   "viewallproject": "View all project",
   "projects": [
     {
+      "id": 1,
       "title": "Project 1",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Frontend"
+      "endtrac": "Frontend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Latest"
     },
     {
+      "id": 2,
       "title": "Project 2",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Backend"
+      "endtrac": "Backend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Latest"
     },
     {
+      "id": 3,
       "title": "Project 3",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Latest",
       "endtrac": "Fullstack"
     },
     {
+      "id": 4,
       "title": "Project 4",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Frontend"
+      "endtrac": "Frontend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Latest"
     },
     {
+      "id": 5,
       "title": "Project 5",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "techStack": "Node.js, MongoDB",
       "link": "",
-      "endtrac": "Backend"
+      "endtrac": "Backend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Old"
     },
     {
+      "id": 6,
       "title": "Project 6",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Fullstack"
+      "endtrac": "Fullstack",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Latest"
     },
     {
+      "id": 7,
       "title": "Project 7",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Frontend"
+      "endtrac": "Frontend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Old"
     },
     {
+      "id": 8,
       "title": "Project 8",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Backend"
+      "endtrac": "Backend",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Old"
     },
     {
+      "id": 9,
       "title": "Project 9",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Fullstack"
+      "endtrac": "Fullstack",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "Old"
     }
   ]
 },
@@ -310,11 +346,11 @@
       }
     ]
   },
-    "footer": {
+  "footer": {
     "company": "Rashadul",
     "about": "About Me",
     "contact": "Contact",
-    "privacy": "cookies policy",
+    "privacy": "Cookies Policy",
     "terms": "Terms of Service",
     "resources": "Resources",
     "articles": "Articles",
@@ -327,5 +363,31 @@
     "subscribe": "Subscribe",
     "subscribeSuccess": "Thank you for subscribing with email:",
     "copyright": "© 2025 My Brand. All rights reserved."
+  },
+  "contact": {
+  "heroTitle": "Get in Touch",
+  "letsConnect": "Let's Connect",
+  "description": "I’d love to hear from you! Whether you have a question, project idea or just want to say hi.",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "namePlaceholder": "Your Name",
+  "phonePlaceholder": "Your Phone",
+  "emailPlaceholder": "Your Email",
+  "messagePlaceholder": "Your Message",
+  "sendButton": "Send Message",
+  "ctaTitle": "Looking for a Creative Developer?",
+  "ctaDescription": "Let’s build something amazing together. Reach out now!"
+},
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn’t exist or has been moved.",
+    "backToHome": "Go Back Home"
+  },
+    "developerIsWorking": {
+    "title": "The Developer is Working...",
+    "description": "This section is currently under development. Please check back soon for updates.",
+    "backToHome": "Back to Home"
   }
 }
+

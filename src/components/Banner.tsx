@@ -1,7 +1,6 @@
 "use client"
 import { useContext, useEffect, useState } from "react"
 import Image from "next/image"
-import bannerImage from "../../public/assets/bannerImage.png"
 import { LayoutContext } from "./context"
 import { CiLocationArrow1 } from "react-icons/ci"
 import { IoArrowRedoCircleOutline, IoArrowUndoCircleOutline } from "react-icons/io5"
@@ -69,7 +68,7 @@ export default function Banner() {
               <a
                 href="/assets/Resume of Md Rashadul Islam.pdf"
                 download="Resume of Md Rashadul Islam.pdf"
-                className={`cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row md:flex-row-reverse"} md:flex-row gap-[14px]`}
+                className={`cursor-pointer flex items-center ${isRTL ? "flex-row" : "flex-row md:flex-row"} md:flex-row gap-[14px]`}
               >
                 {translations?.main?.resume || "Download Resume"}
                 {isRTL ? <IoArrowRedoCircleOutline /> : <IoArrowUndoCircleOutline />}
@@ -92,7 +91,9 @@ export default function Banner() {
             }`}
           >
             <Image
-              src={bannerImage}
+            height={300}
+            width={300}
+              src="https://res.cloudinary.com/de8yddexc/image/upload/v1747298275/resume/Banner.png"
               alt="Banner"
               className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
               priority

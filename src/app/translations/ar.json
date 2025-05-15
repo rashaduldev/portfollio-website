@@ -75,55 +75,54 @@
     }
   },
 "testimonialsSection": {
-  "testimonialHeading": "الشهادات",
-  "trustedClients": "عملاؤنا الموثوقون",
+  "testimonialHeading": "آراء العملاء",
+  "trustedClients": "",
   "testimonials": [
     {
-      "quote": "غيرت هذه الخدمة طريقة عملنا",
-      "highlight": "بشكل كبير",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18r4NC_pzJ3KV6wbdcWLAe3k-2j8zi7XMzQ&s",
+      "quote": "لقد غيرت هذه الخدمة الطريقة التي نعمل بها",
+      "highlight": "dramatically",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
       "name": "جين دو",
       "username": "@janedoe"
     },
     {
-      "quote": "تجربة مذهلة من البداية للنهاية",
+      "quote": "تجربة مذهلة من البداية إلى النهاية",
       "highlight": "دعم من الدرجة الأولى",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_--AyyYijg_1uOCe5tcxVoTZ37o24do9rQ&s",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
       "name": "جون سميث",
       "username": "@johnsmith"
     },
     {
-      "quote": "فريق العمل تجاوز كل التوقعات",
+      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
       "highlight": "نتائج رائعة",
-      "image": "https://www.digitalstrike.com/wp-content/uploads/2018/09/testimonial-blog-post.jpg",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
       "name": "أليس جونسون",
       "username": "@alicej"
     },
     {
-      "quote": "فريق العمل تجاوز كل التوقعات",
+      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
       "highlight": "نتائج رائعة",
-      "image": "https://www.crowe.com/ie/-/media/crowe/firms/europe/ie/crowe-ireland/images/crowe-ireland-client-testimonials.jpg?rev=93aee6721081491c958da91763bb239f",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
       "name": "أليس جونسون",
       "username": "@alicej"
     },
     {
-      "quote": "فريق العمل تجاوز كل التوقعات",
+      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
       "highlight": "نتائج رائعة",
-      "image": "https://onemarketmedia.com/wp-content/uploads/2020/06/testimonial-video.jpg",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
+      "username": "@alicej"
+    },
+    {
+      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
+      "highlight": "نتائج رائعة",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
       "name": "أليس جونسون",
       "username": "@alicej"
     },
     {
-      "quote": "فريق العمل تجاوز كل التوقعات",
+      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
       "highlight": "نتائج رائعة",
-      "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
-      "name": "أليس جونسون",
-      "username": "@alicej"
-    },
-    {
-      "quote": "فريق العمل تجاوز كل التوقعات",
-      "highlight": "نتائج رائعة",
-      "image": "https://img-c.udemycdn.com/course/240x135/745148_35de.jpg",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
       "name": "أليس جونسون",
       "username": "@alicej"
     }
@@ -172,85 +171,121 @@
   "viewallproject": "عرض جميع المشاريع",
   "projects": [
     {
+      "id": 1,
       "title": "المشروع 1",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الأمامية"
+      "endtrac": "الواجهة الأمامية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 2,
       "title": "المشروع 2",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الخلفية"
+      "endtrac": "الواجهة الخلفية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 3,
       "title": "المشروع 3",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "فولستاك"
+      "endtrac": "فولستاك",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 4,
       "title": "المشروع 4",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الأمامية"
+      "endtrac": "الواجهة الأمامية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 5,
       "title": "المشروع 5",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الخلفية"
+      "endtrac": "الواجهة الخلفية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 6,
       "title": "المشروع 6",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "فولستاك"
+      "endtrac": "فولستاك",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 7,
       "title": "المشروع 7",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الأمامية"
+      "endtrac": "الواجهة الأمامية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 8,
       "title": "المشروع 8",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "الواجهة الخلفية"
+      "endtrac": "الواجهة الخلفية",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     },
     {
+      "id": 9,
       "title": "المشروع 9",
       "description": "وصف المشروع هنا.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "فولستاك"
+      "endtrac": "فولستاك",
+      "githubLink": "https://github.com/rashaduldev",
+      "liveLink": "https://github.com/rashaduldev",
+      "status": "الأمامية"
     }
   ]
 },
@@ -312,15 +347,45 @@
 },
   "footer": {
     "company": "رشادول",
-    "about": "عنّي",
-    "contact": "اتصال",
-    "privacy": "سياسة الخصوصية",
+    "about": "عني",
+    "contact": "اتصل",
+    "privacy": "سياسة الكوكيز",
     "terms": "شروط الخدمة",
     "resources": "الموارد",
-    "articles": "المدونة",
+    "articles": "مقالات",
     "help": "مركز المساعدة",
     "faq": "الأسئلة الشائعة",
-    "follow": "تابعنا",
-    "newsletter": "النشرة الإخبارية"
+    "follow": "تابعني",
+    "newsletter": "اشترك في النشرة الإخبارية الخاصة بي",
+    "newsletterDesc": "احصل على آخر التحديثات والعروض.",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "subscribe": "اشترك",
+    "subscribeSuccess": "شكرًا لاشتراكك عبر البريد الإلكتروني:",
+    "copyright": "© 2025 علامتي التجارية. كل الحقوق محفوظة."
+  },
+  "contact": {
+  "heroTitle": "تواصل معنا",
+  "letsConnect": "دعنا نتواصل",
+  "description": "أود أن أسمع منك! سواء كان لديك سؤال أو فكرة مشروع أو تريد فقط إلقاء التحية.",
+  "email": "البريد الإلكتروني",
+  "phone": "الهاتف",
+  "address": "العنوان",
+  "namePlaceholder": "اسمك",
+  "phonePlaceholder": "هاتفك",
+  "emailPlaceholder": "بريدك الإلكتروني",
+  "messagePlaceholder": "رسالتك",
+  "sendButton": "أرسل رسالة",
+  "ctaTitle": "هل تبحث عن مطور مبدع؟",
+  "ctaDescription": "دعونا نبني شيئًا رائعًا معًا. تواصل الآن!"
+  },
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "عذرًا، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backToHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "developerIsWorking": {
+    "title": "المطور يعمل...",
+    "description": "هذا القسم قيد التطوير حاليًا. يرجى العودة قريبًا للتحديثات.",
+    "backToHome": "العودة إلى الصفحة الرئيسية"
   }
 }

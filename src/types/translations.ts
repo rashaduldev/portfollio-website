@@ -15,6 +15,10 @@ export type PortfolioJSON = {
   whyChooseMeSection: WhyChooseMeSectionType;
   latestArticlesSection: LatestArticlesSectionType;
   experienceHeading:string;
+  contact: ContactTranslations;
+  notFound: NotFoundTranslation;
+  [key: string]: unknown; // Allow for additional dynamic keys
+  developerIsWorking: DeveloperIsWorking;
 };
 
 interface HeaderSection {
@@ -118,6 +122,10 @@ export interface Project {
   techStack: string;
   link: string;
   endtrac: string;
+  id: number;
+  githubLink: string;
+  liveLink: string;
+  status: string;
 }
 
 interface ProjectsSection {
@@ -178,4 +186,29 @@ export interface ArticleItem {
   date: string;
   imageUrl: string;
   link: string;
+}
+export interface ContactTranslations {
+  heroTitle: string;
+  letsConnect: string;
+  description: string;
+  email: string;
+  phone: string;
+  address: string;
+  namePlaceholder: string;
+  phonePlaceholder: string;
+  emailPlaceholder: string;
+  messagePlaceholder: string;
+  sendButton: string;
+  ctaTitle: string;
+  ctaDescription: string;
+}
+export interface NotFoundTranslation {
+  title: string;
+  description: string;
+  backToHome: string;
+};
+export interface DeveloperIsWorking {
+  title: string;
+  description: string;
+  backToHome: string;
 }
