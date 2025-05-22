@@ -33,26 +33,26 @@ const designSkills: Skill[] = [
 ];
 
 const toolskills: Skill[] = [
-  { key: "git", value: 100 },
+  { key: "git", value: 95 },
   { key: "firebase", value: 95 },
-  { key: "cloudinary", value: 60 },
+  { key: "cloudinary", value: 75 },
   { key: "cpanel", value: 70 },
-  { key: "vs", value: 70 },
+  { key: "vs", value: 85 },
   { key: "jetBrains", value: 70 },
 ];
 
 const devSkills: Skill[] = [
   { key: "html", value: 100 },
-  { key: "css", value: 95 },
+  { key: "css", value: 98 },
   { key: "js", value: 80 },
   { key: "ts", value: 75 },
   { key: "react", value: 90 },
   { key: "next", value: 80 },
   { key: "vue", value: 40 },
-  { key: "tailwind", value: 90 },
-  { key: "bootstrap", value: 70 },
+  { key: "tailwind", value: 100 },
+  { key: "bootstrap", value: 80 },
   { key: "node", value: 70 },
-  { key: "ex", value: 70 },
+  { key: "ex", value: 75 },
   { key: "wp", value: 65 },
 ];
 
@@ -90,7 +90,7 @@ useEffect(() => {
   return (
     <div
       ref={sectionRef}
-      className="skill-section opacity-0 transform translate-y-12 transition-all duration-1000 ease-in-out"
+      className="skill-section opacity-0 transform translate-y-12 transition-all duration-1000 ease-in-out mb-10"
     >
       <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
         {title}

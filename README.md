@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Next.js Project - `rashtech.bd`
 
-## Getting Started
+This project is built using [Next.js](https://nextjs.org), a powerful React framework for building fast, modern web applications. It was initialized with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and follows best practices for scalability, maintainability, and performance.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
+
+To run the development server locally, use one of the following commands:
 
 ```bash
 npm run dev
@@ -14,26 +18,65 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the server is running, open your browser at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Project Structure & Info
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS (Dark Mode + RTL support)
+- **Language:** TypeScript
+- **State Management:** React Hooks (`useState`, `useEffect`, `useContext`)
+- **Fonts:** Uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) for optimized loading of [Geist](https://vercel.com/font)
+- **Icons:** React Icons
+- **Storage:** `localStorage` (for likes and comments persistence)
+- **Deployment Ready:** Optimized for deployment on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧪 Editing the Project
 
-## Deploy on Vercel
+To edit the homepage, modify the following file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+app/page.tsx
+```
 
-Check out my [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The page will auto-refresh when you save the file. Any component or layout changes will reflect instantly.
 
+---
 
-rashtech.bd
+## 📚 Learn More
+
+Explore the following resources to level up with Next.js:
+
+- 📘 [Official Docs](https://nextjs.org/docs) – In-depth Next.js features and guides
+- 🧠 [Next.js Learn](https://nextjs.org/learn) – Interactive learning experience
+- 💻 [GitHub Repo](https://github.com/vercel/next.js) – Community and contribution
+
+---
+
+## ☁️ Deploying on Vercel
+
+Deploy your project seamlessly using the Vercel platform:
+
+👉 [Deploy with Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+Read the official [deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for details.
+
+---
+
+## 👨‍💻 Author
+
+**Md Rashadul Islam**  
+rashtech.bd  
+Full-Stack Web Developer | React | Next.js | Tailwind | MongoDB | Node.js
+
+Feel free to connect or collaborate! 🚀
+
+---
+
+> Designed and developed with ❤️ by Rashtech.bd

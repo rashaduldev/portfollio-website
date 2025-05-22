@@ -60,23 +60,23 @@
   "experience": {
     "2025": {
       "title": "Full Stack Web Developer",
-      "company": "BDOSC",
+      "company": "Uysystems Ltd",
       "department": "Engineering",
       "description": "Developed full-stack applications with Tailwind, JavaScript, TypeScript, ReactJS, NodeJS, Express, and MongoDB."
     },
-    "2023": {
+    "2024": {
       "title": "Junior Frontend Developer",
-      "company": "BDOSC",
+      "company": "Uysystems Ltd",
       "department": "Development",
       "description": "Built responsive web applications using HTML, CSS, JavaScript, ReactJS, and NodeJS."
     },
-    "2021": {
+    "2020": {
       "title": "Web Development Level - 4",
       "company": "Freelance",
       "department": "Development",
       "description": "Developed web applications and gained proficiency in HTML, CSS, and PHP."
     },
-    "2020": {
+    "2022": {
       "title": "IT Manager",
       "company": "ShopUp",
       "department": "Unicorn Department",
@@ -145,54 +145,54 @@
   "projects": [
     {
       "id": 1,
-      "title": "Project 1",
-      "description": "This is a description of the project.",
+      "title": "Tourisom & Travels",
+      "description": "A full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js), offering seamless booking, destination exploration, and user management. Features include dynamic tour packages, secure authentication, a user-friendly interface, and responsive design for an enhanced travel planning experience.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "techStack": "React,Tailwind,Node,Express,Mongodb,Firebase",
       "link": "",
-      "endtrac": "Frontend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "endtrac": "Mern-Stack",
+      "githubLink": "https://github.com/rashaduldev/Tourist-Guide-Client",
+      "liveLink": "https://tour-guide-theta.vercel.app",
       "status": "Latest"
     },
     {
       "id": 2,
-      "title": "Project 2",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "title": "Trade Ventures",
+      "description": "A responsive frontend application built with Next.js and Tailwind CSS, designed for seamless user interaction and dynamic content management. The project offers a clean UI, fast performance, and optimized navigation for enhanced user experience. It includes modern design principles and responsive layouts, ensuring accessibility across all devices.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747463326/resume/projects/trade-venture-web.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747463389/resume/projects/tradeventure-mobile.png",
+      "techStack": "Next.js,Tailwind CSS",
       "link": "",
-      "endtrac": "Backend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "Latest"
+      "endtrac": "Frontend Next.js",
+      "githubLink": "https://github.com/rashaduldev/Trade-Venture",
+      "liveLink": "https://trade-venture-roan.vercel.app",
+      "status": "Old"
     },
     {
       "id": 3,
-      "title": "Project 3",
-      "description": "This is a description of the project.",
+      "title": "SSL Garments System",
+      "description": "The SSL Garments System (Frontend) is a dynamic and responsive web application designed to manage garment production processes. Developed using Next.js and Tailwind CSS, this frontend interface enables users to interact with the garment management system, track orders, view inventory, and manage production workflows. The application features a user-friendly design with a focus on performance, offering a seamless experience across various devices.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "techStack": "React.js,Tailwind CSS,Javascript",
       "link": "",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "githubLink": "https://github.com/rashaduldev/ssl",
+      "liveLink": "https://stylorium.net",
       "status": "Latest",
-      "endtrac": "Fullstack"
+      "endtrac": "Frontend"
     },
     {
       "id": 4,
-      "title": "Project 4",
+      "title": "Learning Management System (LMS)",
       "description": "This is a description of the project.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "techStack": "HTML5,CSS3,React,Javascript",
       "link": "",
-      "endtrac": "Frontend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "endtrac": "Fullstack",
+      "githubLink": "https://github.com/rashaduldev/Course-learning-Front-end",
+      "liveLink": "https://learning.tripleibd.com",
       "status": "Latest"
     },
     {
@@ -362,7 +362,7 @@
     "emailPlaceholder": "Enter your email",
     "subscribe": "Subscribe",
     "subscribeSuccess": "Thank you for subscribing with email:",
-    "copyright": "© 2025 My Brand. All rights reserved."
+    "copyright": "© 2025 Rashadul. All rights reserved."
   },
   "contact": {
   "heroTitle": "Get in Touch",
@@ -388,6 +388,66 @@
     "title": "The Developer is Working...",
     "description": "This section is currently under development. Please check back soon for updates.",
     "backToHome": "Back to Home"
-  }
+  },
+ "faq": {
+  "faqTitle": "Frequently Asked Questions",
+  "faqDescription": "Here are some common questions and answers to help you understand my services better.",
+  "items": [
+    {
+      "question": "What services do you offer?",
+      "answer": "I specialize in front-end development using modern technologies like React, Next.js, and Tailwind CSS. I also offer UI/UX design, website performance optimization, and full-stack web solutions."
+    },
+    {
+      "question": "Do you work with international clients?",
+      "answer": "Yes, I have experience working with clients globally, including those from the US, UK, Canada, Australia, and more. I ensure clear communication and timely delivery for every project."
+    },
+    {
+      "question": "What technologies do you use?",
+      "answer": "I mainly work with JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, MongoDB, and other modern tools to build fast, responsive, and scalable applications."
+    },
+    {
+      "question": "How can I contact you?",
+      "answer": "You can reach out via the contact form on my website, or directly through my email or social media channels linked below."
+    },
+    {
+      "question": "Can you help with performance optimization?",
+      "answer": "Absolutely! I offer performance audits and optimization services to improve load speed, SEO, and user experience of your website or application."
+    },
+    {
+      "question": "Are you open to freelance or contract work?",
+      "answer": "Yes, I’m open to freelance opportunities, contract projects, and collaborations. Let’s discuss how I can help bring your ideas to life."
+    }
+  ]
+},
+"services": {
+  "title": "Services I Offer",
+  "items": [
+    {
+      "title": "Frontend Development",
+      "description": "Building responsive, accessible UIs using React, Next.js & Tailwind CSS.",
+       "image": "/images/seo.jpg"
+    },
+    {
+      "title": "Full-Stack Solutions",
+      "description": "From database to UI — creating seamless full-stack apps using MERN.",
+      "image": "/images/fullstack.jpg"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Crafting user-centric interfaces with clean, modern aesthetics.",
+      "image": "/images/uiux.jpg"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Improving load speed, SEO, and Lighthouse score for web apps.",
+      "image": "/images/performance.jpg"
+    },
+    {
+      "title": "API Integration",
+      "description": "Connecting your frontend to powerful APIs for dynamic functionality.",
+      "image": "/images/api.jpg"
+    }
+  ]
+}
 }
 

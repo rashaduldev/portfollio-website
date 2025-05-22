@@ -19,6 +19,8 @@ export type PortfolioJSON = {
   notFound: NotFoundTranslation;
   [key: string]: unknown; // Allow for additional dynamic keys
   developerIsWorking: DeveloperIsWorking;
+  faq: FAQTranslation;
+  services: ServicesSection
 };
 
 interface HeaderSection {
@@ -212,3 +214,22 @@ export interface DeveloperIsWorking {
   description: string;
   backToHome: string;
 }
+export type FAQ = {
+  question: string
+  answer: string
+}
+
+type FAQTranslation = {
+  faqTitle: string
+  faqDescription: string
+  items: FAQ[]
+}
+export type Service = {
+  title: string;
+  description: string;
+  image: string;
+};
+type ServicesSection = {
+  title: string;
+  items: Service[];
+};

@@ -101,7 +101,7 @@ const ProjectsPage = () => {
           isRTL ? "text-right" : "text-left"
         )}
       >
-        <div className="flex flex-wrap gap-2 max-w-full sm:max-w-xs">
+        <div className="flex flex-wrap gap-2 md:min-w-2xl sm:max-w-xs">
           {techStacks.map((tech) => (
             <button
               key={tech}

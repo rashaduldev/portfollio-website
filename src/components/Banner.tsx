@@ -78,28 +78,28 @@ export default function Banner() {
         </div>
 
         {/* Right Image (or Left in RTL) */}
-        <div
-          className="flex-1 overflow-hidden rounded-lg"
-          style={{
-            transform: `rotate(${rotateDeg}deg)`,
-            transition: "transform 0.5s ease-out", // Smooth transition for rotation
-          }}
-        >
-          <div
-            className={`group relative overflow-hidden rounded-lg shadow-lg animated-border-wrapper ${
-              isRTL ? "rtl" : "ltr"
-            }`}
-          >
-            <Image
-            height={300}
-            width={300}
-              src="https://res.cloudinary.com/de8yddexc/image/upload/v1747298275/resume/Banner.png"
-              alt="Banner"
-              className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
-              priority
-            />
-          </div>
-        </div>
+       <div
+      className="flex-1 flex justify-end"
+      style={{
+        transform: `rotate(${rotateDeg}deg)`,
+        transition: "transform 0.5s ease-out",
+      }}
+    >
+      <div
+        className={`group relative overflow-hidden animated-border-wrapper ${
+          isRTL ? "rtl" : "ltr"
+        }`}
+      >
+        <Image
+          height={750}
+          width={450}
+          src="https://res.cloudinary.com/de8yddexc/image/upload/v1747461829/resume/banner.png"
+          alt="Banner"
+          className="max-w-7xl max-h-[450px] transition-transform duration-700 group-hover:scale-105"
+          priority
+        />
+      </div>
+    </div>
       </div>
     </section>
   )

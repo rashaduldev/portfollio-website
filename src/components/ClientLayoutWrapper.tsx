@@ -11,6 +11,7 @@ import NormalRoute from "./NormalRoute/NormalRoute"
 import Header from "./Header"
 import Footer from "./Footer"
 import ScrollToTopWithProgress from "./ScrollToTopWithProgress"
+import CookieConsent from "./CookieConsent"
 
 interface ClientLayoutWrapperProps {
   children: React.ReactNode
@@ -58,6 +59,7 @@ export default function ClientLayoutWrapper({ children }: ClientLayoutWrapperPro
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <LayoutContext.Provider value={{ language, setLanguage, translations, isRTL }}>
+        <CookieConsent />
         <Header/>
         {/* {isHome ? <div>{children}</div> : <div>{children}</div>} */}
         {/* If you want to show full layout only in home: */}

@@ -26,24 +26,33 @@ export default function LatestArticles() {
         isRTL ? "text-right" : "text-left"
       }`}
     >
-      {/* Header */}
-      <div className="flex justify-between items-center mb-10">
-        <div className="flex items-center gap-2">
-          <span className="h-3 w-3 rounded-full bg-orange-400"></span>
-          <h2 className="uppercase text-sm font-medium tracking-wide text-gray-700 dark:text-gray-300">
-            {sectionleftTitle}
-          </h2>
-        </div>
-        <div className="text-4xl font-bold">
-          {sectionTitle}
-        </div>
-        <Link
-          href="/articles"
-          className="text-sm font-medium text-orange-400 underline dark:text-orange-300"
-        >
-          {viewAllLabel}
-        </Link>
-      </div>
+   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 gap-4">
+  {/* Left Circle and Subheading */}
+  <div className="flex items-center">
+    <span className="w-3 h-3 rounded-full bg-orange-400 mr-2"></span>
+    <h2 className="uppercase text-sm font-medium tracking-wide text-gray-700 dark:text-gray-300">
+      {sectionleftTitle}
+    </h2>
+  </div>
+
+  {/* Center Title */}
+  <div className="text-center flex-1">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+      {sectionTitle}
+    </h2>
+  </div>
+
+  {/* Right Link */}
+  <div className="text-right">
+    <Link
+      href="/articles"
+      className="text-sm font-medium text-orange-400 underline dark:text-orange-300"
+    >
+      {viewAllLabel}
+    </Link>
+  </div>
+</div>
+
 
       {/* Articles Grid */}
       <div className="grid gap-8 md:grid-cols-3">

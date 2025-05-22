@@ -55,10 +55,20 @@ const ProjectsSection = () => {
         {projects.slice(0, 6).map((item, idx) => (
           <div
             key={idx}
-            className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition-all hover:scale-105 hover:border-2 hover:border-[#3f4144] hover:shadow-lg"
+            className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition-all hover:scale-105 hover:border-2 hover:border-[#3f4144] hover:shadow-lg min-h-[420px] flex flex-col"
           >
+            {/* Diagonal Background Image */}
+            <div className="absolute -bottom-10 -left-10 w-[150%] h-[150%] transform rotate-12 opacity-10 z-0">
+              <Image
+                src={item.desktopimage}
+                alt={item.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
             {/* Hover Overlay with Animated Icons */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 z-10 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
+            <div className="absolute inset-0 bg-black bg-opacity-40 z-50 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
               <Link
                 href={`/projects/${item.id}`}
                 className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500"
@@ -66,7 +76,7 @@ const ProjectsSection = () => {
                 <FaInfoCircle />
               </Link>
               <a
-                href={item.githubLink || "#"}
+                href={item.githubLink || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
@@ -74,7 +84,7 @@ const ProjectsSection = () => {
                 <FaGithub />
               </a>
               <a
-                href={item.liveLink || "#"}
+                href={item.liveLink || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
@@ -84,29 +94,23 @@ const ProjectsSection = () => {
             </div>
 
             {/* Card Content */}
-            <div className="p-4 flex flex-col justify-between h-full relative z-0">
+            <div className="p-4 flex flex-col justify-between h-full relative z-20">
               <div className="text-gray-700 dark:text-gray-300 mb-4">
-                {/* Images */}
-                <div className="flex flex-col sm:flex-row items-center gap-4">
-                  <div className="relative w-full sm:w-2/3 h-64 overflow-hidden">
-                    <Image
-                      src={item.desktopimage}
-                      alt={item.title}
-                      fill
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <div className="relative w-full sm:w-1/3 h-56 overflow-hidden">
-                    <Image
-                      src={item.mobileimage}
-                      alt={item.title}
-                      fill
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                </div>
-
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mt-4">
+                {/* Status Badge */}
+               {item.status && (
+                <span
+                  className={clsx(
+                    'absolute top-5 transform z-30 px-3 py-1 text-xs font-semibold rounded-full',
+                    isRTL ? 'left-2 -rotate-[30deg]' : 'right-2 rotate-[30deg]',
+                    item.status === 'Latest'
+                      ? 'bg-green-600 text-white'
+                      : 'bg-gray-600 text-white'
+                  )}
+                >
+                  {item.status}
+                </span>
+              )}
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">

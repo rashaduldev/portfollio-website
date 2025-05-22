@@ -1,7 +1,8 @@
 import Banner from "../Banner";
-import CookieConsent from "../CookieConsent";
+import FaqSection from "../FAQ";
 import LatestArticles from "../LatestArticles";
 import ProjectsSection from "../ProjectsSection";
+import ServicesCarousel from "../ServicesCarouse";
 import SkillsMarquee from "../SkillsMarquee";
 import SkillsSection from "../SkillsSection";
 import StatsSection from "../StatsCountSection";
@@ -13,7 +14,6 @@ import WorkExperience from "../WorkExperience";
 const NormalRoute = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900">
-       <CookieConsent />
         <Banner />
         <SkillsSection />
         <SkillsMarquee />
@@ -22,8 +22,10 @@ const NormalRoute = () => {
         <StatsSection />
         <TestimonialSection />
         <WhyChooseMe />
+        <ServicesCarousel />
         <Timeline />
         <LatestArticles />
+        <FaqSection />
     </div>
   );
 };
