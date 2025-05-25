@@ -15,7 +15,7 @@
   "main": {
     "subtitle": "Hello",
     "title": "I am Rashadul Islam",
-    "description": "Frontend Web Developer from Dhaka, passionate about Laravel and React.js. Currently working at BDOSC as a Frontend Web Developer, I focus on building error-free web applications and solving real-world problems. I enjoy learning, sharing knowledge, and improving web performance. Skilled in ReactJS, JavaScript, and PHP, I'm also learning React Native, Node.js, Next.js, MongoDB, and Flutter. I love collaborating on Laravel and MERN Stack projects and exploring new places in my free time.",
+    "description": "Frontend Web Developer from Dhaka, passionate about Laravel and React.js. Currently working at Uysystems as a Frontend Web Developer, I focus on building error-free web applications and solving real-world problems. I enjoy learning, sharing knowledge, and improving web performance. Skilled in ReactJS, JavaScript, and PHP, I'm also learning React Native, Node.js, Next.js, MongoDB, and Flutter. I love collaborating on Laravel and MERN Stack projects and exploring new places in my free time.",
     "leftbutton": "Let's go",
     "resume": "Download Resume"
   },
@@ -50,10 +50,10 @@
   "statsSection": {
   "title":"Achievements",
   "stats": [
-    { "value": 1037, "label": "Project Completed" },
-    { "value": 20, "label": "Award Winner" },
-    { "value": 90, "label": "Client Satisfaction" },
-    { "value": 15, "label": "Year of Experience" }
+    { "value": 29, "label": "Project Completed" },
+    { "value": 6, "label": "Award Winner" },
+    { "value": 99, "label": "Client Satisfaction" },
+    { "value": 1.6, "label": "Year of Experience" }
   ]
 },
 "experienceHeading": "Work Experience",
@@ -88,53 +88,39 @@
     "trustedClients": "",
     "testimonials": [
       {
-        "quote": "This service changed the way we work",
-        "highlight": "dramatically",
+        "quote": "Great experience working with Rashadul. He delivered my website on time with perfect responsiveness.",
+        "highlight": "perfect responsiveness",
         "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
-        "name": "Jane Doe",
-        "username": "@janedoe"
+        "name": "Sarah Williams",
+        "username": "@sarah_w"
       },
       {
-        "quote": "Amazing experience from start to finish",
-        "highlight": "top-notch support",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
-        "name": "John Smith",
-        "username": "@johnsmith"
-      },
-      {
-        "quote": "The team went above and beyond with",
-        "highlight": "outstanding results",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
-        "name": "Alice Johnson",
-        "username": "@alicej"
-      },
-      {
-        "quote": "The team went above and beyond with",
-        "highlight": "outstanding results",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
-        "name": "Alice Johnson",
-        "username": "@alicej"
-      },
-      {
-        "quote": "The team went above and beyond with",
-        "highlight": "outstanding results",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
-        "name": "Alice Johnson",
-        "username": "@alicej"
-      },
-      {
-        "quote": "The team went above and beyond with",
-        "highlight": "outstanding results",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
-        "name": "Alice Johnson",
-        "username": "@alicej"
-      },
-      {
-        "quote": "The team went above and beyond with",
-        "highlight": "outstanding results",
+        "quote": "I had multiple revisions, but he was always patient and cooperative. The final result was exactly what I wanted.",
+        "highlight": "patient and cooperative",
         "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
-        "name": "Alice Johnson",
-        "username": "@alicej"
+        "name": "Jessica Lee",
+        "username": "@jess_dev"
+      },
+      {
+        "quote": "Tini amar restaurant er jonno ekta portfolio site banai disilen. Design ta onek modern, mobile friendly chilo.",
+        "highlight": "modern, mobile friendly",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
+        "name": "Tanvir Alam",
+        "username": "@tanvirfood"
+      },
+      {
+        "quote": "Very professional and delivered exactly as promised. Loved the animations and smooth performance.",
+        "highlight": "professional",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
+        "name": "Emily Chen",
+        "username": "@emilyweb"
+      },
+      {
+        "quote": "He handled my freelance portfolio site from scratch. Clean code and beautiful UI. Will hire again!",
+        "highlight": "beautiful UI",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
+        "name": "David Mendez",
+        "username": "@davidm"
       }
     ]
   },
@@ -185,10 +171,10 @@
     {
       "id": 4,
       "title": "Learning Management System (LMS)",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "HTML5,CSS3,React,Javascript",
+      "description": "A fully responsive and dynamic Learning Management System built with React for the front end. It offers user authentication, course browsing, enrollment, and video lessons. Designed to simplify online learning with a clean UI, intuitive navigation, and integrated payment support. Admins can manage courses, instructors, and students efficiently.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748169533/resume/projects/qdmydctclgsjll5kgq53.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748169533/resume/projects/qdmydctclgsjll5kgq53.png",
+      "techStack": "HTML5, CSS3, React, JavaScript",
       "link": "",
       "endtrac": "Fullstack",
       "githubLink": "https://github.com/rashaduldev/Course-learning-Front-end",
@@ -219,7 +205,7 @@
       "endtrac": "Fullstack",
       "githubLink": "https://github.com/rashaduldev",
       "liveLink": "https://github.com/rashaduldev",
-      "status": "Latest"
+      "status": "Old"
     },
     {
       "id": 7,
@@ -236,16 +222,16 @@
     },
     {
       "id": 8,
-      "title": "Project 8",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "title": "A to Z Ecommerce",
+      "description": "A full-featured ecommerce platform built from scratch using the Frontend. The project includes user authentication, product management, shopping cart functionality, secure checkout, and order tracking. It also features an admin dashboard for managing inventory, orders, and customers. Optimized for both desktop and mobile experiences.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748168335/resume/projects/a%20to%20z.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748168335/resume/projects/a%20to%20z.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Backend",
+      "endtrac": "Frontend",
       "githubLink": "https://github.com/rashaduldev",
       "liveLink": "https://github.com/rashaduldev",
-      "status": "Old"
+      "status": "Latest"
     },
     {
       "id": 9,
@@ -290,32 +276,52 @@
     }
   },
   "whyChooseMeSection": {
-    "title": "Why Choose Me",
-    "description": "I provide high-quality web solutions with a focus on modern technologies, clean code, and outstanding user experience.",
-    "contactbutton": "Contact me",
-    "contactdescription": "Have any project idea contact with me",
+     "title": "Why Choose Me",
+  "description": "I provide high-quality web solutions tailored to your business needs. With a strong focus on modern technologies, clean and efficient code, responsive design, and a seamless user experience, I ensure every project delivers real value. Whether you're a local business or an international client, you can count on professionalism, performance, and clear communication at every stage.",
+  "contactbutton": "Contact me",
+  "contactdescription": "Have a project in mind? Let’s bring your vision to life",
     "features": [
-      {
-        "title": "Clean & Modern Code",
-        "description": "I write maintainable, scalable, and efficient code with best practices and modern technologies."
-      },
-      {
-        "title": "Responsive Design",
-        "description": "Every website I build is fully responsive and optimized for all devices and screen sizes."
-      },
-      {
-        "title": "Performance Optimization",
-        "description": "I prioritize fast-loading websites with optimized assets and minimal latency."
-      },
-      {
-        "title": "SEO Friendly",
-        "description": "My projects are structured and coded with SEO best practices to improve visibility on search engines."
-      },
-      {
-        "title": "Strong Communication",
-        "description": "I ensure clear, transparent communication and timely updates throughout the project."
-      }
-    ]
+    {
+      "title": "Clean & Modern Code",
+      "description": "I write maintainable, scalable, and efficient code with best practices and modern technologies."
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Every website I build is fully responsive and optimized for all devices and screen sizes."
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "I prioritize fast-loading websites with optimized assets and minimal latency."
+    },
+    {
+      "title": "SEO Friendly",
+      "description": "My projects are structured and coded with SEO best practices to improve visibility on search engines."
+    },
+    {
+      "title": "Strong Communication",
+      "description": "I ensure clear, transparent communication and timely updates throughout the project."
+    },
+    {
+      "title": "Custom Admin Panel",
+      "description": "I develop easy-to-manage custom admin panels so you can control your site without technical knowledge."
+    },
+    {
+      "title": "Third-Party API Integration",
+      "description": "Need payment gateways, Google Maps, or social media integration? I seamlessly connect your site with external services."
+    },
+    {
+      "title": "Cross-Browser Compatibility",
+      "description": "Your site will look and function consistently across all major browsers, including Chrome, Firefox, Safari, and Edge."
+    },
+    {
+      "title": "Bug Fixing & Debugging",
+      "description": "I quickly identify and fix bugs to ensure smooth and error-free user experiences."
+    },
+    {
+      "title": "Client Training & Support",
+      "description": "After project delivery, I offer guidance and support to help you maintain and update your site confidently."
+    }
+  ]
   },
   "latestArticlesSection": {
     "lefttitle": "Articles",
@@ -328,21 +334,24 @@
         "category": "React",
         "date": "May 5, 2025",
         "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-        "link": "/articles/mastering-react-hooks"
+        "id": 1,
+        "description": "Learn how to effectively use React Hooks like useState, useEffect, and custom hooks to write cleaner and reusable components."
       },
       {
         "title": "Next.js Server Components Explained",
         "category": "Next.js",
         "date": "May 3, 2025",
         "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-        "link": "/articles/nextjs-server-components"
+        "id": 2,
+        "description": "Understand the power of server components in Next.js and how they help optimize performance by rendering on the server."
       },
       {
         "title": "Optimizing Web Performance in 2025",
         "category": "Web Performance",
         "date": "April 28, 2025",
         "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-        "link": "/articles/web-performance-2025"
+        "id": 3,
+        "description": "Explore the latest strategies and tools for improving your website’s speed, including lazy loading, code splitting, and image optimization."
       }
     ]
   },

@@ -17,7 +17,7 @@ export default function DeveloperIsWorking() {
   return (
     <div
       dir={isRTL ? "rtl" : "ltr"}
-      className="min-h-screen flex items-center justify-center bg-gray-100 text-gray-800  dark:text-gray-200 transition-colors duration-500"
+      className="min-h-screen flex items-center justify-center transition-colors duration-500"
     >
       <div className="max-w-3xl text-center space-y-6">
         <Image

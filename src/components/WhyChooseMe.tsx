@@ -37,7 +37,7 @@ export default function WhyChooseMe() {
         >
           <div className="flex items-center gap-2">
             <span className="h-3 w-3 rounded-full bg-orange-600"></span>
-            <h2 className="uppercase text-sm font-medium tracking-wide">
+            <h2 className="uppercase text-3xl font-medium tracking-wide">
               {sectionTitle}
             </h2>
           </div>

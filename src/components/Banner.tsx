@@ -65,7 +65,7 @@ export default function Banner() {
             <Button className="cursor-pointer">
               <a
                 href="#"
-                className={`bg-primary px-4 py-2 rounded cursor-pointer flex items-center ${
+                className={`px-4 py-2 rounded cursor-pointer flex items-center ${
                   isRTL ? "flex-row" : "flex-row md:flex-row-reverse"
                 } md:flex-row gap-[14px]`}
               >

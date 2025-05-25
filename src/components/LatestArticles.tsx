@@ -58,9 +58,9 @@ export default function LatestArticles() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-            className="flex flex-col border border-gray-200 dark:border-gray-700 rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            className="flex flex-col border border-gray-200 dark:border-gray-700 rounded overflow-hidden"
           >
-            <Link href={article.link}>
+            <Link href={`/articles/${article.id}`}>
               <Image
                 src={article.imageUrl}
                 alt={article.title}
@@ -80,7 +80,7 @@ export default function LatestArticles() {
               </div>
               <h3 className="mt-2 text-lg font-semibold">{article.title}</h3>
               <Link
-                href={article.link}
+                href={`/articles/${article.id}`}
                 className="mt-4 inline-flex items-center gap-1 text-sm text-orange-400 dark:text-orange-300 hover:underline"
               >
                 {section?.readMoreLabel ?? "Read More"}

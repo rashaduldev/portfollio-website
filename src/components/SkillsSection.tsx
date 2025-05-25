@@ -141,7 +141,6 @@ export default function SkillsSection() {
       value === 100
         ? "bg-orange-400 dark:bg-orange-300"
         : "bg-[#3f4144] dark:bg-white";
-
     return (
       <div className="w-full h-2 rounded overflow-hidden">
         <div
@@ -154,7 +153,6 @@ export default function SkillsSection() {
       </div>
     );
   };
-
   // Framer Motion scroll + RTL support
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({

@@ -187,7 +187,8 @@ export interface ArticleItem {
   category: string;
   date: string;
   imageUrl: string;
-  link: string;
+  id: number;
+  description: string
 }
 export interface ContactTranslations {
   heroTitle: string;

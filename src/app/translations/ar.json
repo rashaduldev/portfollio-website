@@ -3,33 +3,33 @@
     "brand": "رشادول",
     "home": "الرئيسية",
     "projects": "المشاريع",
-    "contact": "اتصال",
-    "scrollMessage": "قم بالتمرير لأسفل"
+    "contact": "اتصل بنا",
+    "scrollMessage": "رسالة التمرير"
   },
   "cookieConsent": {
-    "title": "نستخدم ملفات تعريف الارتباط 🍪",
-    "message": "يستخدم هذا الموقع ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة.",
-    "accept": "موافقة",
+    "title": "استخدام الكوكيز 🍪",
+    "message": "يستخدم هذا الموقع الكوكيز لضمان حصولك على أفضل تجربة في محفظتي.",
+    "accept": "قبول",
     "reject": "رفض"
   },
   "main": {
-    "subtitle": "مرحبًا",
+    "subtitle": "مرحباً",
     "title": "أنا رشادول إسلام",
-    "description": "مطور واجهات أمامية من دكا، شغوف بـ Laravel و React.js. أعمل حاليًا في BDOSC كمطور واجهة أمامية، أركز على بناء تطبيقات ويب خالية من الأخطاء وحل المشكلات الواقعية. أستمتع بالتعلم ومشاركة المعرفة وتحسين أداء الويب. لدي مهارات في ReactJS و JavaScript و PHP، وأتعلم React Native و Node.js و Next.js و MongoDB و Flutter. أحب التعاون في مشاريع Laravel و MERN Stack واستكشاف أماكن جديدة في وقت فراغي.",
+    "description": "مطور واجهات أمامية من دكا، شغوف بلارافيل و React.js. أعمل حالياً في Uysystems كمطور واجهات أمامية، أركز على بناء تطبيقات ويب خالية من الأخطاء وحل المشاكل الحقيقية. أحب التعلم، ومشاركة المعرفة، وتحسين أداء الويب. ماهر في ReactJS، JavaScript، و PHP، وأتعلم حالياً React Native، Node.js، Next.js، MongoDB، و Flutter. أحب التعاون في مشاريع Laravel و MERN Stack واستكشاف أماكن جديدة في وقت فراغي.",
     "leftbutton": "لنبدأ",
     "resume": "تحميل السيرة الذاتية"
   },
   "skills": {
-    "about": "عنّي",
+    "about": "عني",
     "designTitle": "مهارات التصميم",
     "devTitle": "مهارات التطوير",
     "tools": "الأدوات",
-    "git": "Git (نظام التحكم بالإصدار)",
+    "git": "Git (التحكم بالإصدارات)",
     "firebase": "Firebase",
     "cloudinary": "Cloudinary",
     "jetBrains": "JetBrains",
     "cpanel": "cPanel",
-    "vs": "VS Code",
+    "vs": "Vs Code",
     "photoshop": "Photoshop",
     "figma": "Figma",
     "xd": "Adobe XD",
@@ -45,347 +45,180 @@
     "bootstrap": "Bootstrap",
     "node": "Node.js",
     "ex": "Express.js",
-    "wp": "WordPress"
+    "wp": "ووردبريس"
   },
-  "experienceHeading": "الخبرة",
+  "statsSection": {
+    "title": "الإنجازات",
+    "stats": [
+      { "value": 29, "label": "مشروع مكتمل" },
+      { "value": 6, "label": "الفائزين بالجوائز" },
+      { "value": 99, "label": "رضا العملاء" },
+      { "value": 1.6, "label": "سنة خبرة" }
+    ]
+  },
+  "experienceHeading": "الخبرات العملية",
   "experience": {
     "2025": {
       "title": "مطور ويب متكامل",
-      "company": "BDOSC",
+      "company": "Uysystems Ltd",
       "department": "الهندسة",
-      "description": "طورت تطبيقات متكاملة باستخدام Tailwind، JavaScript، TypeScript، ReactJS، NodeJS، Express، و MongoDB."
+      "description": "طورت تطبيقات متكاملة باستخدام Tailwind, JavaScript, TypeScript, ReactJS, NodeJS, Express, و MongoDB."
     },
-    "2023": {
-      "title": "مطور واجهة أمامية مبتدئ",
-      "company": "BDOSC",
+    "2024": {
+      "title": "مطور واجهات أمامية مبتدئ",
+      "company": "Uysystems Ltd",
       "department": "التطوير",
-      "description": "أنشأت تطبيقات ويب متجاوبة باستخدام HTML، CSS، JavaScript، ReactJS، و NodeJS."
+      "description": "بنيت تطبيقات ويب متجاوبة باستخدام HTML, CSS, JavaScript, ReactJS, و NodeJS."
     },
-    "2021": {
-      "title": "مطور ويب - المستوى 4",
+    "2020": {
+      "title": "مطور ويب مستوى 4",
       "company": "عمل حر",
       "department": "التطوير",
-      "description": "أنشأت تطبيقات ويب واكتسبت مهارات في HTML، CSS، و PHP."
+      "description": "طورت تطبيقات ويب واكتسبت مهارات في HTML, CSS, و PHP."
     },
-    "2020": {
+    "2022": {
       "title": "مدير تقنية المعلومات",
       "company": "ShopUp",
-      "department": "قسم يونيكورن",
-      "description": "أدرت البنية التحتية لتقنية المعلومات وقادت فريق تطوير لتطبيق حلول تقنية رئيسية."
+      "department": "قسم الشركات الناشئة",
+      "description": "أدرت البنية التحتية لتقنية المعلومات وقادت فريقاً من المطورين لتنفيذ حلول تقنية رئيسية."
     }
   },
-"testimonialsSection": {
-  "testimonialHeading": "آراء العملاء",
-  "trustedClients": "",
-  "testimonials": [
-    {
-      "quote": "لقد غيرت هذه الخدمة الطريقة التي نعمل بها",
-      "highlight": "dramatically",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
-      "name": "جين دو",
-      "username": "@janedoe"
-    },
-    {
-      "quote": "تجربة مذهلة من البداية إلى النهاية",
-      "highlight": "دعم من الدرجة الأولى",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
-      "name": "جون سميث",
-      "username": "@johnsmith"
-    },
-    {
-      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
-      "highlight": "نتائج رائعة",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
-      "name": "أليس جونسون",
-      "username": "@alicej"
-    },
-    {
-      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
-      "highlight": "نتائج رائعة",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
-      "name": "أليس جونسون",
-      "username": "@alicej"
-    },
-    {
-      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
-      "highlight": "نتائج رائعة",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
-      "username": "@alicej"
-    },
-    {
-      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
-      "highlight": "نتائج رائعة",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-2.jpg",
-      "name": "أليس جونسون",
-      "username": "@alicej"
-    },
-    {
-      "quote": "ذهب الفريق إلى ما هو أبعد من المتوقع مع",
-      "highlight": "نتائج رائعة",
-      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
-      "name": "أليس جونسون",
-      "username": "@alicej"
-    }
-  ]
-},
-"whyChooseMeSection": {
-  "title": "لماذا تختارني",
-  "description": "أقدم حلول ويب عالية الجودة مع التركيز على التقنيات الحديثة، الكود النظيف، وتجربة مستخدم متميزة.",
-  "contactbutton": "اتصل بي",
-"contactdescription": "إذا كان لديك فكرة مشروع، تواصل معي",
-  "features": [
-    {
-      "title": "كود نظيف وحديث",
-      "description": "أكتب كودًا قابلاً للصيانة والتوسع وفعالًا باستخدام أفضل الممارسات والتقنيات الحديثة."
-    },
-    {
-      "title": "تصميم متجاوب",
-      "description": "كل موقع أقوم ببنائه يكون متجاوبًا تمامًا ومحسنًا لجميع الأجهزة وأحجام الشاشات."
-    },
-    {
-      "title": "تحسين الأداء",
-      "description": "أعطي الأولوية للمواقع سريعة التحميل مع أصول محسنة وزمن استجابة منخفض."
-    },
-    {
-      "title": "صديق لمحركات البحث (SEO)",
-      "description": "مشاريعي مُهيكلة ومشفرة باتباع أفضل ممارسات SEO لزيادة الظهور على محركات البحث."
-    },
-    {
-      "title": "تواصل قوي",
-      "description": "أضمن تواصلًا واضحًا وشفافًا وتحديثات منتظمة طوال فترة المشروع."
-    }
-  ]
-},
-  "statsSection": {
-  "title": "الإنجازات",
-  "stats": [
-    { "value": 1037, "label": "مشروع مكتمل" },
-    { "value": 20, "label": "الفائز بالجائزة" },
-    { "value": 90, "label": "رضا العملاء" },
-    { "value": 15, "label": "سنوات الخبرة" }
-  ]
-},
-"projectsSection": {
-  "projectsHeading": "المشاريع",
-  "trustedProjects": "أحدث المشاريع",
-  "viewallproject": "عرض جميع المشاريع",
-  "projects": [
-    {
-      "id": 1,
-      "title": "المشروع 1",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الأمامية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 2,
-      "title": "المشروع 2",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الخلفية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 3,
-      "title": "المشروع 3",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "فولستاك",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 4,
-      "title": "المشروع 4",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الأمامية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 5,
-      "title": "المشروع 5",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الخلفية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 6,
-      "title": "المشروع 6",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "فولستاك",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 7,
-      "title": "المشروع 7",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الأمامية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 8,
-      "title": "المشروع 8",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "الواجهة الخلفية",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    },
-    {
-      "id": 9,
-      "title": "المشروع 9",
-      "description": "وصف المشروع هنا.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "فولستاك",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "الأمامية"
-    }
-  ]
-},
- "Educationheading": "التعليم",
-  "education": {
-    "2020": {
-      "title": "SSC",
-      "company": "مدرسة نوداباش الثانوية",
-      "department": "العلوم",
-      "description": "أكملت شهادة الثانوية العامة مع التركيز على العلوم والحوسبة الأساسية."
-    },
-    "2021": {
-      "title": "HSC",
-      "company": "كلية كوريجرام الحكومية",
-      "department": "العلوم",
-      "description": "أنهيت التعليم الثانوي المتخصص في العلوم مع اهتمام بالرياضيات وتكنولوجيا المعلومات."
-    },
-    "2023": {
-      "title": "دبلوم في الهندسة",
-      "company": "معهد دكا للتقنية",
-      "department": "علوم وهندسة الحاسوب",
-      "description": "اكتسبت خبرة عملية في البرمجة والشبكات وإدارة قواعد البيانات خلال برنامج مدته 4 سنوات."
-    },
-    "2025": {
-      "title": "بكالوريوس",
-      "company": "جامعة جرين في بنغلاديش",
-      "department": "هندسة الحاسوب",
-      "description": "أدرس للحصول على درجة البكالوريوس مع تركيز على تطوير الويب والتقنيات الحديثة."
-    }
+  "testimonialsSection": {
+    "testimonialHeading": "الشهادات",
+    "trustedClients": "",
+    "testimonials": [
+      {
+        "quote": "تجربة رائعة في العمل مع رشادول. قام بتسليم موقعي في الوقت المحدد وباستجابة مثالية.",
+        "highlight": "استجابة مثالية",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
+        "name": "سارة ويليامز",
+        "username": "@sarah_w"
+      },
+      {
+        "quote": "كان لدي عدة تعديلات، لكنه كان دائمًا صبورًا ومتعاونًا. كانت النتيجة النهائية بالضبط ما أردته.",
+        "highlight": "صبور ومتعاون",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
+        "name": "جيسيكا لي",
+        "username": "@jess_dev"
+      },
+      {
+        "quote": "لقد أنشأ موقع بورتفوليو لمطعمي. التصميم كان حديثًا ومتوافقًا مع الجوال.",
+        "highlight": "حديث، متوافق مع الجوال",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296070/resume/testimonials/testtomonials-5.png",
+        "name": "تانفير عالم",
+        "username": "@tanvirfood"
+      },
+      {
+        "quote": "محترف جدًا وسلم العمل كما وعد تمامًا. أحببت الحركات والأداء السلس.",
+        "highlight": "محترف",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
+        "name": "إميلي تشين",
+        "username": "@emilyweb"
+      },
+      {
+        "quote": "قام بإدارة موقع البورتفوليو الخاص بي كمستقل من الصفر. كود نظيف وواجهة مستخدم جميلة. سأوظفه مرة أخرى!",
+        "highlight": "واجهة مستخدم جميلة",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
+        "name": "ديفيد مينديز",
+        "username": "@davidm"
+      }
+    ]
   },
-  "latestArticlesSection": {
-  "lefttitle": "المقالات",
-  "title": "أحدث المقالات",
-  "viewAllLabel": "عرض جميع المقالات",
-  "readMoreLabel": "قراءة المزيد",
-  "articles": [
-    {
-      "title": "إتقان React Hooks",
-      "category": "React",
-      "date": "5 مايو 2025",
-      "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-      "link": "/articles/mastering-react-hooks"
-    },
-    {
-      "title": "شرح مكونات الخادم في Next.js",
-      "category": "Next.js",
-      "date": "3 مايو 2025",
-      "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-      "link": "/articles/nextjs-server-components"
-    },
-    {
-      "title": "تحسين أداء الويب في 2025",
-      "category": "أداء الويب",
-      "date": "28 أبريل 2025",
-      "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
-      "link": "/articles/web-performance-2025"
-    }
-  ]
-},
-  "footer": {
-    "company": "رشادول",
-    "about": "عني",
-    "contact": "اتصل",
-    "privacy": "سياسة الكوكيز",
-    "terms": "شروط الخدمة",
-    "resources": "الموارد",
-    "articles": "مقالات",
-    "help": "مركز المساعدة",
-    "faq": "الأسئلة الشائعة",
-    "follow": "تابعني",
-    "newsletter": "اشترك في النشرة الإخبارية الخاصة بي",
-    "newsletterDesc": "احصل على آخر التحديثات والعروض.",
-    "emailPlaceholder": "أدخل بريدك الإلكتروني",
-    "subscribe": "اشترك",
-    "subscribeSuccess": "شكرًا لاشتراكك عبر البريد الإلكتروني:",
-    "copyright": "© 2025 علامتي رشادول. كل الحقوق محفوظة."
-  },
-  "contact": {
-  "heroTitle": "تواصل معنا",
-  "letsConnect": "دعنا نتواصل",
-  "description": "أود أن أسمع منك! سواء كان لديك سؤال أو فكرة مشروع أو تريد فقط إلقاء التحية.",
-  "email": "البريد الإلكتروني",
-  "phone": "الهاتف",
-  "address": "العنوان",
-  "namePlaceholder": "اسمك",
-  "phonePlaceholder": "هاتفك",
-  "emailPlaceholder": "بريدك الإلكتروني",
-  "messagePlaceholder": "رسالتك",
-  "sendButton": "أرسل رسالة",
-  "ctaTitle": "هل تبحث عن مطور مبدع؟",
-  "ctaDescription": "دعونا نبني شيئًا رائعًا معًا. تواصل الآن!"
-  },
-  "notFound": {
-    "title": "الصفحة غير موجودة",
-    "description": "عذرًا، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
-    "backToHome": "العودة إلى الصفحة الرئيسية"
-  },
-  "developerIsWorking": {
-    "title": "المطور يعمل...",
-    "description": "هذا القسم قيد التطوير حاليًا. يرجى العودة قريبًا للتحديثات.",
-    "backToHome": "العودة إلى الصفحة الرئيسية"
+  "projectsSection": {
+    "projectsHeading": "المشاريع",
+    "trustedProjects": "أحدث المشاريع",
+    "viewallproject": "عرض جميع المشاريع",
+    "projects": [
+      {
+        "id": 1,
+        "title": "السياحة والسفر",
+        "description": "تطبيق ويب متكامل مبني باستخدام MERN Stack (MongoDB, Express.js, React, Node.js)، يوفر حجزًا سلسًا، واستكشاف الوجهات، وإدارة المستخدمين. يتميز بحزم سياحية ديناميكية، وتوثيق آمن، وواجهة سهلة الاستخدام، وتصميم متجاوب لتجربة تخطيط سفر محسنة.",
+        "techStack": "React,Tailwind,Node,Express,Mongodb,Firebase",
+        "endtrac": "MERN Stack",
+        "githubLink": "https://github.com/rashaduldev/Tourist-Guide-Client",
+        "liveLink": "https://tour-guide-theta.vercel.app",
+        "status": "أحدث"
+      },
+      {
+        "id": 2,
+        "title": "مشروع التجارة",
+        "description": "تطبيق واجهة أمامية متجاوب مبني باستخدام Next.js وTailwind CSS، مصمم لتفاعل المستخدم السلس وإدارة المحتوى الديناميكي. يوفر واجهة نظيفة، وأداءً سريعًا، وملاحة محسّنة لتحسين تجربة المستخدم.",
+        "techStack": "Next.js,Tailwind CSS",
+        "endtrac": "الواجهة الأمامية (Next.js)",
+        "githubLink": "https://github.com/rashaduldev/Trade-Venture",
+        "liveLink": "https://trade-venture-roan.vercel.app",
+        "status": "قديم"
+      },
+      {
+        "id": 3,
+        "title": "نظام مصنع الملابس SSL",
+        "description": "واجهة أمامية ديناميكية ومتجاوبة مصممة لإدارة عمليات إنتاج الملابس. مطورة باستخدام Next.js وTailwind CSS، وتوفر تتبع الطلبات، عرض المخزون، وإدارة سير العمل.",
+        "techStack": "React.js,Tailwind CSS,Javascript",
+        "endtrac": "الواجهة الأمامية",
+        "githubLink": "https://github.com/rashaduldev/ssl",
+        "liveLink": "https://stylorium.net",
+        "status": "أحدث"
+      },
+      {
+        "id": 4,
+        "title": "نظام إدارة التعلم (LMS)",
+        "description": "نظام إدارة تعلم متكامل ومتجاوب تم بناؤه باستخدام React. يوفر تسجيل الدخول، تصفح الدورات، الانضمام، دروس الفيديو، ولوحة تحكم للإدارة. صمم لتبسيط التعليم عبر الإنترنت.",
+        "techStack": "HTML5, CSS3, React, JavaScript",
+        "endtrac": "متكامل",
+        "githubLink": "https://github.com/rashaduldev/Course-learning-Front-end",
+        "liveLink": "https://learning.tripleibd.com",
+        "status": "أحدث"
+      },
+      {
+        "id": 5,
+        "title": "المشروع ٥",
+        "description": "هذا وصف للمشروع.",
+        "techStack": "Node.js, MongoDB",
+        "endtrac": "الخلفية",
+        "githubLink": "https://github.com/rashaduldev",
+        "liveLink": "https://github.com/rashaduldev",
+        "status": "قديم"
+      },
+      {
+        "id": 6,
+        "title": "المشروع ٦",
+        "description": "هذا وصف للمشروع.",
+        "techStack": "React, Node.js, MongoDB",
+        "endtrac": "متكامل",
+        "githubLink": "https://github.com/rashaduldev",
+        "liveLink": "https://github.com/rashaduldev",
+        "status": "قديم"
+      },
+      {
+        "id": 7,
+        "title": "المشروع ٧",
+        "description": "هذا وصف للمشروع.",
+        "techStack": "React, Node.js, MongoDB",
+        "endtrac": "الواجهة الأمامية",
+        "githubLink": "https://github.com/rashaduldev",
+        "liveLink": "https://github.com/rashaduldev",
+        "status": "قديم"
+      },
+      {
+        "id": 8,
+        "title": "منصة التجارة الإلكترونية من الألف إلى الياء",
+        "description": "منصة تجارة إلكترونية متكاملة تشمل تسجيل الدخول، إدارة المنتجات، السلة، الدفع، وتتبع الطلبات. تشمل لوحة تحكم للإدارة وتم تحسينها لأجهزة الجوال والكمبيوتر.",
+        "techStack": "React, Node.js, MongoDB",
+        "endtrac": "الواجهة الأمامية",
+        "githubLink": "https://github.com/rashaduldev",
+        "liveLink": "https://github.com/rashaduldev",
+        "status": "أحدث"
+      },
+      {
+        "id": 9,
+        "title": "المشروع ٩",
+        "description": "هذا وصف للمشروع.",
+        "techStack": "React, Node.js, MongoDB",
+        "endtrac": "متكامل",
+        "githubLink": "https://github.com/rashaduldev",
+        "liveLink": "https://github.com/rashaduldev",
+        "status": "قديم"
+      }
+    ]
   }
 }

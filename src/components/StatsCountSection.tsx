@@ -47,7 +47,17 @@ const StatsSection = () => {
             <div className="text-4xl font-bold mb-2">
               {inView ? (
                 <>
-                  <CountUp end={item.value} duration={2} separator="," />
+                  <CountUp
+                    end={item.value}
+                    duration={2}
+                    decimals={item.value % 1 !== 0 ? 1 : 0}
+                    formattingFn={(val) => {
+                      if (item.value < 10 && item.value % 1 === 0) {
+                        return `0${Math.floor(val)}`;
+                      }
+                      return val.toString();
+                    }}
+                  />
                   {idx !== 2 && "+"} {/* Only exclude + for satisfaction (%) */}
                   {idx === 2 && "%"}
                 </>
