@@ -8,14 +8,17 @@ const ScrollToTopWithProgress: React.FC = () => {
   const context = useContext(LayoutContext);
 
   if (!context) {
-    throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
   }
 
   const { isRTL } = context;
 
   const updateScrollProgress = () => {
     const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
     const progress = (scrollTop / docHeight) * 100;
     setScrollProgress(progress);
     setIsVisible(scrollTop > 100);
@@ -41,7 +44,10 @@ const ScrollToTopWithProgress: React.FC = () => {
       >
         {/* Progress Layer with Wave */}
         <div className="absolute inset-0 flex items-end justify-center overflow-hidden">
-          <div className="w-full relative" style={{ height: `${scrollProgress}%` }}>
+          <div
+            className="w-full relative"
+            style={{ height: `${scrollProgress}%` }}
+          >
             {/* Wave SVG */}
             <svg
               className="absolute bottom-0 w-full h-4 animate-wave"
@@ -59,7 +65,7 @@ const ScrollToTopWithProgress: React.FC = () => {
         </div>
 
         {/* Icon Layer */}
-        <ArrowUp className="relative z-10 text-black dark:text-white w-5 h-5 transition-colors duration-200 group-hover:text-black dark:group-hover:text-orange-white" />
+        <ArrowUp className="relative z-10 w-5 h-5 transition-colors duration-200 group-hover:text-black dark:group-hover:text-gray-100" />
       </button>
     )
   );

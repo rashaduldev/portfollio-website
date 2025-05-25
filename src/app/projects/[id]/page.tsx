@@ -73,7 +73,7 @@ const ProjectDetailsPage = () => {
         isRTL ? "text-right" : "text-left"
       }`}
     >
-      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 ">
         {project.title}
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -117,7 +117,7 @@ const ProjectDetailsPage = () => {
           href={project.githubLink || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white"
+          className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-gray-100"
         >
           <FaGithub size={20} />
         </a>
@@ -130,14 +130,14 @@ const ProjectDetailsPage = () => {
           <FaLink size={20} />
         </a>
 
-        <button className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+        <button className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">
           <FaShareAlt size={20} />
         </button>
       </div>
 
       {/* Comment Section */}
       <div className="mt-10">
-        <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+        <h3 className="text-xl font-semibold mb-4 text-gray-900 ">
           Leave a Comment
         </h3>
         <form
@@ -151,7 +151,7 @@ const ProjectDetailsPage = () => {
             required
             value={commentData.name}
             onChange={handleChange}
-            className="p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            className="p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 "
           />
           <input
             type="email"
@@ -160,7 +160,7 @@ const ProjectDetailsPage = () => {
             required
             value={commentData.email}
             onChange={handleChange}
-            className="p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            className="p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 "
           />
           <textarea
             name="message"
@@ -168,11 +168,11 @@ const ProjectDetailsPage = () => {
             required
             value={commentData.message}
             onChange={handleChange}
-            className="sm:col-span-2 p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            className="sm:col-span-2 p-2 rounded-md border dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 "
           ></textarea>
           <button
             type="submit"
-            className="sm:col-span-2 bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition"
+            className="sm:col-span-2 bg-orange-500 text-gray-100 px-4 py-2 rounded-md hover:bg-orange-600 transition"
           >
             Submit Comment
           </button>
@@ -183,11 +183,9 @@ const ProjectDetailsPage = () => {
           {comments.map((cmt, index) => (
             <div
               key={index}
-              className="border dark:border-gray-700 rounded-md p-4 bg-gray-50 dark:bg-gray-900"
+              className="border dark:border-gray-700 rounded-md p-4 bg-gray-50 "
             >
-              <p className="font-semibold text-gray-900 dark:text-white">
-                {cmt.name}
-              </p>
+              <p className="font-semibold text-gray-900 ">{cmt.name}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {cmt.email}
               </p>

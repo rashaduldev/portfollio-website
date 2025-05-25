@@ -17,12 +17,12 @@ export default function DeveloperIsWorking() {
   return (
     <div
       dir={isRTL ? "rtl" : "ltr"}
-      className="min-h-screen flex items-center justify-center px-4 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500"
+      className="min-h-screen flex items-center justify-center bg-gray-100 text-gray-800  dark:text-gray-200 transition-colors duration-500"
     >
       <div className="max-w-3xl text-center space-y-6">
         <Image
-        width={500}
-        height={300}
+          width={500}
+          height={300}
           src="https://res.cloudinary.com/de8yddexc/image/upload/v1747288109/resume/gzvauwc649f4udkk0flv.svg"
           alt="Under construction"
           className="mx-auto w-64 sm:w-80"
@@ -37,9 +37,7 @@ export default function DeveloperIsWorking() {
           {t.description}
         </p>
         <Button className=" cursor-pointer">
-            <Link href="/">
-                {t.backToHome}
-            </Link>
+          <Link href="/">{t.backToHome}</Link>
         </Button>
       </div>
     </div>

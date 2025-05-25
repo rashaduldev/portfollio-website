@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import clsx from 'clsx';
-import { useTheme } from 'next-themes';
-import { LayoutContext } from '@/components/context';
-import { useContext, useEffect, useRef, useState } from 'react';
-import { Button } from '@/components/ui/button';
-import emailjs from 'emailjs-com';
-import toast, { Toaster } from 'react-hot-toast';
+import Image from "next/image";
+import clsx from "clsx";
+import { useTheme } from "next-themes";
+import { LayoutContext } from "@/components/context";
+import { useContext, useEffect, useRef, useState } from "react";
+import { Button } from "@/components/ui/button";
+import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 
-const SERVICE_ID = 'service_4gd61io';
-const TEMPLATE_ID = 'template_ckn68lg';
-const PUBLIC_KEY = 'r3p7NL-T5QFcUdJy2';
+const SERVICE_ID = "service_4gd61io";
+const TEMPLATE_ID = "template_ckn68lg";
+const PUBLIC_KEY = "r3p7NL-T5QFcUdJy2";
 
 const Page = () => {
   const { resolvedTheme } = useTheme();
@@ -20,7 +20,9 @@ const Page = () => {
 
   const context = useContext(LayoutContext);
   if (!context) {
-    throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
   }
 
   const { isRTL, translations } = context;
@@ -38,9 +40,9 @@ const Page = () => {
     toast.promise(
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY),
       {
-        loading: 'Sending...',
-        success: 'Message sent successfully!',
-        error: 'Failed to send message.',
+        loading: "Sending...",
+        success: "Message sent successfully!",
+        error: "Failed to send message.",
       }
     );
 
@@ -51,10 +53,12 @@ const Page = () => {
 
   return (
     <div
-      dir={isRTL ? 'rtl' : 'ltr'}
+      dir={isRTL ? "rtl" : "ltr"}
       className={clsx(
-        'min-h-screen transition-colors duration-300',
-        resolvedTheme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
+        "min-h-screen transition-colors duration-300",
+        resolvedTheme === "dark"
+          ? "bg-gray-900 text-gray-100"
+          : "bg-white text-gray-900"
       )}
     >
       <Toaster position="top-right" />
@@ -68,7 +72,7 @@ const Page = () => {
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-100">
             {t.heroTitle}
           </h1>
         </div>
@@ -126,7 +130,7 @@ const Page = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-green-400 to-blue-500 dark:from-purple-600 dark:to-pink-600 py-12 text-center text-white rounded-t-3xl">
+      <section className="bg-gradient-to-r from-green-400 to-blue-500 dark:from-purple-600 dark:to-pink-600 py-12 text-center text-gray-100 rounded-t-3xl">
         <h3 className="text-2xl md:text-4xl font-bold mb-4">{t.ctaTitle}</h3>
         <p className="text-lg">{t.ctaDescription}</p>
       </section>

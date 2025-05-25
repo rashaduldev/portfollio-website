@@ -36,7 +36,7 @@ const CookieConsent = () => {
   return (
     <div
       dir={isRTL ? "rtl" : "ltr"}
-      className="fixed bottom-4 left-4 right-4 max-w-3xl mx-auto bg-gray-900 dark:bg-white text-white dark:text-gray-900 shadow-lg rounded-lg p-6 z-50 transition-all duration-300 animate-fadeIn"
+      className="fixed bottom-4 left-4 right-4 max-w-3xl mx-auto bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 shadow-lg rounded-lg p-6 z-50 transition-all duration-300 animate-fadeIn"
     >
       <h2 className="text-xl font-semibold mb-2">{translations.cookieConsent.title}</h2>
       <p className="mb-4 text-sm leading-relaxed">{translations.cookieConsent.message}</p>
@@ -44,7 +44,7 @@ const CookieConsent = () => {
       <div className={`flex gap-3 ${isRTL ? "justify-start flex-row-reverse" : "justify-end"}`}>
         <Button
           onClick={rejectCookies}
-          className="bg-gray-700 dark:bg-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600 text-white dark:text-black cursor-pointer"
+          className="bg-gray-700 dark:bg-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600 text-gray-100 dark:text-black cursor-pointer"
         >
           {translations.cookieConsent.reject}
         </Button>

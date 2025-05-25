@@ -1,13 +1,29 @@
 "use client";
 import React, { JSX, useContext } from "react";
 import {
-  FaGitAlt, FaFigma, FaHtml5, FaCss3Alt,
-  FaReact, FaNodeJs, FaBootstrap, FaVuejs, FaWordpress
+  FaGitAlt,
+  FaFigma,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaBootstrap,
+  FaVuejs,
+  FaWordpress,
 } from "react-icons/fa";
 import {
-  SiFirebase, SiJavascript, SiTypescript, SiNextdotjs,
-  SiExpress, SiTailwindcss, SiCloudinary, SiCpanel,
-  SiJetbrains, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd
+  SiFirebase,
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiTailwindcss,
+  SiCloudinary,
+  SiCpanel,
+  SiJetbrains,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobexd,
 } from "react-icons/si";
 import Marquee from "react-fast-marquee";
 import { LayoutContext } from "./context";
@@ -15,7 +31,9 @@ import { LayoutContext } from "./context";
 const SkillsMarquee = () => {
   const context = useContext(LayoutContext);
   if (!context) {
-    throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
   }
 
   const { translations, isRTL } = context;
@@ -27,7 +45,7 @@ const SkillsMarquee = () => {
     { name: skills.cloudinary, icon: <SiCloudinary /> },
     { name: skills.jetBrains, icon: <SiJetbrains /> },
     { name: skills.cpanel, icon: <SiCpanel /> },
-    { name: skills.vs, icon: <SiCpanel /> }, // Consider changing icon if different from cPanel
+    { name: skills.vs, icon: <SiCpanel /> },
   ];
 
   const design = [
@@ -76,10 +94,10 @@ const SkillsMarquee = () => {
   const oppositeDir = isRTL ? "left" : "right";
 
   return (
-    <div className="w-full py-8 text-gray-800 dark:text-white overflow-hidden">
-      {renderLine(skills.tools, tools, dir)}           {/* 1st line */}
-      {renderLine(skills.designTitle, design, oppositeDir)}  {/* 2nd line */}
-      {renderLine(skills.devTitle, development, dir)}  {/* 3rd line */}
+    <div className="w-full py-8 overflow-hidden">
+      {renderLine(skills.tools, tools, dir)} {/* 1st line */}
+      {renderLine(skills.designTitle, design, oppositeDir)} {/* 2nd line */}
+      {renderLine(skills.devTitle, development, dir)} {/* 3rd line */}
     </div>
   );
 };

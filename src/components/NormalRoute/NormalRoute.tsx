@@ -13,19 +13,19 @@ import WorkExperience from "../WorkExperience";
 
 const NormalRoute = () => {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
-        <Banner />
-        <SkillsSection />
-        <SkillsMarquee />
-        <WorkExperience />
-        <ProjectsSection />
-        <StatsSection />
-        <TestimonialSection />
-        <WhyChooseMe />
-        <ServicesCarousel />
-        <Timeline />
-        <LatestArticles />
-        <FaqSection />
+    <div className="max-w-7xl mx-auto">
+      <Banner />
+      <SkillsSection />
+      <SkillsMarquee />
+      <WorkExperience />
+      <ProjectsSection />
+      <StatsSection />
+      <TestimonialSection />
+      <WhyChooseMe />
+      <ServicesCarousel />
+      <Timeline />
+      <LatestArticles />
+      <FaqSection />
     </div>
   );
 };

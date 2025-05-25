@@ -13,7 +13,9 @@ type SortOption = "title-asc" | "title-desc" | "endtrac-asc" | "endtrac-desc";
 const ProjectsPage = () => {
   const context = useContext(LayoutContext);
   if (!context) {
-    throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
   }
 
   const { translations, isRTL } = context;
@@ -73,7 +75,7 @@ const ProjectsPage = () => {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="py-16 px-4 sm:px-6 md:px-10 transition-colors duration-300 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen"
+      className="py-16 px-4 sm:px-6 md:px-10 transition-colors duration-300 bg-gray-50  text-gray-900  min-h-screen"
     >
       {/* Header */}
       <div
@@ -109,8 +111,8 @@ const ProjectsPage = () => {
               className={clsx(
                 "px-3 py-1 rounded-full border transition-colors",
                 selectedTechs.includes(tech)
-                  ? "bg-orange-500 text-white border-orange-500"
-                  : "bg-transparent text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white"
+                  ? "bg-orange-500 text-gray-100 border-orange-500"
+                  : "bg-transparent text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-gray-100"
               )}
             >
               {tech}
@@ -129,7 +131,7 @@ const ProjectsPage = () => {
             id="sort"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-1"
+            className="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900  px-3 py-1"
           >
             <option value="endtrac-desc">End Date (Newest)</option>
             <option value="endtrac-asc">End Date (Oldest)</option>
@@ -155,7 +157,7 @@ const ProjectsPage = () => {
             <div className="absolute inset-0 bg-black bg-opacity-80 z-10 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
               <Link
                 href={`/projects/${item.id}`}
-                className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500"
+                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500"
               >
                 <FaInfoCircle />
               </Link>
@@ -163,7 +165,7 @@ const ProjectsPage = () => {
                 href={item.githubLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
+                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
               >
                 <FaGithub />
               </a>
@@ -171,7 +173,7 @@ const ProjectsPage = () => {
                 href={item.liveLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
+                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
               >
                 <FaLink />
               </a>
@@ -199,7 +201,7 @@ const ProjectsPage = () => {
                 </div>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mt-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900  mt-2">
                 {item.title}
               </h3>
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
@@ -208,7 +210,9 @@ const ProjectsPage = () => {
 
               <div className="mt-auto flex justify-between items-center text-sm sm:text-base">
                 <p className="text-orange-600 font-semibold">{item.endtrac}</p>
-                <p className="text-gray-500 dark:text-gray-400">{item.techStack}</p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  {item.techStack}
+                </p>
               </div>
             </div>
           </div>
