@@ -10,6 +10,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   const context = useContext(LayoutContext);
@@ -36,7 +37,7 @@ export default function Footer() {
   };
   return (
     <footer className="w-full py-12 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 border-t-2">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl md:mx-auto mx-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Combine Company + Resources only on mobile */}
         <div className="block md:hidden">
           <div className="flex flex-row gap-8">
@@ -47,24 +48,24 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/about" className="hover:text-blue-400">
+                  <Link href="/about" className="hover:text-blue-400">
                     {translations?.footer?.about || "About Me"}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:text-blue-400">
+                  <Link href="/contact" className="hover:text-blue-400">
                     {translations?.footer?.contact || "Contact"}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/privacy-policy" className="hover:text-blue-400">
+                  <Link href="/privacy-policy" className="hover:text-blue-400">
                     {translations?.footer?.privacy || "Privacy Policy"}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/terms" className="hover:text-blue-400">
+                  <Link href="/terms" className="hover:text-blue-400">
                     {translations?.footer?.terms || "Terms of Service"}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -75,19 +76,19 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/articles" className="hover:text-blue-400">
+                  <Link href="/articles" className="hover:text-blue-400">
                     {translations?.footer?.articles || "Articles"}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/help" className="hover:text-blue-400">
+                  <Link href="/help" className="hover:text-blue-400">
                     {translations?.footer?.help || "Help Center"}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/faq" className="hover:text-blue-400">
+                  <Link href="/faq" className="hover:text-blue-400">
                     {translations?.footer?.faq || "FAQ"}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -101,24 +102,24 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2">
             <li>
-              <a href="/about" className="hover:text-blue-400">
+              <Link href="/about" className="hover:text-blue-400">
                 {translations?.footer?.about || "About Us"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-blue-400">
+              <Link href="/contact" className="hover:text-blue-400">
                 {translations?.footer?.contact || "Contact"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/privacy-policy" className="hover:text-blue-400">
+              <Link href="/privacy-policy" className="hover:text-blue-400">
                 {translations?.footer?.privacy || "Privacy Policy"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/terms" className="hover:text-blue-400">
+              <Link href="/terms" className="hover:text-blue-400">
                 {translations?.footer?.terms || "Terms of Service"}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -130,19 +131,19 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2">
             <li>
-              <a href="/articles" className="hover:text-blue-400">
+              <Link href="/articles" className="hover:text-blue-400">
                 {translations?.footer?.articles || "Articles"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/help" className="hover:text-blue-400">
+              <Link href="/help" className="hover:text-blue-400">
                 {translations?.footer?.help || "Help Center"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/faq" className="hover:text-blue-400">
+              <Link href="/faq" className="hover:text-blue-400">
                 {translations?.footer?.faq || "FAQ"}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

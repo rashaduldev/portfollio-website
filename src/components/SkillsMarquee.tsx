@@ -75,7 +75,7 @@ const SkillsMarquee = () => {
     items: { name: string; icon: JSX.Element }[],
     scrollDirection: "left" | "right"
   ) => (
-    <div className="my-6 overflow-hidden">
+    <div className="my-6 overflow-hidden ">
       <Marquee direction={scrollDirection} gradient={false} speed={40}>
         {items.map((item, idx) => (
           <div
@@ -94,7 +94,7 @@ const SkillsMarquee = () => {
   const oppositeDir = isRTL ? "left" : "right";
 
   return (
-    <div className="w-full py-8 overflow-hidden">
+    <div className="w-full py-8 my-16 overflow-hidden">
       {renderLine(skills.tools, tools, dir)} {/* 1st line */}
       {renderLine(skills.designTitle, design, oppositeDir)} {/* 2nd line */}
       {renderLine(skills.devTitle, development, dir)} {/* 3rd line */}

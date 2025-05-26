@@ -42,7 +42,7 @@ const TestimonialSection: React.FC = () => {
 
   return (
     <section
-      className="py-16  transition-colors duration-500"
+      className="py-16  transition-colors duration-500 max-w-5xl mx-auto"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="mx-auto text-center">

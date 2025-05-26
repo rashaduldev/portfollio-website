@@ -61,7 +61,7 @@ export default function Header() {
 
       {/* 🔵 Main Header */}
       <header className="w-full shadow relative z-50 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-        <div className="max-w-7xl mx-auto py-4 flex items-center justify-between relative">
+        <div className="max-w-7xl md:mx-auto mx-5 py-4 flex items-center justify-between relative">
           <div className={isRTL ? "absolute" : "absolute"}>
             <Link href="/" className="text-xl font-bold">
               {translations?.header?.brand || "My Brand"}

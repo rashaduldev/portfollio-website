@@ -72,14 +72,14 @@ const Page = () => {
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-100">
+          <h1 className="text-4xl md:text-7xl font-bold text-gray-100">
             {t.heroTitle}
           </h1>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 mx-5 max-w-6xl md:mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <section className="py-16 mx-5 max-w-7xl md:mx-auto grid md:grid-cols-2 gap-10 items-start">
         {/* Info */}
         <div>
           <h2 className="text-3xl font-bold mb-4">{t.letsConnect}</h2>

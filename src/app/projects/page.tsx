@@ -75,7 +75,7 @@ const ProjectsPage = () => {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="py-16 px-4 sm:px-6 md:px-10 transition-colors duration-300 bg-gray-50  text-gray-900  min-h-screen"
+      className="py-16 max-w-7xl mx-auto transition-colors duration-300 min-h-screen"
     >
       {/* Header */}
       <div
@@ -131,7 +131,7 @@ const ProjectsPage = () => {
             id="sort"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900  px-3 py-1"
+            className="rounded-md border border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200  px-3 py-1"
           >
             <option value="endtrac-desc">End Date (Newest)</option>
             <option value="endtrac-asc">End Date (Oldest)</option>
@@ -151,69 +151,93 @@ const ProjectsPage = () => {
         {filteredProjects.map((item, idx) => (
           <div
             key={item.id}
-            className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 flex flex-col justify-between h-full overflow-hidden transition-transform hover:scale-105 hover:shadow-lg"
+            className="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col h-full"
           >
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-80 z-10 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
-              <Link
-                href={`/projects/${item.id}`}
-                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500"
-              >
-                <FaInfoCircle />
-              </Link>
-              <a
-                href={item.githubLink || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href={item.liveLink || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
-              >
-                <FaLink />
-              </a>
-            </div>
-
             {/* Content */}
-            <div className="relative z-0 flex flex-col gap-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <div className="relative w-full sm:w-2/3 h-64 overflow-hidden rounded-lg">
+            <div className="flex flex-col flex-grow">
+              {/* Header: Title + Date */}
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 truncate">
+                  {item.title}
+                </h3>
+                <span className="text-xs font-medium bg-orange-100 text-orange-600 dark:bg-orange-700 dark:text-orange-200 px-3 py-1 rounded-full select-none">
+                  {item.endtrac}
+                </span>
+              </div>
+
+              {/* Images side by side or stacked */}
+              <div className="flex gap-4 mb-4">
+                <div className="relative w-2/3 h-40 rounded-lg overflow-hidden shadow-sm">
                   <Image
                     src={item.desktopimage}
-                    alt={item.title}
+                    alt={`${item.title} desktop`}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover"
                     priority={idx < 3}
                   />
                 </div>
-                <div className="relative w-full sm:w-1/3 h-56 overflow-hidden rounded-lg">
+                <div className="relative w-1/3 h-40 rounded-lg overflow-hidden shadow-sm hidden sm:block">
                   <Image
                     src={item.mobileimage}
-                    alt={item.title}
+                    alt={`${item.title} mobile`}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover"
                   />
                 </div>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900  mt-2">
-                {item.title}
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+              {/* Description */}
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
                 {item.description}
               </p>
 
-              <div className="mt-auto flex justify-between items-center text-sm sm:text-base">
-                <p className="text-orange-600 font-semibold">{item.endtrac}</p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  {item.techStack}
-                </p>
+              {/* Tech Stack Badges */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {item.techStack
+                  .split(",")
+                  .map((tech) => tech.trim())
+                  .map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2 py-0.5 rounded-full select-none"
+                    >
+                      {tech}
+                    </span>
+                  ))}
               </div>
+            </div>
+
+            {/* Footer: Icons with subtle hover */}
+            <div className="flex justify-end gap-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+              <Link
+                href={`/projects/${item.id}`}
+                className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors"
+                aria-label={`Details about ${item.title}`}
+              >
+                <FaInfoCircle size={20} />
+              </Link>
+              {item.githubLink && (
+                <a
+                  href={item.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors"
+                  aria-label={`${item.title} GitHub repository`}
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
+              {item.liveLink && (
+                <a
+                  href={item.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors"
+                  aria-label={`${item.title} live site`}
+                >
+                  <FaLink size={20} />
+                </a>
+              )}
             </div>
           </div>
         ))}

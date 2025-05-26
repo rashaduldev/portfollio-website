@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { useScroll, useTransform, useSpring } from "framer-motion";
 import { LayoutContext } from "./context";
 
 interface Skill {
@@ -141,8 +141,9 @@ export default function SkillsSection() {
       value === 100
         ? "bg-orange-400 dark:bg-orange-300"
         : "bg-[#3f4144] dark:bg-white";
+
     return (
-      <div className="w-full h-2 rounded overflow-hidden">
+      <div className="w-full h-2 rounded overflow-hidden bg-gray-300 dark:bg-gray-700">
         <div
           className={`h-2 transition-all duration-1000 ${barColor}`}
           style={{
@@ -153,6 +154,7 @@ export default function SkillsSection() {
       </div>
     );
   };
+
   // Framer Motion scroll + RTL support
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -167,7 +169,6 @@ export default function SkillsSection() {
     [0, 1],
     isRTL ? ["0px", `${movementDistance}px`] : ["0px", `-${movementDistance}px`]
   );
-  const opacity = useTransform(scrollYProgress, [0, 0.1, 1], [0, 1, 1]);
 
   const xSpring = useSpring(x, { stiffness: 300, damping: 50 });
 
@@ -193,12 +194,9 @@ export default function SkillsSection() {
       dir={isRTL ? "rtl" : "ltr"}
       className="w-full py-2 transition-colors duration-300 overflow-hidden"
     >
-      <motion.h3
-        style={{ x: xSpring, opacity }}
-        className="text-4xl font-bold text-end my-2 md:my-10"
-      >
+      <h3 className="text-4xl font-bold my-2 md:my-10">
         {translations.skills.about}
-      </motion.h3>
+      </h3>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Left Column: Tools + Design */}

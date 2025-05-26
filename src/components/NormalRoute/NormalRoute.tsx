@@ -13,7 +13,7 @@ import WorkExperience from "../WorkExperience";
 
 const NormalRoute = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="md:mx-auto mx-5 max-w-7xl">
       <Banner />
       <SkillsSection />
       <SkillsMarquee />

@@ -62,7 +62,7 @@ const ProjectsSection = () => {
             className="group relative rounded shadow-md overflow-hidden transition-all hover:scale-105 hover:border-1 hover:border-[#fdfdfd5d] hover:shadow-lg min-h-[420px] flex flex-col"
           >
             {/* Diagonal Background Image */}
-            <div className="absolute -bottom-10 -left-10 w-[150%] h-[150%] transform rotate-12 opacity-10 z-0">
+            <div className="absolute -bottom-10 -left-10 w-[150%] h-[150%] transform rotate-12 opacity-5 z-0">
               <Image
                 src={item.desktopimage}
                 alt={item.title}

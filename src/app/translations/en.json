@@ -90,7 +90,7 @@
       {
         "quote": "Great experience working with Rashadul. He delivered my website on time with perfect responsiveness.",
         "highlight": "perfect responsiveness",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-1.png",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
         "name": "Sarah Williams",
         "username": "@sarah_w"
       },
@@ -111,7 +111,7 @@
       {
         "quote": "Very professional and delivered exactly as promised. Loved the animations and smooth performance.",
         "highlight": "professional",
-        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-4.png",
+        "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747296071/resume/testimonials/testtomonials-3.png",
         "name": "Emily Chen",
         "username": "@emilyweb"
       },
@@ -159,8 +159,8 @@
       "id": 3,
       "title": "SSL Garments System",
       "description": "The SSL Garments System (Frontend) is a dynamic and responsive web application designed to manage garment production processes. Developed using Next.js and Tailwind CSS, this frontend interface enables users to interact with the garment management system, track orders, view inventory, and manage production workflows. The application features a user-friendly design with a focus on performance, offering a seamless experience across various devices.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748273205/resume/projects/djg28flqsbthxqy2h52t.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748273205/resume/projects/djg28flqsbthxqy2h52t.png",
       "techStack": "React.js,Tailwind CSS,Javascript",
       "link": "",
       "githubLink": "https://github.com/rashaduldev/ssl",
@@ -196,16 +196,16 @@
     },
     {
       "id": 6,
-      "title": "Project 6",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "title": "Functional portfollio Website",
+      "description": "About Responsive portfolio website built from a Figma design using Next.js (or Astro) and Tailwind CSS. Features include SEO optimization, accessibility, animations, and performance tuning with 95+ PageSpeed score. Deployed on Vercel/Netlify with full documentation.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748271515/resume/projects/desktop.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748271561/resume/projects/mobile.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
       "endtrac": "Fullstack",
       "githubLink": "https://github.com/rashaduldev",
       "liveLink": "https://github.com/rashaduldev",
-      "status": "Old"
+      "status": "Latest"
     },
     {
       "id": 7,
@@ -341,7 +341,7 @@
         "title": "Next.js Server Components Explained",
         "category": "Next.js",
         "date": "May 3, 2025",
-        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
+        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1748272192/resume/articles/bliichmqowukhyzyzs3u.jpg",
         "id": 2,
         "description": "Understand the power of server components in Next.js and how they help optimize performance by rendering on the server."
       },
@@ -349,7 +349,7 @@
         "title": "Optimizing Web Performance in 2025",
         "category": "Web Performance",
         "date": "April 28, 2025",
-        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1747043199/resume/article-1.jpg",
+        "imageUrl": "https://res.cloudinary.com/de8yddexc/image/upload/v1748272192/resume/articles/ga2yimlzvnltnw7kefew.jpg",
         "id": 3,
         "description": "Explore the latest strategies and tools for improving your website’s speed, including lazy loading, code splitting, and image optimization."
       }
@@ -434,29 +434,28 @@
     {
       "title": "Frontend Development",
       "description": "Building responsive, accessible UIs using React, Next.js & Tailwind CSS.",
-       "image": "/images/seo.jpg"
+       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1748264472/resume/services/frontend.jpg"
     },
     {
       "title": "Full-Stack Solutions",
       "description": "From database to UI — creating seamless full-stack apps using MERN.",
-      "image": "/images/fullstack.jpg"
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1748264470/resume/services/backend.jpg"
     },
     {
       "title": "UI/UX Design",
       "description": "Crafting user-centric interfaces with clean, modern aesthetics.",
-      "image": "/images/uiux.jpg"
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1748264470/resume/services/uiux.jpg"
     },
     {
       "title": "Performance Optimization",
       "description": "Improving load speed, SEO, and Lighthouse score for web apps.",
-      "image": "/images/performance.jpg"
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1748264470/resume/services/performance.jpg"
     },
     {
       "title": "API Integration",
       "description": "Connecting your frontend to powerful APIs for dynamic functionality.",
-      "image": "/images/api.jpg"
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1748264468/resume/services/api.jpg"
     }
   ]
 }
 }
-
