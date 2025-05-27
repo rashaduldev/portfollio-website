@@ -6,6 +6,7 @@ import { LayoutContext } from "@/components/context";
 import Image from "next/image";
 import { FaGithub, FaLink, FaHeart, FaShareAlt } from "react-icons/fa";
 import { Project } from "@/types/translations";
+import Link from "next/link";
 
 type Comment = {
   name: string;
@@ -113,22 +114,22 @@ const ProjectDetailsPage = () => {
           <FaHeart /> {likes}
         </button>
 
-        <a
+        <Link
           href={project.githubLink || "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-gray-100"
         >
           <FaGithub size={20} />
-        </a>
-        <a
+        </Link>
+        <Link
           href={project.liveLink || "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
           <FaLink size={20} />
-        </a>
+        </Link>
 
         <button className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">
           <FaShareAlt size={20} />

@@ -217,7 +217,7 @@ const ProjectsPage = () => {
                 <FaInfoCircle size={20} />
               </Link>
               {item.githubLink && (
-                <a
+                <Link
                   href={item.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -225,10 +225,10 @@ const ProjectsPage = () => {
                   aria-label={`${item.title} GitHub repository`}
                 >
                   <FaGithub size={20} />
-                </a>
+                </Link>
               )}
               {item.liveLink && (
-                <a
+                <Link
                   href={item.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -236,7 +236,7 @@ const ProjectsPage = () => {
                   aria-label={`${item.title} live site`}
                 >
                   <FaLink size={20} />
-                </a>
+                </Link>
               )}
             </div>
           </div>

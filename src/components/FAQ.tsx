@@ -24,11 +24,15 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="w-full py-12">
-      <h2 className="text-3xl font-bold text-center mb-10">
+    <section className="w-full py-12" dir={isRTL ? "rtl" : "ltr"}>
+      <h2
+        className={`text-3xl font-bold text-center mb-10 ${
+          isRTL ? "text-right" : "text-left"
+        }`}
+      >
         {faqs?.faqTitle || "Frequently Asked Questions"}
       </h2>
-      <p className="text-center mb-8">
+      <p className={`mb-8 ${isRTL ? "text-right" : "text-left"}`}>
         {faqs?.faqDescription ||
           "We’ve compiled answers to the most common queries."}
       </p>
@@ -74,14 +78,19 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
   }, [isOpen]);
 
   return (
-    <div className="border border-gray-300 dark:border-gray-700 rounded overflow-hidden">
+    <div
+      className={`border border-gray-300 dark:border-gray-700 rounded overflow-hidden ${
+        isRTL ? "text-right" : "text-left"
+      }`}
+      dir={isRTL ? "rtl" : "ltr"}
+    >
       <button
         onClick={onClick}
         className={`w-full flex justify-between items-center p-4 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer ${
-          isRTL ? "flex-row-reverse" : ""
+          isRTL ? "flex-row" : ""
         }`}
       >
-        <span className="font-medium text-left">{faq.question}</span>
+        <span className="font-medium">{faq.question}</span>
         <FaChevronDown
           className={`transform transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"

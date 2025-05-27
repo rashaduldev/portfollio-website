@@ -183,16 +183,16 @@
     },
     {
       "id": 5,
-      "title": "প্রজেক্ট ৫",
-      "description": "এই প্রজেক্টের একটি সংক্ষিপ্ত বিবরণ।",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "Node.js, MongoDB",
+      "title": "ডিজিটাল ক্লক",
+      "description": "একটি সহজ কিন্তু আকর্ষণীয় ডিজিটাল ঘড়ি যা HTML, CSS, এবং JavaScript ব্যবহার করে তৈরি। এটি বর্তমান সময়কে ডায়নামিকভাবে প্রদর্শন করে এবং প্রতি সেকেন্ডে রিয়েল-টাইমে আপডেট হয়। এই প্রজেক্টটি DOM ম্যানিপুলেশন এবং সময়ভিত্তিক ফাংশন শেখার জন্য উপযুক্ত একটি শুরু স্তরের JavaScript প্রজেক্ট।",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+      "techStack": "HTML, CSS, JavaScript",
       "link": "",
       "endtrac": "Backend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "পুরাতন"
+      "githubLink": "https://github.com/rashaduldev/Digital-clock",
+      "liveLink": "https://rashaduldev.github.io/Digital-clock",
+      "status": "Old"
     },
     {
       "id": 6,
@@ -209,15 +209,15 @@
     },
     {
       "id": 7,
-      "title": "প্রজেক্ট ৭",
-      "description": "এই প্রজেক্টের একটি সংক্ষিপ্ত বিবরণ।",
+      "title": "পাসওয়ার্ড জেনারেটর",
+      "description": "এটি একটি সহজ কিন্তু কার্যকর পাসওয়ার্ড জেনারেটর যা HTML, CSS এবং JavaScript ব্যবহার করে তৈরি করা হয়েছে। ব্যবহারকারীরা পাসওয়ার্ডের দৈর্ঘ্য এবং অক্ষরের ধরন কাস্টমাইজ করে শক্তিশালী, এলোমেলো পাসওয়ার্ড তৈরি করতে পারেন। এতে একটি পরিষ্কার ইউজার ইন্টারফেস রয়েছে এবং রিয়েল-টাইমে পাসওয়ার্ড দেখায়, যা সাধারণ নিরাপত্তার প্রয়োজনের জন্য আদর্শ।",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
+      "techStack": "HTML, CSS, JavaScript",
       "link": "",
       "endtrac": "Frontend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "githubLink": "https://github.com/rashaduldev/Password-Generator-Js",
+      "liveLink": "https://rashaduldev.github.io/Password-Generator-Js",
       "status": "পুরাতন"
     },
     {
@@ -235,15 +235,15 @@
     },
     {
       "id": 9,
-      "title": "প্রজেক্ট ৯",
-      "description": "এই প্রজেক্টের একটি সংক্ষিপ্ত বিবরণ।",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+      "title": "এয়ারবুক",
+      "description": "এয়ারবুক একটি ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন, যা একটি এয়ারলাইন বুকিংয়ের অভিজ্ঞতা অনুকরণ করার জন্য ডিজাইন করা হয়েছে। ব্যবহারকারীরা ফ্লাইটের অপশন দেখতে পারে, টিকিট বুক করতে পারে এবং তাদের বুকিং ব্যবস্থাপনা করতে পারে। ফ্রন্টএন্ড তৈরি করা হয়েছে React ব্যবহার করে, যাতে রেসপন্সিভ ইউজার ইন্টারফেস তৈরি হয় এবং ব্যাকএন্ডে Node.js ও MongoDB ব্যবহার করা হয়েছে ডেটাবেস ম্যানেজমেন্ট ও ইউজার অথেনটিকেশন এর জন্য।",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
       "techStack": "React, Node.js, MongoDB",
       "link": "",
-      "endtrac": "Fullstack",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "endtrac": "ফুলস্ট্যাক",
+      "githubLink": "https://github.com/rashaduldev/Airbook-Front-end-Project",
+      "liveLink": "https://zippy-trouble.surge.sh",
       "status": "পুরাতন"
     }
   ]
@@ -403,28 +403,36 @@
     "faqDescription": "এখানে কিছু সাধারণ প্রশ্ন ও উত্তর দেওয়া হলো যাতে আপনি আমার সেবাসমূহ ভালোভাবে বুঝতে পারেন।",
     "items": [
       {
-        "question": "আপনি কি সেবা প্রদান করেন?",
-        "answer": "আমি আধুনিক প্রযুক্তি যেমন React, Next.js, এবং Tailwind CSS ব্যবহার করে ফ্রন্ট-এন্ড ডেভেলপমেন্টে বিশেষজ্ঞ। এছাড়াও UI/UX ডিজাইন, ওয়েবসাইট পারফরম্যান্স অপ্টিমাইজেশন এবং ফুল-স্ট্যাক ওয়েব সলিউশন অফার করি।"
+        "question": "আপনি কী ধরণের সেবা প্রদান করেন?",
+        "answer": "আমি React, Next.js ও Tailwind CSS-এর মতো আধুনিক প্রযুক্তি ব্যবহার করে ফ্রন্টএন্ড ডেভেলপমেন্টে বিশেষজ্ঞ। এছাড়া UI/UX ডিজাইন, রেসপনসিভ লেআউট, পারফরম্যান্স অপ্টিমাইজেশন এবং প্রয়োজন হলে ফুলস্ট্যাক সাপোর্টও দিয়ে থাকি।"
       },
       {
-        "question": "আপনি কি আন্তর্জাতিক ক্লায়েন্টদের সঙ্গে কাজ করেন?",
-        "answer": "হ্যাঁ, আমি ইউএস, যুক্তরাজ্য, কানাডা, অস্ট্রেলিয়া সহ বিশ্বের বিভিন্ন দেশ থেকে ক্লায়েন্টদের সঙ্গে কাজ করার অভিজ্ঞতা রাখি। প্রতিটি প্রজেক্টে পরিষ্কার যোগাযোগ এবং সময়মতো ডেলিভারি নিশ্চিত করি।"
+        "question": "আপনি কি আন্তর্জাতিক ক্লায়েন্টদের সাথে কাজ করেন?",
+        "answer": "হ্যাঁ, আমি যুক্তরাষ্ট্র, যুক্তরাজ্য, কানাডা, অস্ট্রেলিয়া সহ বিশ্বের বিভিন্ন দেশের ক্লায়েন্টদের সাথে কাজ করেছি। আমি পরিষ্কার যোগাযোগ ও সময়মতো ডেলিভারির উপর গুরুত্ব দিই।"
       },
       {
-        "question": "আপনি কোন প্রযুক্তিগুলো ব্যবহার করেন?",
-        "answer": "আমি প্রধানত JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, MongoDB এবং অন্যান্য আধুনিক টুলস ব্যবহার করি দ্রুত, রেসপন্সিভ এবং স্কেলেবল অ্যাপ্লিকেশন তৈরি করতে।"
+        "question": "আপনি কোন কোন প্রযুক্তি ব্যবহার করেন?",
+        "answer": "আমার টেক স্ট্যাকে রয়েছে: HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, MongoDB এবং Git, Figma ও Vite-এর মতো আধুনিক টুলস।"
       },
       {
         "question": "আমি কীভাবে আপনার সাথে যোগাযোগ করতে পারি?",
-        "answer": "আপনি আমার ওয়েবসাইটের যোগাযোগ ফর্ম, ইমেইল অথবা নিচে দেওয়া সোশ্যাল মিডিয়া চ্যানেলগুলো থেকে সরাসরি যোগাযোগ করতে পারেন।"
+        "answer": "আপনি আমার ওয়েবসাইটের কন্টাক্ট ফর্ম ব্যবহার করে যোগাযোগ করতে পারেন অথবা সরাসরি ইমেইল ও লিংকডইনের মাধ্যমে যোগাযোগ করতে পারেন।"
       },
       {
-        "question": "আপনি পারফরম্যান্স অপ্টিমাইজেশনে সাহায্য করতে পারেন?",
-        "answer": "অবশ্যই! আমি লোড স্পিড, SEO এবং ইউজার এক্সপিরিয়েন্স উন্নত করার জন্য পারফরম্যান্স অডিট এবং অপ্টিমাইজেশন সেবা প্রদান করি।"
+        "question": "আপনি কি পারফরম্যান্স অপ্টিমাইজেশন করেন?",
+        "answer": "নিশ্চিতভাবে। আমি ওয়েবসাইটের গতি, Core Web Vitals, SEO ও ইউজার এক্সপেরিয়েন্স উন্নত করতে পারফরম্যান্স অডিট ও অপ্টিমাইজেশন সেবা প্রদান করি।"
       },
       {
-        "question": "আপনি কি ফ্রিল্যান্স বা কন্ট্রাক্ট কাজ গ্রহণ করেন?",
-        "answer": "হ্যাঁ, আমি ফ্রিল্যান্সিং, কন্ট্রাক্ট প্রজেক্ট এবং সহযোগিতার জন্য খোলা। চলুন আলোচনা করি কিভাবে আমি আপনার আইডিয়াগুলো বাস্তবে রূপ দিতে পারি।"
+        "question": "আপনি কি ফ্রিল্যান্স বা কন্ট্রাক্ট ভিত্তিক কাজ করেন?",
+        "answer": "হ্যাঁ, আমি ফ্রিল্যান্স ও কন্ট্রাক্ট প্রজেক্টের জন্য উন্মুক্ত। এটি ল্যান্ডিং পেজ হোক, একটি SaaS ড্যাশবোর্ড হোক, অথবা সম্পূর্ণ ওয়েবসাইট—আপনার আইডিয়া শেয়ার করতে পারেন।"
+      },
+      {
+        "question": "একটি সাধারণ প্রজেক্ট সম্পন্ন করতে কত সময় লাগে?",
+        "answer": "প্রজেক্টের পরিধির উপর নির্ভর করে সময় পরিবর্তিত হয়, তবে সাধারণভাবে একটি ওয়েবসাইট বা ড্যাশবোর্ড তৈরি করতে ১ থেকে ৩ সপ্তাহ লাগে। আমি সর্বদা সময়মতো কোয়ালিটি মেইনটেইন করে ডেলিভারি দেওয়ার চেষ্টা করি।"
+      },
+      {
+        "question": "আপনি কি Figma বা Adobe XD-এর মতো ডিজাইন টুলস ব্যবহার করেন?",
+        "answer": "হ্যাঁ, আমি Figma, Adobe XD বা Sketch ডিজাইনকে আধুনিক ফ্রন্টএন্ড ফ্রেমওয়ার্ক ব্যবহার করে রেসপনসিভ ও প্রোডাকশন-রেডি ওয়েবসাইটে রূপান্তর করি।"
       }
     ]
   },

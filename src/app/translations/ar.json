@@ -181,18 +181,18 @@
         "liveLink": "https://learning.tripleibd.com",
         "status": "أحدث"
       },
-      {
+        {
         "id": 5,
-        "title": "المشروع 5",
-        "description": "هذا وصف للمشروع.",
-        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-        "techStack": "Node.js، MongoDB",
+        "title": "الساعة الرقمية",
+        "description": "ساعة رقمية بسيطة وأنيقة تم بناؤها باستخدام HTML وCSS وJavaScript. تعرض الوقت الحالي بشكل ديناميكي وتحدث نفسها كل ثانية في الوقت الحقيقي. يركز هذا المشروع على التلاعب بعناصر الـ DOM واستخدام الدوال الزمنية، مما يجعله مشروعًا ممتازًا للمبتدئين في JavaScript.",
+        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+        "techStack": "HTML, CSS, JavaScript",
         "link": "",
-        "endtrac": "الخلفية",
-        "githubLink": "https://github.com/rashaduldev",
-        "liveLink": "https://github.com/rashaduldev",
-        "status": "قديم"
+        "endtrac": "Backend",
+        "githubLink": "https://github.com/rashaduldev/Digital-clock",
+        "liveLink": "https://rashaduldev.github.io/Digital-clock",
+        "status": "Old"
       },
       {
       "id": 6,
@@ -207,17 +207,17 @@
       "liveLink": "https://github.com/rashaduldev",
       "status": "أحدث"
       },
-      {
+     {
         "id": 7,
-        "title": "المشروع 7",
-        "description": "هذا وصف للمشروع.",
+        "title": "منشئ كلمة المرور",
+        "description": "هذا منشئ بسيط وفعّال لكلمات المرور تم تطويره باستخدام HTML وCSS وJavaScript. يمكن للمستخدمين إنشاء كلمات مرور قوية وعشوائية مع خيارات مخصصة لطول الكلمة وأنواع الأحرف. يتميز بواجهة مستخدم نظيفة وعرض كلمات المرور في الوقت الفعلي، مما يجعله مثاليًا للاحتياجات الأمنية الأساسية.",
         "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
         "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-        "techStack": "React، Node.js، MongoDB",
+        "techStack": "HTML، CSS، JavaScript",
         "link": "",
         "endtrac": "الواجهة الأمامية",
-        "githubLink": "https://github.com/rashaduldev",
-        "liveLink": "https://github.com/rashaduldev",
+        "githubLink": "https://github.com/rashaduldev/Password-Generator-Js",
+        "liveLink": "https://rashaduldev.github.io/Password-Generator-Js",
         "status": "قديم"
       },
       {
@@ -235,15 +235,15 @@
       },
       {
         "id": 9,
-        "title": "المشروع 9",
-        "description": "هذا وصف للمشروع.",
-        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-        "techStack": "React، Node.js، MongoDB",
+        "title": "إيربوك",
+        "description": "إيربوك هو تطبيق ويب متكامل مصمم لمحاكاة تجربة حجز تذاكر الطيران. يمكن للمستخدمين استكشاف خيارات الرحلات، حجز التذاكر، وإدارة حجوزاتهم. تم تطوير الواجهة الأمامية باستخدام React لضمان تجربة مستخدم تفاعلية، بينما يستخدم الخلفية Node.js وMongoDB لإدارة البيانات والمصادقة.",
+        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
+        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
+        "techStack": "React, Node.js, MongoDB",
         "link": "",
         "endtrac": "متكامل",
-        "githubLink": "https://github.com/rashaduldev",
-        "liveLink": "https://github.com/rashaduldev",
+        "githubLink": "https://github.com/rashaduldev/Airbook-Front-end-Project",
+        "liveLink": "https://zippy-trouble.surge.sh",
         "status": "قديم"
       }
     ]
@@ -401,32 +401,40 @@
   "faq": {
     "faqTitle": "الأسئلة المتكررة",
     "faqDescription": "هنا بعض الأسئلة الشائعة مع إجاباتها لمساعدتك على فهم خدماتي بشكل أفضل.",
-    "items": [
-      {
-        "question": "ما هي الخدمات التي تقدمها؟",
-        "answer": "أنا متخصص في تطوير الواجهات الأمامية باستخدام تقنيات حديثة مثل React و Next.js و Tailwind CSS. كما أقدم خدمات تصميم واجهات المستخدم وتجربة المستخدم، وتحسين أداء المواقع، وحلول الويب المتكاملة."
-      },
-      {
-        "question": "هل تعمل مع عملاء دوليين؟",
-        "answer": "نعم، لدي خبرة في العمل مع عملاء من مختلف أنحاء العالم، بما في ذلك الولايات المتحدة، والمملكة المتحدة، وكندا، وأستراليا، وغيرها. أضمن تواصل واضح وتسليم المشاريع في الوقت المحدد."
-      },
-      {
-        "question": "ما هي التقنيات التي تستخدمها؟",
-        "answer": "أعمل بشكل رئيسي مع JavaScript و TypeScript و React و Next.js و Tailwind CSS و Node.js و MongoDB وغيرها من الأدوات الحديثة لبناء تطبيقات سريعة ومتجاوبة وقابلة للتوسع."
-      },
-      {
-        "question": "كيف يمكنني التواصل معك؟",
-        "answer": "يمكنك التواصل معي عبر نموذج الاتصال في موقعي، أو مباشرة عبر بريدي الإلكتروني أو عبر قنوات التواصل الاجتماعي الموجودة أدناه."
-      },
-      {
-        "question": "هل يمكنك المساعدة في تحسين الأداء؟",
-        "answer": "بالتأكيد! أقدم خدمات تدقيق الأداء وتحسين سرعة التحميل، وتحسين محركات البحث، وتجربة المستخدم لموقعك أو تطبيقك."
-      },
-      {
-        "question": "هل تقبل العمل الحر أو المشاريع التعاقدية؟",
-        "answer": "نعم، أنا متاح للعمل الحر، والمشاريع التعاقدية، والتعاونات. دعنا نناقش كيف يمكنني مساعدتك في تحويل أفكارك إلى واقع."
-      }
-    ]
+     "items": [
+    {
+      "question": "ما هي الخدمات التي تقدمها؟",
+      "answer": "أنا متخصص في تطوير الواجهة الأمامية باستخدام تقنيات حديثة مثل React و Next.js و Tailwind CSS. كما أقدم خدمات تصميم واجهات المستخدم (UI/UX) وتحسين أداء المواقع، ويمكنني تقديم حلول ويب كاملة عند الحاجة."
+    },
+    {
+      "question": "هل تعمل مع عملاء دوليين؟",
+      "answer": "نعم، لدي خبرة في العمل مع عملاء من الولايات المتحدة، المملكة المتحدة، كندا، أستراليا، ودول أخرى. أضمن تواصلًا واضحًا وتسليم المشاريع في الوقت المحدد."
+    },
+    {
+      "question": "ما هي التقنيات التي تستخدمها؟",
+      "answer": "أستخدم HTML و CSS و JavaScript و TypeScript و React و Next.js و Tailwind CSS و Node.js و MongoDB، بالإضافة إلى أدوات حديثة مثل Git و Figma و Vite."
+    },
+    {
+      "question": "كيف يمكنني التواصل معك؟",
+      "answer": "يمكنك التواصل معي عبر نموذج الاتصال الموجود على موقعي الإلكتروني، أو مباشرةً عبر البريد الإلكتروني أو وسائل التواصل الاجتماعي."
+    },
+    {
+      "question": "هل تقدم خدمات تحسين الأداء؟",
+      "answer": "بالتأكيد! أقدم مراجعة شاملة لأداء المواقع وتحسين السرعة وتجربة المستخدم (UX) ونتائج محركات البحث (SEO)."
+    },
+    {
+      "question": "هل أنت متاح للعمل الحر أو التعاقد؟",
+      "answer": "نعم، أنا متاح للمشاريع الحرة (Freelance) والتعاقدية. سواء كان موقع صفحة هبوط أو لوحة تحكم SaaS أو موقع متكامل، يسعدني العمل معك."
+    },
+    {
+      "question": "كم من الوقت يستغرق إنجاز مشروع؟",
+      "answer": "يعتمد الوقت على حجم المشروع، ولكن غالبًا ما يستغرق إنشاء موقع أو لوحة تحكم من أسبوع إلى ثلاثة أسابيع. أحرص دائمًا على الجودة والتسليم في الوقت المحدد."
+    },
+    {
+      "question": "هل تستخدم أدوات التصميم مثل Figma أو Adobe XD؟",
+      "answer": "نعم، يمكنني تحويل تصميمات Figma أو Adobe XD أو Sketch إلى مواقع ويب متجاوبة باستخدام تقنيات حديثة."
+    }
+  ]
   },
   "services": {
     "title": "الخدمات التي أقدمها",

@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex flex-row gap-8">
             {/* Company */}
             <div className="flex-1">
-              <h3 className="font-semibold text-orange-400 dark:bg-orange-300 text-lg">
+              <h3 className="font-semibold text-orange-400 text-lg">
                 {translations?.footer?.company || "Rashadul"}
               </h3>
               <ul className="space-y-2">
@@ -154,38 +154,38 @@ export default function Footer() {
             {translations?.footer?.follow || "Follow Us"}
           </h3>
           <div className="flex flex-row gap-4 mt-2">
-            <a
+            <Link
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
               <FaFacebookF className="text-xl" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
               <FaTwitter className="text-xl" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
               <FaLinkedinIn className="text-xl" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
               <FaInstagram className="text-xl" />
-            </a>
+            </Link>
           </div>
         </div>
 

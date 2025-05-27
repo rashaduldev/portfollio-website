@@ -123,6 +123,18 @@
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
 
 .primary_text_color{
   color: #3f4144;

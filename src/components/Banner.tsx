@@ -8,6 +8,8 @@ import {
   IoArrowUndoCircleOutline,
 } from "react-icons/io5";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function Banner() {
   const context = useContext(LayoutContext);
   if (!context) {
@@ -19,72 +21,81 @@ export default function Banner() {
   const { translations, isRTL } = context;
 
   return (
-    <section className="relative w-full py-10 sm:py-16 md:my-20 overflow-hidden z-10">
-      {/* Content */}
+    <section className="relative w-full py-20 md:py-32 overflow-hidden">
       <div
-        className={`flex flex-col md:flex-row items-center gap-10 ${
+        className={`flex flex-col-reverse md:flex-row items-center gap-12 ${
           isRTL ? "md:flex-row" : ""
         }`}
       >
         {/* Left Content */}
         <div className={`flex-1 ${isRTL ? "text-right" : "text-left"}`}>
-          <h3 className="text-xl md:text-2xl font-bold mb-4">
+          <h3 className="text-xl md:text-2xl font-semibold mb-3">
             {translations?.main?.subtitle || "Welcome to My Website"}
           </h3>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
             {translations?.main?.title || "Welcome to My Website"}
           </h1>
-          <p className="text-lg my-6">
+          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-8 text-justify">
             {translations?.main?.description ||
               "Discover top quality content and services tailored for your needs."}
           </p>
-          <div className="flex gap-4 items-center mt-14">
-            <Button className="cursor-pointer">
-              <a
-                href="#"
-                className={`px-4 py-2 rounded flex items-center ${
-                  isRTL ? "flex-row" : "flex-row md:flex-row-reverse"
-                } gap-[14px]`}
-              >
+
+          {/* Buttons */}
+          <div
+            className={`flex flex-wrap gap-4 items-center ${
+              isRTL ? "justify-start" : ""
+            }`}
+          >
+            <Button
+              className="px-6 py-3 text-base font-medium transition rounded-lg"
+              asChild
+            >
+              <Link href="/contact" className="flex items-center gap-2">
                 {translations?.main?.leftbutton || "Let's go"}
-                <CiLocationArrow1 />
-              </a>
+                <CiLocationArrow1 size={20} />
+              </Link>
             </Button>
 
-            <Button className="cursor-pointer">
-              <a
+            <Button
+              className="px-6 py-3 text-base font-medium transition rounded-lg"
+              asChild
+            >
+              <Link
                 href="/assets/Resume of Md Rashadul Islam.pdf"
                 download="Resume of Md Rashadul Islam.pdf"
-                className={`flex items-center ${
-                  isRTL ? "flex-row" : "flex-row md:flex-row"
-                } gap-[14px]`}
+                className="flex items-center gap-2"
               >
                 {translations?.main?.resume || "Download Resume"}
                 {isRTL ? (
-                  <IoArrowRedoCircleOutline />
+                  <IoArrowRedoCircleOutline size={20} />
                 ) : (
-                  <IoArrowUndoCircleOutline />
+                  <IoArrowUndoCircleOutline size={20} />
                 )}
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
+        <div className="flex-1 flex justify-center md:justify-end">
+          <div className="relative w-[300px] h-[300px] md:w-[340px] md:h-[340px]">
+            {/* Spinning Gradient Border Ring */}
+            <div className="absolute inset-0 flex items-center justify-center z-0">
+              <div className="w-full h-full rounded-full animate-spin-slow border-[6px] border-transparent bg-gradient-to-tr from-[#d3e90c96] via-[#ffffff83] to-[#ffffff70] bg-[length:200%_200%] bg-clip-border" />
+            </div>
 
-        {/* Right Image */}
-        <div className="flex-1 flex justify-end">
-          <div
-            className={`group relative overflow-hidden animated-border-wrapper ${
-              isRTL ? "rtl" : "ltr"
-            }`}
-          >
-            <Image
-              height={550}
-              width={390}
-              src="https://res.cloudinary.com/de8yddexc/image/upload/v1747461829/resume/banner.png"
-              alt="Banner"
-              className="transition-transform duration-700 group-hover:scale-105 z-50"
-              priority
-            />
+            {/* Inner Circle Background */}
+            <div className="absolute inset-[8px] rounded-full bg-gray-100 dark:bg-gray-800 z-0 shadow-md" />
+
+            {/* Actual Image */}
+            <div className="absolute inset-[16px] z-10 rounded-full overflow-hidden">
+              <Image
+                src="https://res.cloudinary.com/de8yddexc/image/upload/v1747461829/resume/banner.png"
+                alt="Profile"
+                width={300}
+                height={300}
+                className="rounded-full  w-full h-full"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

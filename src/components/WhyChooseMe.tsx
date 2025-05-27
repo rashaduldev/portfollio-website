@@ -41,7 +41,7 @@ export default function WhyChooseMe() {
               {sectionTitle}
             </h2>
           </div>
-          <p className="leading-relaxed max-w-md">
+          <p className="leading-relaxed text-justify max-w-md">
             {/* Optional description text if you want more context */}
             {section.description}
           </p>

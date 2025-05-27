@@ -89,7 +89,7 @@ export default function ServicesCarousel() {
             {services.map((service, idx) => (
               <div
                 key={idx}
-                className="min-w-[280px] max-w-sm border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out"
+                className="min-w-[280px] max-w-sm bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out"
               >
                 {service.image && (
                   <Image
@@ -97,7 +97,7 @@ export default function ServicesCarousel() {
                     width={160}
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-48 object-cover rounded mb-4"
+                    className="w-full h-48 object-cover rounded-t mb-4"
                   />
                 )}
                 <div className="p-6">

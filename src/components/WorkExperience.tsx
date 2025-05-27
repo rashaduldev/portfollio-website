@@ -61,7 +61,7 @@ export default function WorkExperience() {
                     isRTL ? "text-right" : "text-left"
                   }`}
                 >
-                  <div className="bg-gray-200 dark:bg-gray-800 shadow-md rounded-lg p-6 border border-transparent hover:border-black dark:hover:border-white transition-all duration-300 group hover:shadow-lg">
+                  <div className="bg-gray-200 dark:bg-gray-800 shadow-md rounded p-6 border border-transparent hover:border-gray-400 dark:hover:border-gray-400 transition-all duration-300 group hover:shadow-lg">
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-semibold">{exp.title}</p>

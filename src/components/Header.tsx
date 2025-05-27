@@ -27,11 +27,6 @@ export default function Header() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const pathname = usePathname();
 
-  // Handle theme toggle
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   // Scroll progress effect
   useEffect(() => {
     const updateScrollProgress = () => {
@@ -103,13 +98,28 @@ export default function Header() {
                 <Menu className="w-5 h-5" />
               </Button>
             </div>
-            <Button variant="ghost" size="icon" onClick={toggleTheme}>
-              {theme === "dark" ? (
-                <Sun className="h-5 w-5" />
-              ) : (
-                <Moon className="h-5 w-5" />
-              )}
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  {theme === "dark" ? (
+                    <Moon className="h-5 w-5" />
+                  ) : (
+                    <Sun className="h-5 w-5" />
+                  )}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem onClick={() => setTheme("system")}>
+                  🖥 Device Default
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("light")}>
+                  ☀️ Light Mode
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("dark")}>
+                  🌙 Dark Mode
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="sm">
@@ -135,7 +145,7 @@ export default function Header() {
         <div
           className={`fixed top-0 ${
             isRTL ? "right-0" : "left-0"
-          } h-full w-64 bg-white  shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+          } h-full w-64 bg-gray-200 dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
             isDrawerOpen
               ? "translate-x-0"
               : isRTL
@@ -143,7 +153,7 @@ export default function Header() {
               : "-translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-end p-4 border-b border-gray-200 dark:border-gray-700">
             <Button variant="ghost" onClick={() => setDrawerOpen(false)}>
               <X className="w-5 h-5" />
             </Button>

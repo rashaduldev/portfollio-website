@@ -19,31 +19,44 @@ export default function Timeline() {
   });
 
   return (
-    <div className="w-full py-10">
-      <h2 className="text-start mb-10 font-bold text-4xl">
+    <div className="w-full py-12">
+      <h2 className="text-start mb-12 font-bold text-4xl">
         {translations.Educationheading}
       </h2>
-      <div className="relative border-t-2 border-black dark:border-white flex justify-between items-start flex-wrap">
+
+      <div className="relative border-t-2 border-black dark:border-white flex flex-wrap justify-between items-start gap-y-12">
         {sortedEducations.map(([year, edu]) => (
           <div
             key={year}
-            className={`relative text-center w-full md:w-1/4 px-2 mb-10 ${
+            className={`relative text-center w-full md:w-1/4 px-4 transition duration-300 ${
               isRTL ? "text-right" : ""
             }`}
           >
-            {/* Icon in center */}
+            {/* Icon */}
             <div className="flex justify-center">
-              <CiSaveDown1 className="text-3xl" />
+              <CiSaveDown1 className="text-4xl hover:scale-110 transition duration-300" />
             </div>
 
-            {/* Content */}
-            <div className="mt-6">
-              <h3 className="font-bold text-sm">{year}</h3>
-              <p className="font-semibold">{edu.title}</p>
-              {edu.company && <p>{edu.company}</p>}
-              {edu.department && <p>{edu.department}</p>}
+            {/* Card */}
+            <div className="mt-6 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded p-4 text-left">
+              <h3 className="font-bold text-sm text-gray-500">{year}</h3>
+              <p className="font-semibold text-lg text-black dark:text-white mt-1">
+                {edu.title}
+              </p>
+              {edu.company && (
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  {edu.company}
+                </p>
+              )}
+              {edu.department && (
+                <p className="italic text-sm text-orange-400">
+                  {edu.department}
+                </p>
+              )}
               {edu.description && (
-                <p className="text-sm mt-1">{edu.description}</p>
+                <p className="text-sm mt-2 leading-relaxed">
+                  {edu.description}
+                </p>
               )}
             </div>
           </div>

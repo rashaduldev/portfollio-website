@@ -181,17 +181,17 @@
       "liveLink": "https://learning.tripleibd.com",
       "status": "Latest"
     },
-    {
+      {
       "id": 5,
-      "title": "Project 5",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "Node.js, MongoDB",
+      "title": "Digital Clock",
+      "description": "A simple yet elegant digital clock built using HTML, CSS, and JavaScript. It dynamically displays the current time and updates every second in real-time. The project focuses on DOM manipulation and time-based functions, making it a great beginner-level JavaScript project.",
+      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
+      "techStack": "HTML, CSS, JavaScript",
       "link": "",
       "endtrac": "Backend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "githubLink": "https://github.com/rashaduldev/Digital-clock",
+      "liveLink": "https://rashaduldev.github.io/Digital-clock",
       "status": "Old"
     },
     {
@@ -208,17 +208,17 @@
       "status": "Latest"
     },
     {
-      "id": 7,
-      "title": "Project 7",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "Frontend",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "Old"
+    "id": 7,
+    "title": "Password Generator",
+    "description": "This is a simple yet effective password generator built using HTML, CSS, and JavaScript. Users can generate strong, random passwords with customizable options for length and character types. It features a clean user interface and real-time password display, ideal for basic security needs.",
+    "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
+    "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+    "techStack": "HTML, CSS, JavaScript",
+    "link": "",
+    "endtrac": "Frontend",
+    "githubLink": "https://github.com/rashaduldev/Password-Generator-Js",
+    "liveLink": "https://rashaduldev.github.io/Password-Generator-Js",
+    "status": "Old"
     },
     {
       "id": 8,
@@ -234,18 +234,18 @@
       "status": "Latest"
     },
     {
-      "id": 9,
-      "title": "Project 9",
-      "description": "This is a description of the project.",
-      "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-      "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React, Node.js, MongoDB",
-      "link": "",
-      "endtrac": "Fullstack",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
-      "status": "Old"
-    }
+    "id": 9,
+    "title": "Airbook",
+    "description": "Airbook is a full-stack web application designed to simulate an airline booking experience. Users can explore flight options, book tickets, and manage bookings. The frontend is developed using React for a responsive UI, while the backend uses Node.js and MongoDB to handle data management and authentication.",
+    "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
+    "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
+    "techStack": "React, Node.js, MongoDB",
+    "link": "",
+    "endtrac": "Fullstack",
+    "githubLink": "https://github.com/rashaduldev/Airbook-Front-end-Project",
+    "liveLink": "https://zippy-trouble.surge.sh",
+    "status": "Old"
+  }
   ]
 },
   "Educationheading": "Education",
@@ -404,27 +404,35 @@
   "items": [
     {
       "question": "What services do you offer?",
-      "answer": "I specialize in front-end development using modern technologies like React, Next.js, and Tailwind CSS. I also offer UI/UX design, website performance optimization, and full-stack web solutions."
+      "answer": "I specialize in modern front-end development using React, Next.js, and Tailwind CSS. I also provide UI/UX design, responsive layouts, performance optimization, and full-stack web development support when needed."
     },
     {
       "question": "Do you work with international clients?",
-      "answer": "Yes, I have experience working with clients globally, including those from the US, UK, Canada, Australia, and more. I ensure clear communication and timely delivery for every project."
+      "answer": "Yes, I collaborate with clients worldwide including the US, UK, Canada, Australia, and others. I focus on clear communication, time-zone flexibility, and timely delivery."
     },
     {
       "question": "What technologies do you use?",
-      "answer": "I mainly work with JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, MongoDB, and other modern tools to build fast, responsive, and scalable applications."
+      "answer": "My tech stack includes HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, MongoDB, and modern tools like Git, Figma, and Vite."
     },
     {
       "question": "How can I contact you?",
-      "answer": "You can reach out via the contact form on my website, or directly through my email or social media channels linked below."
+      "answer": "You can reach me via the contact form on my website, or directly through my email and LinkedIn. I’m responsive and open to discussing your project needs."
     },
     {
       "question": "Can you help with performance optimization?",
-      "answer": "Absolutely! I offer performance audits and optimization services to improve load speed, SEO, and user experience of your website or application."
+      "answer": "Absolutely. I conduct audits and offer optimization services to boost speed, Core Web Vitals, SEO, and overall user experience."
     },
     {
-      "question": "Are you open to freelance or contract work?",
-      "answer": "Yes, I’m open to freelance opportunities, contract projects, and collaborations. Let’s discuss how I can help bring your ideas to life."
+      "question": "Are you available for freelance or contract work?",
+      "answer": "Yes, I’m available for freelance and contract-based projects. Whether it’s a landing page, a SaaS dashboard, or a full website, I’d love to hear about it."
+    },
+    {
+      "question": "How long does a typical project take?",
+      "answer": "It depends on the project scope, but a typical website or dashboard usually takes between 1 to 3 weeks. I always aim for timely delivery without compromising quality."
+    },
+    {
+      "question": "Do you work with design tools like Figma or Adobe XD?",
+      "answer": "Yes, I regularly convert Figma, Adobe XD, or Sketch designs into responsive, pixel-perfect, production-ready websites using modern frontend frameworks."
     }
   ]
 },

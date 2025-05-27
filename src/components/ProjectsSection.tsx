@@ -79,22 +79,22 @@ const ProjectsSection = () => {
               >
                 <FaInfoCircle />
               </Link>
-              <a
+              <Link
                 href={item.githubLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
               >
                 <FaGithub />
-              </a>
-              <a
+              </Link>
+              <Link
                 href={item.liveLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
               >
                 <FaLink />
-              </a>
+              </Link>
             </div>
 
             {/* Card Content */}
@@ -103,7 +103,7 @@ const ProjectsSection = () => {
                 <h3 className="text-lg sm:text-xl font-semibold">
                   {item.title}
                 </h3>
-                <p className="mt-4 text-sm sm:text-base dark:text-gray-300">
+                <p className="mt-4 text-sm sm:text-base text-justify dark:text-gray-300">
                   {item.description}
                 </p>
               </div>
