@@ -94,13 +94,25 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <div className="md:hidden">
-              <Button variant="ghost" onClick={() => setDrawerOpen(true)}>
+              <Button
+                variant="ghost"
+                onClick={() => setDrawerOpen(true)}
+                aria-label="Open menu"
+              >
                 <Menu className="w-5 h-5" />
               </Button>
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label={
+                    theme === "dark"
+                      ? "Switch to light mode"
+                      : "Switch to dark mode"
+                  }
+                >
                   {theme === "dark" ? (
                     <Moon className="h-5 w-5" />
                   ) : (
@@ -122,7 +134,11 @@ export default function Header() {
             </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  aria-label="Select language"
+                >
                   🌐 {language.toUpperCase()}
                 </Button>
               </DropdownMenuTrigger>
@@ -154,7 +170,11 @@ export default function Header() {
           }`}
         >
           <div className="flex items-center justify-end p-4 border-b border-gray-200 dark:border-gray-700">
-            <Button variant="ghost" onClick={() => setDrawerOpen(false)}>
+            <Button
+              variant="ghost"
+              onClick={() => setDrawerOpen(false)}
+              aria-label="Close menu"
+            >
               <X className="w-5 h-5" />
             </Button>
           </div>

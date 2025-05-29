@@ -82,10 +82,10 @@ export default function WhyChooseMe() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto text-center mb-10">
-        <h2 className="my-5 text-3xl mx-auto text-orange-400 dark:text-orange-300">
+        <h2 className="my-5 text-3xl mx-auto text-orange-600 dark:text-orange-400 ">
           {section.contactdescription}
         </h2>
-        <Button className="cursor-pointer">
+        <Button className="cursor-pointer px-5 py-3 text-base">
           <Link href="/contact">{section.contactbutton}</Link>
         </Button>
       </div>

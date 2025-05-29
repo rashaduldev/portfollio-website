@@ -61,7 +61,7 @@ export default function Banner() {
               asChild
             >
               <Link
-                href="/assets/Resume of Md Rashadul Islam.pdf"
+                href="/assets/Rashadul.pdf"
                 download="Resume of Md Rashadul Islam.pdf"
                 className="flex items-center gap-2"
               >
@@ -92,7 +92,7 @@ export default function Banner() {
                 alt="Profile"
                 width={300}
                 height={300}
-                className="rounded-full  w-full h-full"
+                className="rounded-full object-cover"
                 priority
               />
             </div>

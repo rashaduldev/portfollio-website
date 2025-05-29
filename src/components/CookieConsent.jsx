@@ -43,16 +43,14 @@ const CookieConsent = () => {
       <div>
       <div className={`flex gap-3 ${isRTL ? "justify-start flex-row-reverse" : "justify-end"}`}>
         <Button
-          onClick={rejectCookies}
-          className="bg-gray-700 dark:bg-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600 text-gray-100 dark:text-black cursor-pointer"
+          className="bg-gray-700 hover:bg-gray-800 text-white dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-black"
         >
-          {translations.cookieConsent.reject}
+          Reject
         </Button>
         <Button
-          onClick={acceptCookies}
-          className="cursor-pointer bg-orange-400 hover:bg-orange-600"
+          className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-400 dark:hover:bg-orange-500 dark:text-black"
         >
-          {translations.cookieConsent.accept}
+          Accept
         </Button>
       </div>
       </div>

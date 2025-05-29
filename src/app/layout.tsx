@@ -1,6 +1,9 @@
+// app/layout.tsx (or your RootLayout file)
+
 import "./globals.css";
 import type { Metadata } from "next";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Md Rashadul Islam – Portfolio",
@@ -10,7 +13,6 @@ export const metadata: Metadata = {
     "Md Rashadul Islam",
     "Frontend Developer",
     "Best Frontend Developer",
-    "Bangladesh Frontend Developer",
     "Bangladesh Frontend Developer",
     "Bangladesh Best Frontend Developer",
     "React Developer",
@@ -51,21 +53,12 @@ export const metadata: Metadata = {
       "https://res.cloudinary.com/de8yddexc/image/upload/v1747461829/resume/banner.png",
     ],
   },
-  // Remove themeColor from here
   robots: {
     index: true,
     follow: true,
     nocache: false,
   },
 };
-
-// Add this function below metadata export:
-export function generateViewport() {
-  return {
-    themeColor: "#0f172a",
-    // You can add other viewport properties here if needed
-  };
-}
 
 export default function RootLayout({
   children,
@@ -74,8 +67,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Md Rashadul Islam – Portfolio</title>
+      </head>
       <body className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-        <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );

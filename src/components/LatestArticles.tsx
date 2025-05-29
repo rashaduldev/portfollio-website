@@ -42,7 +42,7 @@ export default function LatestArticles() {
         <div className="text-right">
           <Link
             href="/articles"
-            className="text-sm font-medium text-orange-400 underline dark:text-orange-300"
+            className="text-sm font-medium text-orange-600 dark:text-orange-400 underline dark:text-orange-300"
           >
             {viewAllLabel}
           </Link>
@@ -81,7 +81,7 @@ export default function LatestArticles() {
               <h3 className="mt-2 text-lg font-semibold">{article.title}</h3>
               <Link
                 href={`/articles/${article.id}`}
-                className="mt-4 inline-flex items-center gap-1 text-sm text-orange-400 dark:text-orange-300 hover:underline"
+                className="mt-4 inline-flex items-center gap-1 text-sm text-orange-600 dark:text-orange-400 hover:underline"
               >
                 {section?.readMoreLabel ?? "Read More"}
                 <span className="inline-block transform transition-transform group-hover:translate-x-1">

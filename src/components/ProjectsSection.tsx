@@ -43,7 +43,7 @@ const ProjectsSection = () => {
         <div className="text-right">
           <Link
             href="/projects"
-            className="text-sm text-orange-400 dark:text-orange-300 underline rounded-md transition"
+            className="text-sm text-orange-600 dark:text-orange-400 underline rounded-md transition"
           >
             {projectsSection.viewallproject || "View All Projects"}
           </Link>
@@ -75,6 +75,7 @@ const ProjectsSection = () => {
             <div className="absolute inset-0 bg-black bg-opacity-40 z-50 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
               <Link
                 href={`/projects/${item.id}`}
+                aria-label={`View details for ${item.title}`}
                 className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500"
               >
                 <FaInfoCircle />
@@ -83,6 +84,7 @@ const ProjectsSection = () => {
                 href={item.githubLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View ${item.title} on GitHub`}
                 className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-700"
               >
                 <FaGithub />
@@ -91,6 +93,7 @@ const ProjectsSection = () => {
                 href={item.liveLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Visit live site for ${item.title}`}
                 className="text-gray-100 text-2xl transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-1000"
               >
                 <FaLink />

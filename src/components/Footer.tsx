@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex flex-row gap-8">
             {/* Company */}
             <div className="flex-1">
-              <h3 className="font-semibold text-orange-400 text-lg">
+              <h3 className="font-semibold text-orange-600 dark:text-orange-400 text-lg">
                 {translations?.footer?.company || "Rashadul"}
               </h3>
               <ul className="space-y-2">
@@ -194,7 +194,7 @@ export default function Footer() {
           <h3 className="font-semibold text-lg">
             {translations?.footer?.newsletter || "Subscribe to My Newsletter"}
           </h3>
-          <p className="text-sm text-gray-400 mb-4">
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
             {translations?.footer?.newsletterDesc ||
               "Get the latest updates and offers."}
           </p>

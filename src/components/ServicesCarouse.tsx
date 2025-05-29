@@ -67,14 +67,14 @@ export default function ServicesCarousel() {
         {!isAtStart && (
           <button
             onClick={() => scroll("left")}
+            aria-label="Scroll left"
             className={`absolute top-1/2 -translate-y-1/2 z-10 p-2 border border-gray-300 dark:border-gray-700 rounded-full bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer ${
               isRTL ? "right-0" : "left-0"
             }`}
           >
-            <FaChevronLeft className="" />
+            <FaChevronLeft />
           </button>
         )}
-
         {/* Cards Scroll Container */}
         {services.length === 0 ? (
           <p className="text-center text-gray-500 dark:text-gray-400">
@@ -117,6 +117,7 @@ export default function ServicesCarousel() {
         {!isAtEnd && (
           <button
             onClick={() => scroll("right")}
+            aria-label="Scroll right"
             className={`absolute top-1/2 -translate-y-1/2 z-10 p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer ${
               isRTL ? "left-0" : "right-0"
             }`}

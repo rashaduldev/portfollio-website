@@ -89,12 +89,12 @@ const TestimonialSection: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="italic text-sm mb-6">
+              <p className="italic text-sm text-orange-500 dark:text-orange-300">
                 &quot;{testimonial.quote}{" "}
                 <span className="font-semibold">{testimonial.highlight}</span>
                 &quot;
               </p>
-              <h4 className="font-bold text-xl mb-2">{testimonial.name}</h4>
+              <h3 className="font-bold text-xl mb-2">{testimonial.name}</h3>
               <p className="text-sm">{testimonial.username}</p>
             </SwiperSlide>
           ))}

@@ -49,7 +49,7 @@ export default function Timeline() {
                 </p>
               )}
               {edu.department && (
-                <p className="italic text-sm text-orange-400">
+                <p className="italic text-sm text-orange-600 dark:text-orange-400">
                   {edu.department}
                 </p>
               )}

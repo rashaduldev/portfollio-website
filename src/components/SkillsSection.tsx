@@ -194,10 +194,9 @@ export default function SkillsSection() {
       dir={isRTL ? "rtl" : "ltr"}
       className="w-full py-2 transition-colors duration-300 overflow-hidden"
     >
-      <h3 className="text-4xl font-bold my-2 md:my-10">
+      <h2 className="text-4xl font-bold my-2 md:my-10">
         {translations.skills.about}
-      </h3>
-
+      </h2>
       <div className="grid md:grid-cols-2 gap-10">
         {/* Left Column: Tools + Design */}
         <div className="space-y-12">
