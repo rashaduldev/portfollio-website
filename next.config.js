@@ -16,11 +16,15 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'www.crowe.com', // 👈 Include any additional domains you use
+        hostname: 'www.crowe.com', 
       },
       {
         protocol: 'https',
-        hostname: 'onemarketmedia.com', // 👈 Add this for the onemarketmedia.com domain
+        hostname: 'onemarketmedia.com', 
+      },
+       {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
       },
     ],
   },

@@ -89,6 +89,14 @@ export default function Header() {
               >
                 {translations?.header?.contact || "Contact"}
               </Link>
+              <Link
+                href="/github"
+                className={`hover:text-blue-500 ${
+                  pathname === "/github" ? "text-blue-600 font-semibold" : ""
+                }`}
+              >
+                {translations?.header?.github || "Github"}
+              </Link>
             </div>
           </nav>
 

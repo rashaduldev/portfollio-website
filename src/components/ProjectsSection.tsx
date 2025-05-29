@@ -15,10 +15,19 @@ const ProjectsSection = () => {
     );
   }
 
-  const { translations, isRTL } = context;
+  const { translations, isRTL, language } = context;
   const projectsSection = translations.projectsSection || {};
+
+  const statusMap: Record<string, string> = {
+    en: "Latest",
+    ar: "أحدث",
+    bn: "সাম্প্রতিক",
+  };
+
+  const filteredStatus = statusMap[language] || "Latest";
+
   const projects = (projectsSection.projects || [])
-    .filter((project) => project.status === "Latest")
+    .filter((project) => project.status === filteredStatus)
     .slice(0, 6);
 
   return (
