@@ -35,7 +35,7 @@ interface CookieConsentSection {
   title: string;
   message: string;
   accept: string;
-  reject: string;
+  terms: string;
 }
 
 interface MainSection {

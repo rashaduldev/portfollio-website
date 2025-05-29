@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState, useContext } from "react";
-import Cookies from "js-cookie";
 import { Button } from "./ui/button";
 import { LayoutContext } from "@/components/context"; // Adjust path as needed
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const CookieConsent = () => {
   const context = useContext(LayoutContext);
@@ -11,24 +12,24 @@ const CookieConsent = () => {
   }
 
   const { translations, isRTL } = context;
+  const router = useRouter();
 
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = Cookies.get("cookieConsent");
-    if (!consent) {
+    const consent = localStorage.getItem("cookieConsent");
+    if (consent !== "accepted") {
       setVisible(true);
     }
   }, []);
 
   const acceptCookies = () => {
-    Cookies.set("cookieConsent", "accepted", { expires: 365 });
+    localStorage.setItem("cookieConsent", "accepted");
     setVisible(false);
   };
 
-  const rejectCookies = () => {
-    Cookies.set("cookieConsent", "rejected", { expires: 365 });
-    setVisible(false);
+  const goToTerms = () => {
+    router.push("/cookies-policy");
   };
 
   if (!visible) return null;
@@ -40,19 +41,23 @@ const CookieConsent = () => {
     >
       <h2 className="text-xl font-semibold mb-2">{translations.cookieConsent.title}</h2>
       <p className="mb-4 text-sm leading-relaxed">{translations.cookieConsent.message}</p>
-      <div>
-      <div className={`flex gap-3 ${isRTL ? "justify-start flex-row-reverse" : "justify-end"}`}>
+
+      <div className={`flex gap-3 ${isRTL ? "justify-start flex-row-reverse" : "justify-between"}`}>
+        {/* Accept Button */}
         <Button
-          className="bg-gray-700 hover:bg-gray-800 text-white dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-black"
+          onClick={acceptCookies}
+          className="bg-orange-500 hover:bg-orange-600 text-white cursor-pointer dark:bg-orange-400 dark:hover:bg-orange-500 dark:text-black"
         >
-          Reject
+          {translations.cookieConsent.accept}
         </Button>
+
+        {/* Terms and Conditions Button */}
         <Button
-          className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-400 dark:hover:bg-orange-500 dark:text-black"
-        >
-          Accept
-        </Button>
-      </div>
+        onClick={goToTerms}
+        className="bg-gray-700 hover:bg-gray-800 text-white cursor-pointer dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-black"
+      >
+        {translations?.cookieConsent?.terms || "Terms and Condition"}
+      </Button>
       </div>
     </div>
   );
