@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { Repo, User } from "@/types/translations";
 import Image from "next/image";
+import { LayoutContext } from "@/components/context";
 
 export default function GithubProjects() {
   const [repos, setRepos] = useState<Repo[]>([]);
@@ -12,6 +13,13 @@ export default function GithubProjects() {
   const [error, setError] = useState<string | null>(null);
 
   const username = "rashaduldev";
+  const context = useContext(LayoutContext);
+  if (!context) {
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
+  }
+  const { isRTL } = context;
 
   useEffect(() => {
     async function fetchData() {
@@ -76,7 +84,7 @@ export default function GithubProjects() {
     return (
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
         <h1 className="text-4xl font-semibold mb-6 text-gray-900 dark:text-white">
-          My GitHub Projects
+          My GitHub Profile
         </h1>
         <svg
           className="animate-spin h-12 w-12 text-orange-500 mb-4"
@@ -121,7 +129,12 @@ export default function GithubProjects() {
     <main className="max-w-7xl mx-auto py-6">
       {/* Profile Section */}
       {user && (
-        <section className="mb-12 max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-6 border-b-2 pb-8">
+        <section
+          dir={isRTL ? "rtl" : "ltr"}
+          className={`mb-12 max-w-4xl mx-auto flex ${
+            isRTL ? "md:flex-row" : "md:flex-row-reverse"
+          } items-center md:items-start gap-6 border-b-2 pb-8`}
+        >
           <Image
             src={user.avatar_url}
             alt={`${user.login} avatar`}
@@ -129,12 +142,14 @@ export default function GithubProjects() {
             height={128}
             className="rounded-full object-cover shadow-lg"
           />
-          <div className="flex-1 text-center md:text-left">
+          <div className={`flex-1 ${isRTL ? "md:text-right" : "md:text-left"}`}>
             <h1 className="text-4xl font-bold">{user.name || user.login}</h1>
             <p className="text-gray-700 dark:text-gray-300 mt-2">
               {user.bio || "No bio provided."}
             </p>
-            <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start text-sm text-gray-600 dark:text-gray-400">
+            <div
+              className={`mt-4 flex flex-wrap gap-4 justify-center md:justify-start text-sm text-gray-600 dark:text-gray-400`}
+            >
               <p>
                 <strong>Repos:</strong> {user.public_repos}
               </p>

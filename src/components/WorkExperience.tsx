@@ -26,7 +26,7 @@ export default function WorkExperience() {
       <div className="relative">
         {/* Vertical Line */}
         <div
-          className={`absolute bg-gray-100 dark:bg-gray-900 border rounded-2xl ${
+          className={`absolute bg-gray-300 dark:bg-gray-900 border rounded-2xl ${
             isRTL
               ? "md:left-auto md:right-1/2 right-0"
               : "md:right-auto md:left-1/2 left-0"
@@ -51,8 +51,8 @@ export default function WorkExperience() {
                 {/* Mobile Circle (always same side as line) */}
                 <div
                   className={`md:hidden block absolute ${
-                    isRTL ? "right-[-10px]" : "left-[-10px]"
-                  } top-2 w-5 h-5 border-2 border-gray-900 dark:border-gray-100 rounded-full z-10`}
+                    isRTL ? "right-[-2px]" : "left-[-2px]"
+                  } top-2 w-4 h-4 border-2 border-gray-600 dark:border-gray-200 rounded-full z-10`}
                 />
 
                 {/* Timeline Card */}

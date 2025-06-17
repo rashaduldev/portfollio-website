@@ -1,8 +1,9 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
 import { PortfolioJSON } from "@/types/translations";
-import defaultTranslations from "@/app/translations/defaultTranslations";
+import defaultTranslations from "@/app/translations/en.json";
 import { LayoutContext } from "./context";
 import { usePathname } from "next/navigation";
 import NormalRoute from "./NormalRoute/NormalRoute";
@@ -18,18 +19,18 @@ interface ClientLayoutWrapperProps {
 export default function ClientLayoutWrapper({
   children,
 }: ClientLayoutWrapperProps) {
-  const [language, setLanguage] = useState<string>("en");
+  const [language, setLanguage] = useState("en");
   const [translations, setTranslations] =
     useState<PortfolioJSON>(defaultTranslations);
   const [isLoading, setIsLoading] = useState(true);
-  const [isMounted, setIsMounted] = useState(false); // ✅ NEW
+  const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
 
   const isHome = pathname === "/";
   const isRTL = language === "ar";
 
   useEffect(() => {
-    setIsMounted(true); // ✅ Wait until mounted
+    setIsMounted(true);
   }, []);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function ClientLayoutWrapper({
         )) as { default: PortfolioJSON };
         setTranslations(translationModule.default);
       } catch (error) {
-        console.error(`Failed to load translations for ${language}:`, error);
+        console.error(`Translation load failed: ${language}`, error);
         setTranslations(defaultTranslations);
       } finally {
         setIsLoading(false);

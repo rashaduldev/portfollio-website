@@ -18,7 +18,7 @@ export default function NotFound() {
   return (
     <main
       dir={isRTL ? "rtl" : "ltr"}
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-50  p-4 text-center"
+      className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900  p-4 text-center"
     >
       <Image
         src="https://res.cloudinary.com/de8yddexc/image/upload/v1747288109/resume/nw1t97hoccwxtzxrbp2i.svg"

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { LayoutContext } from "./context";
+import { ArticleItem } from "@/types/translations";
 
 export default function LatestArticles() {
   const context = useContext(LayoutContext);
@@ -42,7 +43,7 @@ export default function LatestArticles() {
         <div className="text-right">
           <Link
             href="/articles"
-            className="text-sm font-medium text-orange-600 dark:text-orange-400 underline dark:text-orange-300"
+            className="text-sm font-medium text-orange-600 underline dark:text-orange-400"
           >
             {viewAllLabel}
           </Link>
@@ -51,7 +52,7 @@ export default function LatestArticles() {
 
       {/* Articles Grid */}
       <div className="grid gap-8 md:grid-cols-3">
-        {(articles ?? []).map((article, index) => (
+        {(articles ?? []).slice(0, 3).map((article: ArticleItem, index) => (
           <motion.article
             key={index}
             initial={{ opacity: 0, y: 30 }}

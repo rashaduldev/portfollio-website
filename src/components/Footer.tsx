@@ -4,12 +4,7 @@ import { Mail } from "lucide-react";
 import { useState, useContext } from "react";
 import { Input } from "@/components/ui/input";
 import { LayoutContext } from "./context";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaDev, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -81,12 +76,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/help" className="hover:text-blue-400">
+                  <Link href="/contact" className="hover:text-blue-400">
                     {translations?.footer?.help || "Help Center"}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faq" className="hover:text-blue-400">
+                  <Link href="#faq" className="hover:text-blue-400">
                     {translations?.footer?.faq || "FAQ"}
                   </Link>
                 </li>
@@ -136,12 +131,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/help" className="hover:text-blue-400">
+              <Link href="/contact" className="hover:text-blue-400">
                 {translations?.footer?.help || "Help Center"}
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="hover:text-blue-400">
+              <Link href="#faq" className="hover:text-blue-400">
                 {translations?.footer?.faq || "FAQ"}
               </Link>
             </li>
@@ -155,7 +150,7 @@ export default function Footer() {
           </h3>
           <div className="flex flex-row gap-4 mt-2">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
@@ -163,15 +158,15 @@ export default function Footer() {
               <FaFacebookF className="text-xl" />
             </Link>
             <Link
-              href="https://twitter.com"
+              href="https://github.com/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
-              <FaTwitter className="text-xl" />
+              <FaGithub className="text-xl" />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
@@ -179,12 +174,12 @@ export default function Footer() {
               <FaLinkedinIn className="text-xl" />
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://app.daily.dev/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
-              <FaInstagram className="text-xl" />
+              <FaDev className="text-xl" />
             </Link>
           </div>
         </div>

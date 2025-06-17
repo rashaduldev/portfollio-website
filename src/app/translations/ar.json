@@ -1,10 +1,11 @@
 {
   "header": {
-    "brand": "رشادول",
-    "home": "الصفحة الرئيسية",
+    "brand": "رشادولديف",
+    "home": "الرئيسية",
     "projects": "المشاريع",
-    "contact": "اتصل",
-    "github": "جيت هاب",
+    "contact": "اتصل بنا",
+    "github": "جيت هب",
+    "articles": "مقالات",
     "scrollMessage": "رسالة التمرير"
   },
   "cookieConsent": {
@@ -212,8 +213,8 @@
         "id": 7,
         "title": "منشئ كلمة المرور",
         "description": "هذا منشئ بسيط وفعّال لكلمات المرور تم تطويره باستخدام HTML وCSS وJavaScript. يمكن للمستخدمين إنشاء كلمات مرور قوية وعشوائية مع خيارات مخصصة لطول الكلمة وأنواع الأحرف. يتميز بواجهة مستخدم نظيفة وعرض كلمات المرور في الوقت الفعلي، مما يجعله مثاليًا للاحتياجات الأمنية الأساسية.",
-        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
-        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
+        "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748849841/resume/projects/tuflkvvb5zdvm54b79px.png",
+        "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748849841/resume/projects/tuflkvvb5zdvm54b79px.png",
         "techStack": "HTML، CSS، JavaScript",
         "link": "",
         "endtrac": "الواجهة الأمامية",

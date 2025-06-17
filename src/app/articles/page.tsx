@@ -1,11 +1,52 @@
-import DeveloperIsWorking from "@/components/NormalRoute/DevWorking";
+"use client";
+import { useContext } from "react";
+import { LayoutContext } from "@/components/context";
+import Link from "next/link";
+import Image from "next/image";
+import { ArticleItem } from "@/types/translations";
 
-const articels = () => {
+export default function ArticlesPage() {
+  const context = useContext(LayoutContext);
+  if (!context) {
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
+  }
+
+  const articles = context.translations.latestArticlesSection?.articles || [];
+
+  if (articles.length === 0)
+    return <p className="text-center my-20">No articles found.</p>;
+
   return (
-    <div>
-      <DeveloperIsWorking />
-    </div>
-  );
-};
+    <section className="max-w-6xl mx-auto p-6">
+      <h1 className="text-4xl font-bold mb-10 text-center">All Articles</h1>
 
-export default articels;
+      <div className="grid gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        {articles.map((article: ArticleItem) => (
+          <Link
+            key={article.id}
+            href={`/articles/${article.id}`}
+            className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300"
+          >
+            <div className="relative w-full h-48">
+              <Image
+                src={article.imageUrl}
+                alt={article.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <div className="flex justify-between text-xs text-gray-500 mb-2">
+                <span>{article.category}</span>
+                <span>{article.date}</span>
+              </div>
+              <h2 className="text-lg font-semibold">{article.title}</h2>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}

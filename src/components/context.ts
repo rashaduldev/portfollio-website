@@ -1,5 +1,6 @@
-import { PortfolioJSON } from '@/types/translations';
-import { createContext } from 'react';
+// context/LayoutContext.ts
+import { createContext } from "react";
+import { PortfolioJSON } from "@/types/translations";
 
 interface LayoutContextType {
   language: string;

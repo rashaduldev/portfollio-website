@@ -79,6 +79,7 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
 
   return (
     <div
+      id="faq"
       className={`border border-gray-300 dark:border-gray-700 rounded overflow-hidden ${
         isRTL ? "text-right" : "text-left"
       }`}

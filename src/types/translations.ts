@@ -29,6 +29,7 @@ interface HeaderSection {
   projects: string;
   contact: string;
   github: string;
+  articles: string;
   scrollMessage: string;
 }
 
@@ -134,7 +135,8 @@ export interface Project {
 interface ProjectsSection {
   projectsHeading: string;
   trustedProjects: string;
-  viewallproject: string,
+  viewallproject: string;
+  AllProjects: string;
   projects: Project[];
 }
 

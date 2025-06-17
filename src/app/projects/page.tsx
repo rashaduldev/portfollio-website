@@ -75,7 +75,7 @@ const ProjectsPage = () => {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="py-16 max-w-7xl mx-auto transition-colors duration-300 min-h-screen"
+      className="py-16 px-4 max-w-7xl mx-auto transition-colors duration-300 min-h-screen"
     >
       {/* Header */}
       <div
@@ -92,27 +92,27 @@ const ProjectsPage = () => {
         </div>
 
         <h1 className="text-3xl sm:text-4xl font-extrabold flex-1">
-          {projectsSection.trustedProjects || "All Projects"}
+          {projectsSection.AllProjects || "All Projects"}
         </h1>
       </div>
 
       {/* Filters and Sorting */}
       <div
         className={clsx(
-          "flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4",
+          "flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4 flex-wrap",
           isRTL ? "text-right" : "text-left"
         )}
       >
-        <div className="flex flex-wrap gap-2 md:min-w-2xl sm:max-w-xs">
+        <div className="flex flex-wrap gap-2 w-full sm:max-w-2xl">
           {techStacks.map((tech) => (
             <button
               key={tech}
               onClick={() => toggleTech(tech)}
               className={clsx(
-                "px-3 py-1 rounded-full border transition-colors",
+                "px-3 py-1 rounded-full border text-sm transition-colors cursor-pointer",
                 selectedTechs.includes(tech)
-                  ? "bg-orange-500 text-gray-100 border-orange-500"
-                  : "bg-transparent text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-gray-100"
+                  ? "bg-orange-500 text-white border-orange-500"
+                  : "bg-transparent text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white"
               )}
             >
               {tech}
@@ -131,7 +131,7 @@ const ProjectsPage = () => {
             id="sort"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="rounded-md border border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200  px-3 py-1"
+            className="rounded-md border border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-3 py-1"
           >
             <option value="endtrac-desc">End Date (Newest)</option>
             <option value="endtrac-asc">End Date (Oldest)</option>
@@ -144,7 +144,7 @@ const ProjectsPage = () => {
       {/* Projects Grid */}
       <div
         className={clsx(
-          "grid gap-6 sm:grid-cols-2 lg:grid-cols-3",
+          "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",
           isRTL ? "direction-rtl text-right" : "text-left"
         )}
       >
@@ -153,21 +153,19 @@ const ProjectsPage = () => {
             key={item.id}
             className="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col h-full"
           >
-            {/* Content */}
             <div className="flex flex-col flex-grow">
-              {/* Header: Title + Date */}
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 truncate">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 truncate max-w-full">
                   {item.title}
                 </h3>
-                <span className="text-xs font-medium bg-orange-100 text-orange-600 dark:bg-orange-700 dark:text-orange-200 px-3 py-1 rounded-full select-none">
+                <span className="text-xs font-medium bg-orange-100 text-orange-600 dark:bg-orange-700 dark:text-orange-200 px-3 py-1 rounded-full select-none whitespace-nowrap">
                   {item.endtrac}
                 </span>
               </div>
 
-              {/* Images side by side or stacked */}
-              <div className="flex gap-4 mb-4">
-                <div className="relative w-2/3 h-40 rounded-lg overflow-hidden shadow-sm">
+              {/* Images - responsive flex */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                <div className="relative w-full sm:w-2/3 h-40 rounded-lg overflow-hidden shadow-sm">
                   <Image
                     src={item.desktopimage}
                     alt={`${item.title} desktop`}
@@ -176,7 +174,7 @@ const ProjectsPage = () => {
                     priority={idx < 3}
                   />
                 </div>
-                <div className="relative w-1/3 h-40 rounded-lg overflow-hidden shadow-sm hidden sm:block">
+                <div className="relative w-full sm:w-1/3 h-40 rounded-lg overflow-hidden shadow-sm">
                   <Image
                     src={item.mobileimage}
                     alt={`${item.title} mobile`}
@@ -186,12 +184,10 @@ const ProjectsPage = () => {
                 </div>
               </div>
 
-              {/* Description */}
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-4">
                 {item.description}
               </p>
 
-              {/* Tech Stack Badges */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {item.techStack
                   .split(",")
@@ -207,7 +203,7 @@ const ProjectsPage = () => {
               </div>
             </div>
 
-            {/* Footer: Icons with subtle hover */}
+            {/* Footer icons */}
             <div className="flex justify-end gap-6 pt-4 border-t border-gray-200 dark:border-gray-700">
               <Link
                 href={`/projects/${item.id}`}
