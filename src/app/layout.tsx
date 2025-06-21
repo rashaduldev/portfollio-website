@@ -1,9 +1,9 @@
-// app/layout.tsx (or your RootLayout file)
-
+// app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 import { ThemeProvider } from "next-themes";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Md Rashadul Islam – Portfolio",
@@ -71,6 +71,20 @@ export default function RootLayout({
         <title>Md Rashadul Islam – Portfolio</title>
       </head>
       <body className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+        {/* Plausible Analytics Script */}
+        <Script
+          defer
+          data-domain="rashaduldev01.vercel.app"
+          src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`
+            window.plausible = window.plausible || function () {
+              (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+          `}
+        </Script>
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
         </ThemeProvider>
