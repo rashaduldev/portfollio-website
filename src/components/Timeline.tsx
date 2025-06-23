@@ -38,7 +38,7 @@ export default function Timeline() {
             </div>
 
             {/* Card */}
-            <div className="mt-6 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded p-4 text-left">
+            <div className="mt-6 border border-gray-200 dark:border-gray-700 rounded p-4 text-left">
               <h3 className="font-bold text-sm text-gray-500">{year}</h3>
               <p className="font-semibold text-lg text-black dark:text-white mt-1">
                 {edu.title}

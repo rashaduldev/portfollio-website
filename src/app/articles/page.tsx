@@ -19,7 +19,7 @@ export default function ArticlesPage() {
     return <p className="text-center my-20">No articles found.</p>;
 
   return (
-    <section className="max-w-6xl mx-auto p-6">
+    <section className="max-w-7xl mx-auto px-3 md:px-0 mt-24">
       <h1 className="text-4xl font-bold mb-10 text-center">All Articles</h1>
 
       <div className="grid gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">

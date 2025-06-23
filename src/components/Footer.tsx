@@ -43,7 +43,7 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="hover:text-blue-400">
+                  <Link href="/" className="hover:text-blue-400">
                     {translations?.footer?.about || "About Me"}
                   </Link>
                 </li>
@@ -53,7 +53,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy" className="hover:text-blue-400">
+                  <Link href="/cookies-policy" className="hover:text-blue-400">
                     {translations?.footer?.privacy || "Privacy Policy"}
                   </Link>
                 </li>
@@ -97,7 +97,7 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/about" className="hover:text-blue-400">
+              <Link href="/" className="hover:text-blue-400">
                 {translations?.footer?.about || "About Us"}
               </Link>
             </li>
@@ -107,15 +107,15 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/privacy-policy" className="hover:text-blue-400">
+              <Link href="/cookies-policy" className="hover:text-blue-400">
                 {translations?.footer?.privacy || "Privacy Policy"}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/terms" className="hover:text-blue-400">
                 {translations?.footer?.terms || "Terms of Service"}
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

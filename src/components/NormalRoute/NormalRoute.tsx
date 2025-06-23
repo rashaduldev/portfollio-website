@@ -13,20 +13,25 @@ import WorkExperience from "../WorkExperience";
 
 const NormalRoute = () => {
   return (
-    <div className="md:mx-auto mx-5 max-w-7xl">
+    <>
+      {/* Banner full width */}
       <Banner />
-      <SkillsSection />
-      <SkillsMarquee />
-      <WorkExperience />
-      <ProjectsSection />
-      <StatsSection />
-      <TestimonialSection />
-      <WhyChooseMe />
-      <ServicesCarousel />
-      <Timeline />
-      <LatestArticles />
-      <FaqSection />
-    </div>
+
+      {/* Rest of the content within container */}
+      <div className="md:mx-auto mx-5 max-w-7xl">
+        <SkillsSection />
+        <SkillsMarquee />
+        <WorkExperience />
+        <ProjectsSection />
+        <StatsSection />
+        <TestimonialSection />
+        <WhyChooseMe />
+        <ServicesCarousel />
+        <Timeline />
+        <LatestArticles />
+        <FaqSection />
+      </div>
+    </>
   );
 };
 

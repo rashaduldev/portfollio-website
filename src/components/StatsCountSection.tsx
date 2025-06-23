@@ -42,7 +42,7 @@ const StatsSection = () => {
         {stats.map((item, idx) => (
           <div
             key={idx}
-            className="bg-gray-200 dark:bg-gray-800 rounded p-6 flex flex-col items-center text-center transition-transform hover:scale-105 duration-300"
+            className="rounded border border-gray-300 dark:border-gray-700 p-6 flex flex-col items-center text-center transition-transform hover:scale-105 duration-300"
           >
             <div className="text-4xl font-bold mb-2">
               {inView ? (

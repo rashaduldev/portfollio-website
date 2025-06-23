@@ -70,7 +70,7 @@ export default function ClientLayoutWrapper({
       >
         <CookieConsent />
         <Header />
-        <main className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+        <main className="min-h-screen bg-white/60 text-gray-900 dark:bg-black/70 dark:text-gray-100">
           {isHome ? <NormalRoute /> : children}
         </main>
         <Footer />

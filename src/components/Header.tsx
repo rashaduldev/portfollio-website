@@ -27,6 +27,15 @@ export default function Header() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const pathname = usePathname();
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   // Scroll progress effect
   useEffect(() => {
     const updateScrollProgress = () => {
@@ -55,7 +64,13 @@ export default function Header() {
       </div>
 
       {/* 🔵 Main Header */}
-      <header className="w-full shadow relative z-50 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      <header
+        className={`w-full fixed top-0 z-50 text-gray-900 dark:text-gray-100 shadow transition-colors duration-300 ${
+          scrolled
+            ? "bg-white dark:bg-gray-950"
+            : "bg-white/10 dark:bg-black/10"
+        }`}
+      >
         <div className="max-w-7xl md:mx-auto mx-5 py-4 flex items-center justify-between relative">
           <div className={isRTL ? "absolute" : "absolute"}>
             <Link href="/" className="text-xl font-bold">

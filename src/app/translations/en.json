@@ -15,9 +15,9 @@
     "terms": "Terms and Condition"
   },
   "main": {
-    "subtitle": "Hello",
-    "title": "I am Rashadul Islam",
-    "description": "Frontend Web Developer from Dhaka, passionate about Laravel and React.js. Currently working at Uysystems as a Frontend Web Developer, I focus on building error-free web applications and solving real-world problems. I enjoy learning, sharing knowledge, and improving web performance. Skilled in ReactJS, JavaScript, and PHP, I'm also learning React Native, Node.js, Next.js, MongoDB, and Flutter. I love collaborating on Laravel and MERN Stack projects and exploring new places in my free time.",
+    "subtitle": "Hi there, I'm",
+    "title": "Rashadul Islam",
+    "description": "I'm a Frontend Web Developer with a strong passion for creating error-free, responsive websites that ensure 100% client satisfaction. Skilled in JavaScript and TypeScript, I work with modern frameworks like React.js, Next.js, and Vue.js, and design using Tailwind CSS and Bootstrap. I also have experience with backend technologies like Node.js, Express.js, and databases including MongoDB, Mongoose, SQL, and PostgreSQL. I use tools like Git, Firebase, Cloudinary, JetBrains, and cPanel to streamline development. I'm always eager to learn new technologies and improve my craft.",
     "leftbutton": "Let's go",
     "resume": "Download Resume"
   },

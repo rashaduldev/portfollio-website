@@ -55,7 +55,7 @@ const Page = () => {
     <div
       dir={isRTL ? "rtl" : "ltr"}
       className={clsx(
-        "min-h-screen transition-colors duration-300",
+        "min-h-screen transition-colors duration-300 mt-[68px]",
         resolvedTheme === "dark"
           ? "bg-gray-900 text-gray-100"
           : "bg-white text-gray-900"

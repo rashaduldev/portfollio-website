@@ -68,7 +68,7 @@ export default function ServicesCarousel() {
           <button
             onClick={() => scroll("left")}
             aria-label="Scroll left"
-            className={`absolute top-1/2 -translate-y-1/2 z-10 p-2 border border-gray-300 dark:border-gray-700 rounded-full bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer ${
+            className={`absolute top-1/2 -translate-y-1/2 z-10 p-2 border border-gray-300 dark:border-gray-700 rounded-full bg-gray-100 dark:bg-gray-700 transition-all duration-300 cursor-pointer ${
               isRTL ? "right-0" : "left-0"
             }`}
           >
@@ -89,7 +89,7 @@ export default function ServicesCarousel() {
             {services.map((service, idx) => (
               <div
                 key={idx}
-                className="min-w-[280px] max-w-sm bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out"
+                className="min-w-[280px] max-w-sm border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out"
               >
                 {service.image && (
                   <Image
@@ -101,7 +101,7 @@ export default function ServicesCarousel() {
                   />
                 )}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800  mb-2">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 mb-2">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">

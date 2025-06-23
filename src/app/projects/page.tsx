@@ -75,7 +75,7 @@ const ProjectsPage = () => {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="py-16 px-4 max-w-7xl mx-auto transition-colors duration-300 min-h-screen"
+      className="pb-16 px-3 md:px-0 max-w-7xl mx-auto transition-colors duration-300 min-h-screen mt-24"
     >
       {/* Header */}
       <div

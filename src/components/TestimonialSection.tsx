@@ -77,7 +77,7 @@ const TestimonialSection: React.FC = () => {
           {testimonialsSection.testimonials.map((testimonial, index) => (
             <SwiperSlide
               key={index}
-              className="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center"
+              className="border border-gray-300 dark:border-gray-700 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center"
               style={{ width: "380px", transition: "transform 0.3s ease" }}
             >
               <div className="w-32 h-32 rounded-full overflow-hidden mb-6">

@@ -26,7 +26,7 @@ export default function WorkExperience() {
       <div className="relative">
         {/* Vertical Line */}
         <div
-          className={`absolute bg-gray-300 dark:bg-gray-900 border rounded-2xl ${
+          className={`absolute border rounded-2xl ${
             isRTL
               ? "md:left-auto md:right-1/2 right-0"
               : "md:right-auto md:left-1/2 left-0"
@@ -61,7 +61,7 @@ export default function WorkExperience() {
                     isRTL ? "text-right" : "text-left"
                   }`}
                 >
-                  <div className="bg-gray-200 dark:bg-gray-800 shadow-md rounded p-6 border border-transparent hover:border-gray-400 dark:hover:border-gray-400 transition-all duration-300 group hover:shadow-lg">
+                  <div className="rounded p-6 border border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-700 transition-all duration-300 group hover:shadow-lg">
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-semibold">{exp.title}</p>

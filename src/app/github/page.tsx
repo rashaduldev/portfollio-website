@@ -126,7 +126,7 @@ export default function GithubProjects() {
   }
 
   return (
-    <main className="max-w-7xl mx-auto py-6">
+    <main className="max-w-7xl mx-auto mt-24 px-3 md:px-0">
       {/* Profile Section */}
       {user && (
         <section

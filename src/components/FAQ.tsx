@@ -87,7 +87,7 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
     >
       <button
         onClick={onClick}
-        className={`w-full flex justify-between items-center p-4 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer ${
+        className={`w-full flex justify-between items-center p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer ${
           isRTL ? "flex-row" : ""
         }`}
       >

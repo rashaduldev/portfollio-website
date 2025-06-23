@@ -70,7 +70,7 @@ const ProjectDetailsPage = () => {
 
   return (
     <div
-      className={`p-6 max-w-5xl mx-auto min-h-screen transition-colors duration-300 ${
+      className={`py-6 mt-24 max-w-5xl mx-auto min-h-screen transition-colors duration-300 ${
         isRTL ? "text-right" : "text-left"
       }`}
     >

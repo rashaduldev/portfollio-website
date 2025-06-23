@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CookiesPolicy() {
   return (
-    <main className="max-w-7xl mx-auto my-12 rounded overflow-hidden border">
+    <main className="max-w-7xl mx-auto mt-24 rounded overflow-hidden border px-3 md:px-0 my-10">
       {/* Hero Image Section */}
       <div className="relative w-full h-64 sm:h-96">
         <Image
