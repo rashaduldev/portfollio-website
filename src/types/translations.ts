@@ -43,6 +43,7 @@ interface CookieConsentSection {
 interface MainSection {
   subtitle: string;
   title: string;
+  stack: string;
   description: string;
   leftbutton: string;
   resume: string;
@@ -108,7 +109,6 @@ interface FooterSection {
   resources: string;
   articles: string;
   help: string;
-  faq: string;
   follow: string;
   newsletter: string;
   newsletterDesc: string;

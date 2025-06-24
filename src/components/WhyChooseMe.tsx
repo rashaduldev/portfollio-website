@@ -6,6 +6,7 @@ import { FeatureItem } from "@/types/translations";
 import { LayoutContext } from "./context";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WhyChooseMe() {
   const context = useContext(LayoutContext);
@@ -41,7 +42,13 @@ export default function WhyChooseMe() {
               {sectionTitle}
             </h2>
           </div>
-          <p className="leading-relaxed text-justify max-w-md">
+          <Image
+            src="https://res.cloudinary.com/de8yddexc/image/upload/v1750757476/why_c_m_ydxgsn.png"
+            alt="why choose me"
+            width={400}
+            height={300}
+          />
+          <p className="leading-relaxed text-justify max-w-xl">
             {/* Optional description text if you want more context */}
             {section.description}
           </p>
@@ -70,7 +77,7 @@ export default function WhyChooseMe() {
                 <span className="text-xs font-mono text-orange-500 dark:text-orange-300">
                   [#]
                 </span>
-                <h3 className="text-lg font-semibold text-gray-900 ">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
                   {feature.title}
                 </h3>
               </div>

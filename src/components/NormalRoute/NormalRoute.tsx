@@ -17,14 +17,20 @@ const NormalRoute = () => {
       {/* Banner full width */}
       <Banner />
 
-      {/* Rest of the content within container */}
+      {/* Container content */}
       <div className="md:mx-auto mx-5 max-w-7xl">
         <SkillsSection />
         <SkillsMarquee />
         <WorkExperience />
         <ProjectsSection />
         <StatsSection />
-        <TestimonialSection />
+      </div>
+
+      {/* Testimonial section full width and centered in layout */}
+      <TestimonialSection />
+
+      {/* Continue container content */}
+      <div className="md:mx-auto mx-5 max-w-7xl">
         <WhyChooseMe />
         <ServicesCarousel />
         <Timeline />

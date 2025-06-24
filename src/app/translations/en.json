@@ -17,6 +17,7 @@
   "main": {
     "subtitle": "Hi there, I'm",
     "title": "Rashadul Islam",
+    "stack": "Frontend Developer",
     "description": "I'm a Frontend Web Developer with a strong passion for creating error-free, responsive websites that ensure 100% client satisfaction. Skilled in JavaScript and TypeScript, I work with modern frameworks like React.js, Next.js, and Vue.js, and design using Tailwind CSS and Bootstrap. I also have experience with backend technologies like Node.js, Express.js, and databases including MongoDB, Mongoose, SQL, and PostgreSQL. I use tools like Git, Firebase, Cloudinary, JetBrains, and cPanel to streamline development. I'm always eager to learn new technologies and improve my craft.",
     "leftbutton": "Let's go",
     "resume": "Download Resume"
@@ -301,10 +302,6 @@
       "description": "My projects are structured and coded with SEO best practices to improve visibility on search engines."
     },
     {
-      "title": "Strong Communication",
-      "description": "I ensure clear, transparent communication and timely updates throughout the project."
-    },
-    {
       "title": "Custom Admin Panel",
       "description": "I develop easy-to-manage custom admin panels so you can control your site without technical knowledge."
     },
@@ -321,7 +318,7 @@
       "description": "I quickly identify and fix bugs to ensure smooth and error-free user experiences."
     },
     {
-      "title": "Client Training & Support",
+      "title": "Client Support",
       "description": "After project delivery, I offer guidance and support to help you maintain and update your site confidently."
     }
   ]
@@ -367,7 +364,6 @@
     "resources": "Resources",
     "articles": "Articles",
     "help": "Help Center",
-    "faq": "FAQ",
     "follow": "Follow Me",
     "newsletter": "Subscribe to My Newsletter",
     "newsletterDesc": "Get the latest updates and offers.",

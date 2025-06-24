@@ -4,6 +4,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { LayoutContext } from "@/components/context";
 import { FaChevronDown } from "react-icons/fa";
 import { FAQ } from "@/types/translations";
+import { TypeAnimation } from "react-type-animation";
 
 export default function FaqSection() {
   const context = useContext(LayoutContext);
@@ -103,7 +104,17 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
         className="overflow-hidden transition-all duration-500 ease-in-out"
         style={{ height }}
       >
-        <div className="p-4">{faq.answer}</div>
+        <div className="p-4">
+          {isOpen && (
+            <TypeAnimation
+              sequence={[faq.answer, 1000]}
+              wrapper="span"
+              speed={50}
+              repeat={0}
+              cursor={true}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

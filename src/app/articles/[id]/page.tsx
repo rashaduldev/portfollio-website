@@ -1,6 +1,6 @@
 "use client";
 
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useMemo } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import { LayoutContext } from "@/components/context";
@@ -11,11 +11,12 @@ type ArticleItem = {
   imageUrl: string;
   category: string;
   date: string;
+  content?: string; // Optional content field
 };
 
 export default function ArticleDetailsClient() {
   const params = useParams();
-  const id = params?.id;
+  const id = Array.isArray(params.id) ? params.id[0] : params.id;
 
   const context = useContext(LayoutContext);
   if (!context) {
@@ -24,8 +25,14 @@ export default function ArticleDetailsClient() {
     );
   }
 
-  const articles: ArticleItem[] =
-    context.translations.latestArticlesSection?.articles || [];
+  if (!context.translations?.latestArticlesSection) {
+    throw new Error("Translations or articles section not available");
+  }
+
+  const articles = useMemo(
+    () => context.translations.latestArticlesSection.articles || [],
+    [context.translations.latestArticlesSection.articles]
+  );
 
   const [article, setArticle] = useState<ArticleItem | null>(null);
   const [likes, setLikes] = useState<number>(0);
@@ -35,35 +42,78 @@ export default function ArticleDetailsClient() {
   useEffect(() => {
     if (!id) return;
 
-    // Find article by id (convert both to string for safety)
     const found = articles.find((a) => String(a.id) === String(id));
     setArticle(found || null);
 
-    // Load likes from localStorage
-    const storedLikes = localStorage.getItem(`likes-${id}`);
-    if (storedLikes) setLikes(Number(storedLikes));
+    try {
+      const storedLikes = localStorage.getItem(`likes-${id}`);
+      if (storedLikes) setLikes(Number(storedLikes));
 
-    // Load comments from localStorage
-    const storedComments = JSON.parse(
-      localStorage.getItem(`comments-${id}`) || "[]"
-    );
-    setComments(storedComments);
+      const storedComments = JSON.parse(
+        localStorage.getItem(`comments-${id}`) || "[]"
+      );
+      setComments(storedComments);
+    } catch (error) {
+      console.error("Error accessing localStorage:", error);
+      setLikes(0);
+      setComments([]);
+    }
   }, [id, articles]);
 
   const handleLike = () => {
     if (!id) return;
     const updatedLikes = likes + 1;
     setLikes(updatedLikes);
-    localStorage.setItem(`likes-${id}`, updatedLikes.toString());
+    try {
+      localStorage.setItem(`likes-${id}`, updatedLikes.toString());
+    } catch (error) {
+      console.error("Error saving to localStorage:", error);
+    }
+  };
+
+  const handleShare = async () => {
+    const shareData = {
+      title: article?.title || "Article",
+      url: window.location.href,
+    };
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        console.error("Error sharing:", error);
+      }
+    } else {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+      } catch (error) {
+        console.error("Error copying to clipboard:", error);
+      }
+    }
   };
 
   const handleComment = () => {
-    if (!id || newComment.trim() === "") return;
+    if (!id || newComment.trim() === "" || newComment.length > 500) {
+      alert("Comment must be between 1 and 500 characters.");
+      return;
+    }
     const updatedComments = [...comments, newComment.trim()];
     setComments(updatedComments);
-    localStorage.setItem(`comments-${id}`, JSON.stringify(updatedComments));
+    try {
+      localStorage.setItem(`comments-${id}`, JSON.stringify(updatedComments));
+    } catch (error) {
+      console.error("Error saving to localStorage:", error);
+    }
     setNewComment("");
   };
+
+  if (!id) {
+    return (
+      <div className="p-4 text-center text-gray-600 dark:text-gray-300">
+        Invalid article ID
+      </div>
+    );
+  }
 
   if (!article) {
     return (
@@ -74,7 +124,7 @@ export default function ArticleDetailsClient() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-4 md:p-0 mt-24 space-y-6">
+    <div className="max-w-4xl mx-auto py-4 md:p-0 mt-24 space-y-6 mb-10">
       <h1 className="text-3xl font-bold">{article.title}</h1>
       <div className="text-sm text-gray-500">
         <span>{article.category}</span> • <span>{article.date}</span>
@@ -88,35 +138,28 @@ export default function ArticleDetailsClient() {
         className="w-full h-96 object-cover rounded"
       />
 
-      {/* Placeholder content */}
       <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-        This is the article content placeholder.
+        {article.content || "This is the article content placeholder."}
       </p>
 
       <div className="flex items-center gap-4 mt-4">
         <button
           onClick={handleLike}
+          aria-label={`Like article, ${likes} likes`}
           className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
         >
           ❤️ Like ({likes})
         </button>
 
-        {typeof navigator !== "undefined" && navigator.share && (
-          <button
-            onClick={() =>
-              navigator.share({
-                title: article.title,
-                url: window.location.href,
-              })
-            }
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          >
-            🔗 Share
-          </button>
-        )}
+        <button
+          onClick={handleShare}
+          aria-label="Share article"
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          🔗 Share
+        </button>
       </div>
 
-      {/* Comments Section */}
       <div className="mt-8">
         <h3 className="text-xl font-semibold mb-2">
           Comments ({comments.length})
@@ -139,6 +182,7 @@ export default function ArticleDetailsClient() {
             onChange={(e) => setNewComment(e.target.value)}
             placeholder="Write a comment..."
             className="flex-1 px-4 py-2 border rounded dark:bg-gray-800 dark:text-white"
+            aria-label="Comment input"
           />
           <button
             onClick={handleComment}

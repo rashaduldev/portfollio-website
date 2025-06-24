@@ -80,11 +80,6 @@ export default function Footer() {
                     {translations?.footer?.help || "Help Center"}
                   </Link>
                 </li>
-                <li>
-                  <Link href="#faq" className="hover:text-blue-400">
-                    {translations?.footer?.faq || "FAQ"}
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
@@ -133,11 +128,6 @@ export default function Footer() {
             <li>
               <Link href="/contact" className="hover:text-blue-400">
                 {translations?.footer?.help || "Help Center"}
-              </Link>
-            </li>
-            <li>
-              <Link href="#faq" className="hover:text-blue-400">
-                {translations?.footer?.faq || "FAQ"}
               </Link>
             </li>
           </ul>

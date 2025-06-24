@@ -15,7 +15,7 @@ import {
   FaGithub,
   FaEnvelope,
 } from "react-icons/fa";
-
+import { TypeAnimation } from "react-type-animation";
 export default function Banner() {
   const context = useContext(LayoutContext);
   if (!context) {
@@ -48,9 +48,19 @@ export default function Banner() {
             {translations?.main?.subtitle || "Hi there, I'm"}
           </h3>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white mb-4">
-            {translations?.main?.title || "Md Rashadul Islam"}
+            <TypeAnimation
+              sequence={[
+                translations?.main?.title || "Rashadul Islam",
+                1000, // Wait 1 second before switching
+                translations?.main?.stack || "Frontend Developer",
+                1000, // Wait 1 second before repeating
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
-          <p className="text-base sm:text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-6 max-w-prose md:max-w-2xl text-justify">
+          <p className="text-base sm:text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-6 max-w-prose md:min-w-2xl text-justify">
             {translations?.main?.description ||
               "I build interactive and responsive web applications using modern web technologies. Let's turn your ideas into reality."}
           </p>
@@ -126,14 +136,14 @@ export default function Banner() {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 flex justify-center md:justify-end relative mt-10 md:mt-0 md:mr-[90px]">
+        <div className="flex-1 flex justify-center md:justify-end relative mt-10 md:mt-0 md:me-[90px]">
           {/* Extra Circle 1 */}
           <div
             className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#14AE89] pointer-events-none animate-circleFloat`}
             style={
               isRTL
-                ? { top: "-90px", right: "178px", zIndex: 0 }
-                : { top: "-90px", left: "178px", zIndex: 0 }
+                ? { top: "-90px", right: "68px", zIndex: 0 }
+                : { top: "-90px", left: "68px", zIndex: 0 }
             }
           />
 
@@ -142,8 +152,8 @@ export default function Banner() {
             className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#CBE333] pointer-events-none animate-circleFloatReverse`}
             style={
               isRTL
-                ? { bottom: "-70px", left: "-90px", zIndex: 0 }
-                : { bottom: "-70px", right: "-90px", zIndex: 0 }
+                ? { bottom: "-90px", left: "-90px", zIndex: 0 }
+                : { bottom: "-90px", right: "-90px", zIndex: 0 }
             }
           />
 
@@ -157,10 +167,10 @@ export default function Banner() {
             {/* Actual Image */}
             <div className="absolute inset-[20px] z-30 overflow-hidden animate-imageFloat">
               <Image
-                src="https://res.cloudinary.com/de8yddexc/image/upload/v1747461829/resume/banner.png"
+                src="https://res.cloudinary.com/de8yddexc/image/upload/c_crop,ar_1:1/v1750745977/rashadul-removebg-preview_svemu4.png"
                 alt="Profile"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 className="object-cover"
                 priority
               />
