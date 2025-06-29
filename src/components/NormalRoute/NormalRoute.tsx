@@ -7,7 +7,7 @@ import SkillsMarquee from "../SkillsMarquee";
 import SkillsSection from "../SkillsSection";
 import StatsSection from "../StatsCountSection";
 import TestimonialSection from "../TestimonialSection";
-import Timeline from "../Timeline";
+import Timeline from "../Education";
 import WhyChooseMe from "../WhyChooseMe";
 import WorkExperience from "../WorkExperience";
 

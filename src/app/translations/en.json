@@ -56,7 +56,7 @@
     { "value": 29, "label": "Project Completed" },
     { "value": 6, "label": "Award Winner" },
     { "value": 99, "label": "Client Satisfaction" },
-    { "value": 1.6, "label": "Year of Experience" }
+    { "value": 1.6, "label": "Years of Experience" }
   ]
 },
 "experienceHeading": "Work Experience",
@@ -133,14 +133,25 @@
   "AllProjects": "All Projects",
   "viewallproject": "View all project",
   "projects": [
+      {
+    "id": 11,
+    "title": "HTML_tailwind_dashboard",
+    "description": "A fully responsive CRM dashboard built with pure HTML and Tailwind CSS—no frameworks or libraries used. Clean UI, mobile-friendly layout, and lightweight design focused on frontend presentation only.",
+    "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1750859245/html-tailwind-dashboard-vercel-app_dregzi.jpg",
+    "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1750859408/53bc20bf-3f99-4128-a240-d299dff8554c.png",
+    "techStack": "HTML5, CSS3, Tailwind, JavaScript, Ajax",
+    "endtrac": "Frontend",
+    "githubLink": "https://github.com/rashaduldev/HTML_tailwind_dashboard",
+    "liveLink": "https://html-tailwind-dashboard.vercel.app",
+    "status": "Latest"
+  },
     {
       "id": 1,
       "title": "Tourisom & Travels",
-      "description": "A full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js), offering seamless booking, destination exploration, and user management. Features include dynamic tour packages, secure authentication, a user-friendly interface, and responsive design for an enhanced travel planning experience.",
+      "description": "A MERN-Stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js), offering seamless booking, destination exploration, and user management. Features include dynamic tour packages, secure authentication, a user-friendly interface, and responsive design for an enhanced travel planning experience.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033657/resume/tour-desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747033652/resume/tour-mobile.png",
-      "techStack": "React.js,Tailwind CSS3,Node.js,Express,MongoDB,Firebase",
-      "link": "",
+      "techStack": "MongoDB,Express,React.js,Node.js,Tailwind,Firebase",
       "endtrac": "Mern-Stack",
       "githubLink": "https://github.com/rashaduldev/Tourist-Guide-Client",
       "liveLink": "https://tour-guide-theta.vercel.app",
@@ -152,9 +163,8 @@
       "description": "A responsive frontend application built with Next.js and Tailwind CSS, designed for seamless user interaction and dynamic content management. The project offers a clean UI, fast performance, and optimized navigation for enhanced user experience. It includes modern design principles and responsive layouts, ensuring accessibility across all devices.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747463326/resume/projects/trade-venture-web.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1747463389/resume/projects/tradeventure-mobile.png",
-      "techStack": "Next.js,Tailwind CSS3",
-      "link": "",
-      "endtrac": "Frontend Next.js",
+      "techStack": "Next.js,Tailwind,recharts,JavaScript,Daisyui",
+      "endtrac": "Frontend",
       "githubLink": "https://github.com/rashaduldev/Trade-Venture",
       "liveLink": "https://trade-venture-roan.vercel.app",
       "status": "Old"
@@ -165,8 +175,7 @@
       "description": "The SSL Garments System (Frontend) is a dynamic and responsive web application designed to manage garment production processes. Developed using Next.js and Tailwind CSS, this frontend interface enables users to interact with the garment management system, track orders, view inventory, and manage production workflows. The application features a user-friendly design with a focus on performance, offering a seamless experience across various devices.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748273205/resume/projects/djg28flqsbthxqy2h52t.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748273205/resume/projects/djg28flqsbthxqy2h52t.png",
-      "techStack": "React.js,Tailwind CSS3,JavaScript",
-      "link": "",
+      "techStack": "React.js,Tailwind,JavaScript,Tsparticles",
       "githubLink": "https://github.com/rashaduldev/ssl",
       "liveLink": "https://stylorium.net",
       "status": "Latest",
@@ -179,11 +188,11 @@
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748169533/resume/projects/qdmydctclgsjll5kgq53.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748169533/resume/projects/qdmydctclgsjll5kgq53.png",
       "techStack": "HTML5, CSS3, React.js, JavaScript",
-      "link": "",
-      "endtrac": "Fullstack",
+      
+      "endtrac": "Frontend",
       "githubLink": "https://github.com/rashaduldev/Course-learning-Front-end",
       "liveLink": "https://learning.tripleibd.com",
-      "status": "Latest"
+      "status": "Old"
     },
       {
       "id": 5,
@@ -192,8 +201,8 @@
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350185/resume/projects/o6dhdvvx4amajp2bg3wf.png",
       "techStack": "HTML5, CSS3, JavaScript",
-      "link": "",
-      "endtrac": "Backend",
+      
+      "endtrac": "Frontend",
       "githubLink": "https://github.com/rashaduldev/Digital-clock",
       "liveLink": "https://rashaduldev.github.io/Digital-clock",
       "status": "Old"
@@ -204,11 +213,11 @@
       "description": "About Responsive portfolio website built from a Figma design using Next.js (or Astro) and Tailwind CSS. Features include SEO optimization, accessibility, animations, and performance tuning with 95+ PageSpeed score. Deployed on Vercel/Netlify with full documentation.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748271515/resume/projects/desktop.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748271561/resume/projects/mobile.png",
-      "techStack": "React.js, Node.js, MongoDB, Tailwind CSS3, Next.js, TypeScript",
-      "link": "",
-      "endtrac": "Fullstack",
-      "githubLink": "https://github.com/rashaduldev",
-      "liveLink": "https://github.com/rashaduldev",
+      "techStack": "Next.js,Tailwind, TypeScript",
+      
+      "endtrac": "Frontend",
+      "githubLink": "https://github.com/rashaduldev/Functional-Portfollio-Frontend",
+      "liveLink": "https://functional-portfollio-frontend-rash.vercel.app",
       "status": "Latest"
     },
     {
@@ -218,7 +227,7 @@
     "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748849841/resume/projects/tuflkvvb5zdvm54b79px.png",
     "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748849841/resume/projects/tuflkvvb5zdvm54b79px.png",
     "techStack": "HTML5, CSS3, JavaScript",
-    "link": "",
+    
     "endtrac": "Frontend",
     "githubLink": "https://github.com/rashaduldev/Password-Generator-Js",
     "liveLink": "https://rashaduldev.github.io/Password-Generator-Js",
@@ -230,8 +239,8 @@
       "description": "A full-featured ecommerce platform built from scratch using the Frontend. The project includes user authentication, product management, shopping cart functionality, secure checkout, and order tracking. It also features an admin dashboard for managing inventory, orders, and customers. Optimized for both desktop and mobile experiences.",
       "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748168335/resume/projects/a%20to%20z.png",
       "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748168335/resume/projects/a%20to%20z.png",
-      "techStack": "React.js, Node.js, MongoDB",
-      "link": "",
+      "techStack": "React.js, MongoDB",
+      
       "endtrac": "Frontend",
       "githubLink": "https://github.com/rashaduldev",
       "liveLink": "https://github.com/rashaduldev",
@@ -243,37 +252,50 @@
     "description": "Airbook is a full-stack web application designed to simulate an airline booking experience. Users can explore flight options, book tickets, and manage bookings. The frontend is developed using React for a responsive UI, while the backend uses Node.js and MongoDB to handle data management and authentication.",
     "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
     "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1748350186/resume/projects/xibwsr65tdfjifvy3nd5.png",
-    "techStack": "React.js, Node.js, MongoDB",
-    "link": "",
-    "endtrac": "Fullstack",
+    "techStack": "React.js",
+    
+    "endtrac": "Frontend",
     "githubLink": "https://github.com/rashaduldev/Airbook-Front-end-Project",
     "liveLink": "https://zippy-trouble.surge.sh",
     "status": "Old"
+  },
+    {
+    "id": 10,
+    "title": "Tourist-Guide-Server",
+    "description": "The Tourist-Guide-Server is a robust backend for a travel planning platform, enabling seamless itinerary management and user authentication. Built with Node.js, Express, and MongoDB, it uses Mongoose for efficient data handling and JWT for secure authentication.",
+    "desktopimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1750858561/4125f1f9-dc21-44c1-91f5-6c901b9b7996.png",
+    "mobileimage": "https://res.cloudinary.com/de8yddexc/image/upload/v1750858561/4125f1f9-dc21-44c1-91f5-6c901b9b7996.png",
+    "techStack": "Node.js,Express,JWT,MongoDB,Mongoose",
+    
+    "endtrac": "Backend",
+    "githubLink": "https://github.com/rashaduldev/Tourist-Guide-Server",
+    "liveLink": "https://tourist-guide-server-tawny.vercel.app",
+    "status": "Latest"
   }
   ]
 },
   "Educationheading": "Education",
   "education": {
     "2020": {
-      "title": "SSC",
+      "title": "Secondary School Certificate (SSC)",
       "company": "Nawdabash High School",
       "department": "Science",
       "description": "Completed Secondary School Certificate with a focus on general science and foundational computing skills."
     },
     "2021": {
-      "title": "HSC",
+      "title": "Higher Secondary Certificate (HSC)",
       "company": "Kurigram Govt Collage",
       "department": "Science",
       "description": "Passed Higher Secondary Certificate specializing in Science, with strong interest in mathematics and ICT."
     },
     "2023": {
-      "title": "Diploma in Eng:",
+      "title": "Diploma in Engineering (Diploma in CSE)",
       "company": "Dhaka Polytechnic Institute",
       "department": "Computer Science & Technology",
       "description": "Gained hands-on experience in programming, networking, and database management during a 4-year diploma program."
     },
     "2025": {
-      "title": "BSC",
+      "title": "Bachelor of Science (BSC)",
       "company": "Green University of Bangladesh",
       "department": "BSc in CSE",
       "description": "Pursuing a Bachelor's degree in Computer Science and Engineering focusing on full-stack development and modern technologies."

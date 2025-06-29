@@ -1,4 +1,5 @@
 "use client";
+
 import { useContext } from "react";
 import Image from "next/image";
 import { LayoutContext } from "./context";
@@ -16,8 +17,11 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+
 export default function Banner() {
   const context = useContext(LayoutContext);
+
   if (!context) {
     throw new Error(
       "LayoutContext must be used within a LayoutContext.Provider"
@@ -28,7 +32,7 @@ export default function Banner() {
 
   return (
     <section
-      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed mt-5"
       style={{
         backgroundImage:
           "url('https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740')",
@@ -43,7 +47,12 @@ export default function Banner() {
         }`}
       >
         {/* Left Content */}
-        <div className={`flex-1 ${isRTL ? "text-right" : "text-left"}`}>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className={`flex-1 ${isRTL ? "text-right" : "text-left"}`}
+        >
           <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-2">
             {translations?.main?.subtitle || "Hi there, I'm"}
           </h3>
@@ -51,9 +60,9 @@ export default function Banner() {
             <TypeAnimation
               sequence={[
                 translations?.main?.title || "Rashadul Islam",
-                1000, // Wait 1 second before switching
+                1000,
                 translations?.main?.stack || "Frontend Developer",
-                1000, // Wait 1 second before repeating
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -67,36 +76,36 @@ export default function Banner() {
 
           {/* Social Icons */}
           <div className="flex items-center gap-3 mb-6 flex-wrap">
-            <a
+            <Link
               href="https://linkedin.com/in/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-gray-200 hover:bg-blue-600 text-blue-600 hover:text-white flex items-center justify-center transition dark:bg-gray-700 dark:text-white dark:hover:bg-blue-500"
             >
               <FaLinkedinIn size={16} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-gray-200 hover:bg-gray-900 text-gray-900 hover:text-white flex items-center justify-center transition dark:bg-gray-700 dark:text-white"
             >
               <FaGithub size={16} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:rashadul.dev@gmail.com"
               className="w-9 h-9 rounded-full bg-gray-200 hover:bg-red-500 text-red-500 hover:text-white flex items-center justify-center transition dark:bg-gray-700 dark:text-white"
             >
               <FaEnvelope size={16} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://facebook.com/rashaduldev"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-gray-200 hover:bg-blue-500 text-blue-500 hover:text-white flex items-center justify-center transition dark:bg-gray-700 dark:text-white"
             >
               <FaFacebookF size={16} />
-            </a>
+            </Link>
           </div>
 
           {/* Buttons */}
@@ -133,12 +142,20 @@ export default function Banner() {
               </Link>
             </Button>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right Image */}
-        <div className="flex-1 flex justify-center md:justify-end relative mt-10 md:mt-0 md:me-[90px]">
-          {/* Extra Circle 1 */}
-          <div
+        {/* Right Image Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className="flex-1 flex justify-center md:justify-end relative mt-10 md:mt-0 md:me-[90px]"
+        >
+          {/* Circle 1 */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.4 }}
             className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#14AE89] pointer-events-none animate-circleFloat`}
             style={
               isRTL
@@ -147,8 +164,11 @@ export default function Banner() {
             }
           />
 
-          {/* Extra Circle 2 */}
-          <div
+          {/* Circle 2 */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
             className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#CBE333] pointer-events-none animate-circleFloatReverse`}
             style={
               isRTL
@@ -157,14 +177,18 @@ export default function Banner() {
             }
           />
 
-          <div className="relative w-[260px] h-[260px] md:w-[300px] md:h-[300px] z-10">
-            {/* Top Half Dotted Border */}
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.8 }}
+            className="relative w-[260px] h-[260px] md:w-[300px] md:h-[300px] z-10"
+          >
+            {/* Top Half Border */}
             <div className="absolute top-0 left-0 w-full h-1/2 border-[3px] border-dotted border-[#14AE89] border-b-0 z-0" />
-
-            {/* Bottom Half Dotted Border */}
+            {/* Bottom Half Border */}
             <div className="absolute bottom-0 left-0 w-full h-1/2 border-[3px] border-dotted border-orange-300 border-t-0 z-0" />
 
-            {/* Actual Image */}
+            {/* Image */}
             <div className="absolute inset-[20px] z-30 overflow-hidden animate-imageFloat">
               <Image
                 src="https://res.cloudinary.com/de8yddexc/image/upload/c_crop,ar_1:1/v1750745977/rashadul-removebg-preview_svemu4.png"
@@ -175,8 +199,8 @@ export default function Banner() {
                 priority
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

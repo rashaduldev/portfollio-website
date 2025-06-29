@@ -1,5 +1,3 @@
-// components/LatestArticles.tsx
-
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -61,15 +59,13 @@ export default function LatestArticles() {
             transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
             className="flex flex-col border border-gray-200 dark:border-gray-700 rounded overflow-hidden"
           >
-            <Link href={`/articles/${article.id}`}>
-              <Image
-                src={article.imageUrl}
-                alt={article.title}
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-              />
-            </Link>
+            <Image
+              src={article.imageUrl}
+              alt={article.title}
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
             <div className="p-4 flex-1 flex flex-col justify-between">
               <div
                 className={`flex justify-between text-xs ${

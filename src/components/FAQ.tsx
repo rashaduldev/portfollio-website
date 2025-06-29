@@ -5,6 +5,7 @@ import { LayoutContext } from "@/components/context";
 import { FaChevronDown } from "react-icons/fa";
 import { FAQ } from "@/types/translations";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 export default function FaqSection() {
   const context = useContext(LayoutContext);
@@ -38,10 +39,16 @@ export default function FaqSection() {
           "We’ve compiled answers to the most common queries."}
       </p>
 
-      <div className="space-y-4">
+      <motion.div
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ staggerChildren: 0.15 }}
+      >
         {faqs?.items?.length ? (
           faqs.items.map((faq, index) => (
-            <FAQItem
+            <AnimatedFAQItem
               key={index}
               faq={faq}
               isOpen={activeIndex === index}
@@ -54,10 +61,16 @@ export default function FaqSection() {
             No FAQs available at the moment.
           </p>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 }
+
+// animation variant for items
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 type FAQItemProps = {
   faq: FAQ;
@@ -66,7 +79,7 @@ type FAQItemProps = {
   isRTL: boolean;
 };
 
-function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
+function AnimatedFAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState("0px");
 
@@ -79,8 +92,8 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
   }, [isOpen]);
 
   return (
-    <div
-      id="faq"
+    <motion.div
+      variants={itemVariants}
       className={`border border-gray-300 dark:border-gray-700 rounded overflow-hidden ${
         isRTL ? "text-right" : "text-left"
       }`}
@@ -116,6 +129,6 @@ function FAQItem({ faq, isOpen, onClick, isRTL }: FAQItemProps) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

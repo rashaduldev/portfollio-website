@@ -234,6 +234,22 @@ export default function Header() {
             >
               {translations?.header?.contact || "Contact"}
             </Link>
+            <Link
+              href="/github"
+              className={`hover:text-blue-500 ${
+                pathname === "/github" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
+              {translations?.header?.github || "Github"}
+            </Link>
+            <Link
+              href="/articles"
+              className={`hover:text-blue-500 ${
+                pathname === "/articles" ? "text-blue-600 font-semibold" : ""
+              }`}
+            >
+              {translations?.header?.articles || "Articles"}
+            </Link>
           </div>
         </div>
 

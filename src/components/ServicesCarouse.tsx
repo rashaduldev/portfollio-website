@@ -5,6 +5,7 @@ import { LayoutContext } from "@/components/context";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Service } from "@/types/translations";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ServicesCarousel() {
   const context = useContext(LayoutContext);
@@ -26,10 +27,9 @@ export default function ServicesCarousel() {
     const container = scrollRef.current;
     if (container) {
       const { scrollLeft, scrollWidth, clientWidth } = container;
-
       const maxScroll = scrollWidth - clientWidth;
-      setIsAtStart(scrollLeft <= 10); // 10px buffer
-      setIsAtEnd(scrollLeft >= maxScroll - 10); // 10px buffer
+      setIsAtStart(scrollLeft <= 10);
+      setIsAtEnd(scrollLeft >= maxScroll - 10);
     }
   };
 
@@ -51,8 +51,9 @@ export default function ServicesCarousel() {
       container.addEventListener("scroll", updateScrollButtons);
     }
     return () => {
-      if (container)
+      if (container) {
         container.removeEventListener("scroll", updateScrollButtons);
+      }
     };
   }, []);
 
@@ -75,6 +76,7 @@ export default function ServicesCarousel() {
             <FaChevronLeft />
           </button>
         )}
+
         {/* Cards Scroll Container */}
         {services.length === 0 ? (
           <p className="text-center text-gray-500 dark:text-gray-400">
@@ -87,9 +89,19 @@ export default function ServicesCarousel() {
             dir={isRTL ? "rtl" : "ltr"}
           >
             {services.map((service, idx) => (
-              <div
+              <motion.div
                 key={idx}
-                className="min-w-[280px] max-w-sm border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out"
+                layout
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 50 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: idx * 0.1,
+                }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="min-w-[280px] max-w-sm min-h-[420px] border border-gray-200 dark:border-gray-700 rounded flex-shrink-0 transition-transform transform hover:-translate-y-2 duration-300 ease-in-out bg-white dark:bg-gray-900"
               >
                 {service.image && (
                   <Image
@@ -108,7 +120,7 @@ export default function ServicesCarousel() {
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         )}
