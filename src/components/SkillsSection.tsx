@@ -27,7 +27,7 @@ interface SkillSectionProps {
 
 const designSkills: Skill[] = [
   { key: "photoshop", value: 100 },
-  { key: "figma", value: 95 },
+  { key: "figma", value: 90 },
   { key: "xd", value: 60 },
   { key: "illustrator", value: 70 },
 ];
@@ -36,22 +36,22 @@ const toolskills: Skill[] = [
   { key: "git", value: 95 },
   { key: "firebase", value: 95 },
   { key: "cloudinary", value: 75 },
-  { key: "cpanel", value: 70 },
-  { key: "vs", value: 85 },
+  { key: "cpanel", value: 80 },
+  { key: "vs", value: 95 },
   { key: "jetBrains", value: 70 },
 ];
 
 const devSkills: Skill[] = [
   { key: "html", value: 100 },
   { key: "css", value: 98 },
-  { key: "js", value: 80 },
-  { key: "ts", value: 75 },
+  { key: "js", value: 95 },
+  { key: "ts", value: 90 },
   { key: "react", value: 90 },
-  { key: "next", value: 80 },
+  { key: "next", value: 90 },
   { key: "vue", value: 40 },
   { key: "tailwind", value: 100 },
   { key: "bootstrap", value: 80 },
-  { key: "node", value: 70 },
+  { key: "node", value: 80 },
   { key: "ex", value: 75 },
   { key: "wp", value: 65 },
 ];

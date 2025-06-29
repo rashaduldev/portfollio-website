@@ -124,7 +124,6 @@ export interface Project {
   desktopimage: string;
   mobileimage: string;
   techStack: string;
-  link: string;
   endtrac: string;
   id: number;
   githubLink: string;

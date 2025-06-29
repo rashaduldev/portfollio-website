@@ -41,8 +41,7 @@ export default function ClientLayoutWrapper({
           `@/app/translations/${language}.json`
         )) as { default: PortfolioJSON };
         setTranslations(translationModule.default);
-      } catch (error) {
-        console.error(`Translation load failed: ${language}`, error);
+      } catch {
         setTranslations(defaultTranslations);
       } finally {
         setIsLoading(false);

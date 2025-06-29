@@ -9,14 +9,9 @@ export default function CookiesPolicy() {
           src="https://res.cloudinary.com/de8yddexc/image/upload/v1748528683/resume/cgeslgurmvval32npu18.webp"
           alt="Cookies Policy Banner"
           fill
-          className=""
+          className="w-full h-auto"
           priority
         />
-        {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-lg px-4 text-center">
-            Cookies Policy
-          </h1>
-        </div> */}
       </div>
 
       {/* Content Section */}
@@ -119,3 +114,8 @@ export default function CookiesPolicy() {
     </main>
   );
 }
+export const metadata = {
+  title: "Cookies Policy",
+  description:
+    "Learn about our cookies policy and how we use cookies on our website.",
+};

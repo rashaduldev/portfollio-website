@@ -21,15 +21,13 @@ const CookieConsent = () => {
 
     try {
       const consent = localStorage.getItem("cookieConsent");
-      console.log("🎯 CookieConsent localStorage:", consent); // ✅ DEBUG LOG
-
       if (consent === "accepted") {
         setVisible(false);
       } else {
         setVisible(true);
       }
-    } catch (err) {
-      console.error("❌ Error accessing localStorage:", err);
+    } catch {
+      // Silently fail without logging
     }
   }, [hasMounted]);
 
@@ -37,9 +35,8 @@ const CookieConsent = () => {
     try {
       localStorage.setItem("cookieConsent", "accepted");
       setVisible(false);
-      console.log("✅ Cookie set to accepted");
-    } catch (err) {
-      console.error("❌ Error setting localStorage:", err);
+    } catch {
+      // Silently fail without logging
     }
   };
 
@@ -55,21 +52,29 @@ const CookieConsent = () => {
     <div
       dir={isRTL ? "rtl" : "ltr"}
       className="fixed bottom-4 left-4 right-4 max-w-3xl mx-auto bg-gray-900 text-white dark:bg-white dark:text-gray-900 shadow-lg rounded-lg p-6 z-50 transition-all duration-300"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookie consent banner"
     >
       <h2 className="text-xl font-semibold mb-2">
         {translations.cookieConsent.title}
       </h2>
       <p className="mb-4 text-sm">{translations.cookieConsent.message}</p>
-      <div className={`flex gap-3 ${isRTL ? "justify-start flex-row-reverse" : "justify-between"}`}>
+      <div
+        className={`flex flex-wrap gap-3 ${
+          isRTL ? "justify-start flex-row-reverse" : "justify-between"
+        }`}
+      >
         <Button
           onClick={acceptCookies}
-          className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-400 dark:text-black"
+          className="bg-orange-600 hover:bg-orange-700 text-white dark:bg-orange-500 dark:hover:bg-orange-600 dark:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
         >
           {translations.cookieConsent.accept}
         </Button>
+
         <Button
           onClick={goToTerms}
-          className="bg-gray-700 hover:bg-gray-800 text-white dark:bg-gray-200 dark:text-black"
+          className="bg-gray-700 hover:bg-gray-800 text-white dark:bg-gray-200 dark:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
         >
           {translations.cookieConsent.terms || "Terms & Conditions"}
         </Button>

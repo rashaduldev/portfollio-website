@@ -6,6 +6,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import Link from "next/link";
 import { FaInfoCircle, FaGithub, FaLink } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ProjectsSection = () => {
   const context = useContext(LayoutContext);
@@ -66,8 +67,12 @@ const ProjectsSection = () => {
         )}
       >
         {projects.map((item, idx) => (
-          <div
+          <motion.div
             key={idx}
+            initial={{ opacity: 0, y: 100 }} // bottom to top
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
             className="group relative rounded shadow-md overflow-hidden transition-all hover:scale-105 hover:border-1 hover:border-[#fdfdfd5d] hover:shadow-lg min-h-[420px] flex flex-col"
           >
             {/* Diagonal Background Image */}
@@ -129,7 +134,7 @@ const ProjectsSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
