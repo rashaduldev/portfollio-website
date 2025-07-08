@@ -3,6 +3,7 @@
 import { useContext } from "react";
 import { LayoutContext } from "./context";
 import { motion } from "framer-motion";
+import { ExperienceItem } from "@/types/translations";
 
 export default function WorkExperience() {
   const context = useContext(LayoutContext);
@@ -13,10 +14,27 @@ export default function WorkExperience() {
   }
 
   const { translations, isRTL } = context;
-  const experiences = translations?.experience || {};
 
-  const sortedExperiences = Object.entries(experiences).sort(
-    (a, b) => Number(b[0]) - Number(a[0])
+  // Your existing experience object (Record<string, Experience>)
+  const experiencesObj: Record<string, ExperienceItem | ExperienceItem[]> =
+    translations?.experience || {};
+
+  // ✅ Convert to array, supporting multiple entries per year
+  const experiences: ExperienceItem[] = Object.entries(experiencesObj).flatMap(
+    ([year, data]) => {
+      if (Array.isArray(data)) {
+        // multiple experiences for same year
+        return data.map((exp) => ({ ...exp, year }));
+      } else {
+        // single experience
+        return [{ ...data, year }];
+      }
+    }
+  );
+
+  // Sort by year descending
+  const sortedExperiences = experiences.sort(
+    (a, b) => Number(b.year) - Number(a.year)
   );
 
   return (
@@ -26,7 +44,7 @@ export default function WorkExperience() {
       </h2>
 
       <div className="relative overflow-x-hidden">
-        {/* Vertical Line */}
+      {/* Vertical Line */}
         <div
           className={`absolute border rounded-2xl bg-gray-400 dark:bg-gray-600 ${
             isRTL
@@ -34,16 +52,15 @@ export default function WorkExperience() {
               : "md:right-auto md:left-1/2 left-0"
           } transform md:-translate-x-1/2 h-full w-[2px] z-0`}
         />
-
         <div className="flex flex-col space-y-16 relative z-10">
-          {sortedExperiences.map(([year, exp], index) => {
+          {sortedExperiences.map((exp, index) => {
             const isLeft = index % 2 === 0;
             const alignLeft = (!isRTL && isLeft) || (isRTL && !isLeft);
-            const animationDirection = alignLeft ? -40 : 40; // ✅ less offset
+            const animationDirection = alignLeft ? -40 : 40;
 
             return (
               <div
-                key={year}
+                key={index}
                 className={`flex flex-col items-center md:flex-row md:items-start ${
                   alignLeft ? "md:justify-start" : "md:justify-end"
                 } relative`}
@@ -72,12 +89,17 @@ export default function WorkExperience() {
                     <div className="rounded p-6 border border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-700 transition-all duration-300 group hover:shadow-lg">
                       <div className="flex items-center justify-between">
                         <p className="font-semibold">{exp.title}</p>
-                        <i className="text-md">{year}</i>
+                        <i className="text-md">{exp.duration}</i>
                       </div>
                       {exp.company && <p>{exp.company}</p>}
                       {exp.department && <p>{exp.department}</p>}
                       {exp.description && (
                         <p className="text-sm mt-1">{exp.description}</p>
+                      )}
+                      {exp.duration && (
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                          {exp.duration}
+                        </p>
                       )}
                     </div>
                   </motion.div>

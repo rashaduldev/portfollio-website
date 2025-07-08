@@ -65,10 +65,10 @@ export default function Header() {
 
       {/* 🔵 Main Header */}
       <header
-        className={`w-full fixed top-0 z-50 text-gray-900 dark:text-gray-100 shadow transition-colors duration-300 ${
+        className={`w-full fixed top-0 z-50 text-gray-900 dark:text-gray-100 transition-colors duration-300 ${
           scrolled
             ? "bg-white dark:bg-gray-950"
-            : "bg-white/10 dark:bg-black/10"
+            : ""
         }`}
       >
         <div className="max-w-7xl md:mx-auto mx-5 py-4 flex items-center justify-between relative">

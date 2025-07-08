@@ -1,5 +1,4 @@
 "use client";
-
 import { useContext } from "react";
 import { LayoutContext } from "./context";
 import Image from "next/image";
@@ -86,7 +85,7 @@ const ProjectsSection = () => {
             </div>
 
             {/* Hover Overlay with Animated Icons */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 z-50 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center gap-6">
+            <div className="absolute inset-0 bg-black bg-opacity-40 z-50 transform -translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-80 transition-all duration-900 ease-in-out flex items-center justify-center gap-6">
               <Link
                 href={`/projects/${item.id}`}
                 aria-label={`View details for ${item.title}`}

@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import "./banner.css";
 
 export default function Banner() {
   const context = useContext(LayoutContext);
@@ -31,15 +32,17 @@ export default function Banner() {
   const { translations, isRTL } = context;
 
   return (
-    <section
-      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed mt-5"
-      style={{
-        backgroundImage:
-          "url('https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740')",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm z-0" />
+  <section className="relative w-full min-h-screen overflow-hidden mt-5">
+  {/* Background Image with Zoom Animation */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed zoom-bg"
+    style={{
+      backgroundImage:
+        "url('https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740')",
+    }}
+  />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm z-10" />
 
       <div
         className={`relative z-10 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16 px-4 md:px-0 py-16 md:py-24 max-w-7xl mx-auto min-h-[100vh] ${

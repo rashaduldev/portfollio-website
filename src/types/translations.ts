@@ -5,7 +5,7 @@ export type PortfolioJSON = {
   cookieConsent: CookieConsentSection;
   main: MainSection;
   skills: SkillsSection;
-  experience: Record<string, ExperienceItem>;
+  experience: Record<string, ExperienceItem[]>;
   education: Record<string, EducationItem>;
   Educationheading:string;
   footer: FooterSection;
@@ -84,13 +84,13 @@ export interface SkillsSection {
 export interface Translations {
   skills: SkillsSection;
 }
-
-
-interface ExperienceItem {
+export interface ExperienceItem {
+  year: string;
   title: string;
-  company: string;
-  department: string;
-  description: string;
+  company?: string;
+  department?: string;
+  description?: string;
+  duration?: string;
 }
 
 interface EducationItem {

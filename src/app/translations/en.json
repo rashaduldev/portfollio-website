@@ -60,32 +60,54 @@
   ]
 },
 "experienceHeading": "Work Experience",
-  "experience": {
-    "2025": {
-      "title": "Full Stack Web Developer",
-      "company": "Uysystems Ltd",
-      "department": "Engineering",
-      "description": "Developed full-stack applications with Tailwind, JavaScript, TypeScript, ReactJS, NodeJS, Express, and MongoDB."
+"experience": {
+  "2025": [
+    {
+      "year": "2025",
+      "title": "Frontend Developer",
+      "company": "Themefisher",
+      "department": "Developer",
+      "description": "Built apps with Tailwind, React, Next.js, etc.",
+      "duration": "July 2025 – Present"
     },
-    "2024": {
+    {
+      "year": "2025",
       "title": "Junior Frontend Developer",
       "company": "Uysystems Ltd",
-      "department": "Development",
-      "description": "Built responsive web applications using HTML, CSS, JavaScript, ReactJS, and NodeJS."
-    },
-    "2020": {
-      "title": "Web Development Level - 4",
-      "company": "Freelance",
-      "department": "Development",
-      "description": "Developed web applications and gained proficiency in HTML, CSS, and PHP."
-    },
-    "2022": {
-      "title": "IT Manager",
-      "company": "ShopUp",
-      "department": "Unicorn Department",
-      "description": "Managed IT infrastructure and led a team of developers to implement key technology solutions."
+      "department": "Engineering",
+      "description": "Worked on full-stack with React and MongoDB.",
+      "duration": "Sep 2024 – June 2025"
     }
-  },
+  ],
+  "2024": [
+    {
+      "year": "2025",
+      "title": "Implementation Assistant",
+      "company": "a2i (contructual)",
+      "department": "Mygov team",
+      "description": "Created reusable form templates for MyGov.",
+      "duration": "Sep 2024 – June 2025"
+    },
+    {
+      "year": "2025",
+      "title": "Intern Frontend Developer",
+      "company": "Uysystems Ltd",
+      "department": "Development",
+      "description": "Built responsive websites with HTML, CSS, Bootstrap, Ajax, PHP, Laravel",
+      "duration": "Feb 2024 – Aug 2024"
+    }
+  ],
+  "2023": [
+    {
+    "year": "2025",
+    "title": "IT Manager",
+    "company": "ShopUp",
+    "department": "Unicorn Dept",
+    "description": "Managed IT infrastructure.",
+    "duration": "Dec 2022 – Jan 2024"
+  }
+  ]
+},
   "testimonialsSection": {
     "testimonialHeading": "Testimonials",
     "trustedClients": "",
