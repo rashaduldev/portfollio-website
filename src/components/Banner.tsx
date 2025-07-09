@@ -32,17 +32,17 @@ export default function Banner() {
   const { translations, isRTL } = context;
 
   return (
-  <section className="relative w-full min-h-screen overflow-hidden mt-5">
-  {/* Background Image with Zoom Animation */}
-  <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed zoom-bg"
-    style={{
-      backgroundImage:
-        "url('https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740')",
-    }}
-  />
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm z-10" />
+    <section className="relative w-full min-h-screen overflow-hidden mt-5">
+      {/* Background Image with Zoom Animation */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed zoom-bg"
+        style={{
+          backgroundImage:
+            "url('https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740')",
+        }}
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm z-10" />
 
       <div
         className={`relative z-10 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16 px-4 md:px-0 py-16 md:py-24 max-w-7xl mx-auto min-h-[100vh] ${
@@ -147,63 +147,60 @@ export default function Banner() {
           </div>
         </motion.div>
 
-        {/* Right Image Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="flex-1 flex justify-center md:justify-end relative mt-10 md:mt-0 md:me-[90px]"
-        >
-          {/* Circle 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.4 }}
-            className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#14AE89] pointer-events-none animate-circleFloat`}
-            style={
-              isRTL
-                ? { top: "-90px", right: "68px", zIndex: 0 }
-                : { top: "-90px", left: "68px", zIndex: 0 }
-            }
-          />
-
-          {/* Circle 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.6 }}
-            className={`hidden md:block absolute w-[240px] h-[240px] border-4 border-dotted border-[#CBE333] pointer-events-none animate-circleFloatReverse`}
-            style={
-              isRTL
-                ? { bottom: "-90px", left: "-90px", zIndex: 0 }
-                : { bottom: "-90px", right: "-90px", zIndex: 0 }
-            }
-          />
-
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.8 }}
-            className="relative w-[260px] h-[260px] md:w-[300px] md:h-[300px] z-10"
+        {/* Right Image Card */}
+        <div className="flex justify-center items-center flex-wrap gap-10">
+          <a
+            href="#"
+            className="group relative w-[300px] sm:w-[350px] md:w-[400px] h-[350px] md:h-[400px] p-5 block"
           >
-            {/* Top Half Border */}
-            <div className="absolute top-0 left-0 w-full h-1/2 border-[3px] border-dotted border-[#14AE89] border-b-0 z-0" />
-            {/* Bottom Half Border */}
-            <div className="absolute bottom-0 left-0 w-full h-1/2 border-[3px] border-dotted border-orange-300 border-t-0 z-0" />
+            {/* Gradient Border */}
+            <div className="absolute top-10 -left-10 w-full h-full z-0 transition-all duration-300 group-hover:scale-[0.96] rotate-[-10deg] skew-[-10deg] group-hover:rotate-[-14deg] group-hover:skew-[-14deg]">
+              <svg className="w-full h-full">
+                <defs>
+                  <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="rgb(253,137,68)" />
+                    <stop offset="100%" stopColor="rgb(153,75,23)" />
+                  </linearGradient>
+                </defs>
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  stroke="url(#grad-orange)"
+                  strokeWidth={4}
+                />
+              </svg>
+            </div>
 
-            {/* Image */}
-            <div className="absolute inset-[20px] z-30 overflow-hidden animate-imageFloat">
+            {/* Image Wrapper */}
+            <div className="absolute inset-0 flex items-center justify-center rotate-[-10deg] skew-[-10deg] overflow-hidden transition-all duration-300 group-hover:rotate-[-14deg] group-hover:skew-[-14deg] group-hover:scale-[0.96] bg-white">
               <Image
                 src="https://res.cloudinary.com/de8yddexc/image/upload/c_crop,ar_1:1/v1750745977/rashadul-removebg-preview_svemu4.png"
-                alt="Profile"
-                width={400}
+                alt="Rashadul Islam"
                 height={400}
-                className="object-cover"
+                width={500}
                 priority
+                className="opacity-30 max-w-[200px] max-h-[200px] scale-90 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100"
               />
             </div>
-          </motion.div>
-        </motion.div>
+
+            {/* Text Content */}
+            <div className="absolute bottom-0 left-[-25%] uppercase text-yellow-600 z-10">
+              <span className="block text-xl font-bold rotate-[270deg] origin-top-left absolute left-0 top-2 translate-y-[-100%] -translate-x-[calc(100%+80px)] opacity-0 transition-all duration-700 group-hover:translate-x-[-100%] group-hover:opacity-100 delay-[350ms]">
+                Heading
+              </span>
+              <strong className="block text-[42px] md:text-[62px] font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[100ms]">
+                Hello
+              </strong>
+              <strong className="block text-[42px] md:text-[62px] font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[200ms]">
+                World
+              </strong>
+              <span className="block translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[140ms]">
+                Details and stuff
+              </span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

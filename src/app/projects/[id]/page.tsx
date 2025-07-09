@@ -10,6 +10,6 @@ const ProjectDetailsPage = () => {
 
 export default ProjectDetailsPage;
 export const metadata = {
-  title: "Project Details",
+  title: "Rashaduldev | Project Details",
   description: "Detailed view of the selected project.",
 };

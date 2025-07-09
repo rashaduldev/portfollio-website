@@ -115,7 +115,7 @@ export default function CookiesPolicy() {
   );
 }
 export const metadata = {
-  title: "Cookies Policy",
+  title: "Rashaduldev | Cookies Policy",
   description:
     "Learn about our cookies policy and how we use cookies on our website.",
 };
