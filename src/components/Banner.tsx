@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import "./banner.css";
 
 export default function Banner() {
@@ -147,6 +148,13 @@ export default function Banner() {
           </div>
         </motion.div>
 
+          <DotLottieReact
+      src="https://lottie.host/dd41f228-5379-497a-961e-051787531156/xOoltcD2od.lottie"
+      loop
+      className="w-96 h-96"
+      autoplay
+    />
+
         {/* Right Image Card */}
         <div className="flex justify-center items-center flex-wrap gap-10">
           <a
@@ -172,33 +180,36 @@ export default function Banner() {
               </svg>
             </div>
 
-            {/* Image Wrapper */}
-            <div className="absolute inset-0 flex items-center justify-center rotate-[-10deg] skew-[-10deg] overflow-hidden transition-all duration-300 group-hover:rotate-[-14deg] group-hover:skew-[-14deg] group-hover:scale-[0.96] bg-white">
-              <Image
-                src="https://res.cloudinary.com/de8yddexc/image/upload/c_crop,ar_1:1/v1750745977/rashadul-removebg-preview_svemu4.png"
-                alt="Rashadul Islam"
-                height={400}
-                width={500}
-                priority
-                className="opacity-30 max-w-[200px] max-h-[200px] scale-90 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100"
-              />
-            </div>
+           <div className="relative group w-[300px] h-[300px] mx-auto">
+  {/* Image Wrapper */}
+  <div className="absolute inset-0 flex items-center justify-center rotate-[-10deg] skew-[-10deg] overflow-hidden transition-all duration-500 group-hover:rotate-[-14deg] group-hover:skew-[-14deg] group-hover:scale-95">
+    <Image
+      src="https://res.cloudinary.com/de8yddexc/image/upload/c_crop,ar_1:1/v1750745977/rashadul-removebg-preview_svemu4.png"
+      alt="Rashadul Islam"
+      height={400}
+      width={400}
+      priority
+      className="opacity-30 scale-90 max-w-[180px] max-h-[180px] transition-all duration-500 group-hover:scale-100 group-hover:opacity-100"
+    />
+  </div>
 
-            {/* Text Content */}
-            <div className="absolute bottom-0 left-[-25%] uppercase text-yellow-600 z-10">
-              <span className="block text-xl font-bold rotate-[270deg] origin-top-left absolute left-0 top-2 translate-y-[-100%] -translate-x-[calc(100%+80px)] opacity-0 transition-all duration-700 group-hover:translate-x-[-100%] group-hover:opacity-100 delay-[350ms]">
-                Heading
-              </span>
-              <strong className="block text-[42px] md:text-[62px] font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[100ms]">
-                Hello
-              </strong>
-              <strong className="block text-[42px] md:text-[62px] font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[200ms]">
-                World
-              </strong>
-              <span className="block translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[140ms]">
-                Details and stuff
-              </span>
-            </div>
+  {/* Text Content */}
+  <div className="absolute -bottom-20 left-0 p-4 uppercase text-yellow-600 z-10 w-full">
+    <span className="block text-sm md:text-base font-mono rotate-[320deg] origin-bottom-left -right-20 absolute -top-20 bottom-full translate-y-[100%] -translate-x-[calc(100%+40px)] opacity-0 transition-all duration-700 group-hover:translate-x-[-100%] group-hover:opacity-100 delay-[300ms]">
+      <span>{'console.log("HELLO WORLD")'}</span>
+    </span>
+    <strong className="block text-3xl md:text-5xl font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[100ms]">
+      Hello
+    </strong>
+    <strong className="block text-3xl md:text-5xl font-black translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[200ms]">
+      World
+    </strong>
+    {/* <span className="block text-base mt-2 translate-x-[-80px] opacity-0 transition-all duration-700 group-hover:translate-x-0 group-hover:opacity-100 delay-[400ms]">
+      Details and stuff
+    </span> */}
+  </div>
+</div>
+
           </a>
         </div>
       </div>
